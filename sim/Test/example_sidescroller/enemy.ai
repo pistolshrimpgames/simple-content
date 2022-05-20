@@ -1,0 +1,426 @@
+{
+    "components": {
+        "180bf9b9e14c619+Enemy Patroller": {
+            "flags": "+*",
+            "extends": "33",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "180bfcef93f065e+stunned time": {
+                            "flags": "*",
+                            "base": "65",
+                            "init": {
+                                "ops": [
+                                    {}
+                                ]
+                            }
+                        },
+                        "180bfabb9fdb3c8+patrol direction": {
+                            "flags": "*",
+                            "base": "65",
+                            "init": {
+                                "ops": [
+                                    {}
+                                ]
+                            }
+                        },
+                        "180bfab8b951286-patrol distance": {
+                            "base": "65",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 5
+                                    }
+                                ]
+                            }
+                        },
+                        "180bfac2a66f741-move speed": {
+                            "base": "65",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 5
+                                    }
+                                ]
+                            }
+                        },
+                        "180bfada85dd25f-spawn position": {
+                            "flags": "*",
+                            "base": "66",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "prop": "13"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "49": {
+                            "flags": "*",
+                            "init": {
+                                "set": 1,
+                                "needed": 1,
+                                "conjured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "180bf9cd11c24a4|Enemy Collider"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "5": {
+                    "flags": "+",
+                    "instructions": {
+                        "9": {
+                            "LHS": {
+                                "obj": {
+                                    "prop": "14"
+                                }
+                            },
+                            "RHS": {
+                                "ops": [
+                                    {}
+                                ]
+                            }
+                        },
+                        "8": {
+                            "flags": "+",
+                            "contextValue": -1,
+                            "instructions": {
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "16"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "contextValue": -1,
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180bfcef93f065e|stunned time"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": ">=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "4"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "180bfcef93f065e|stunned time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "RHS": {
+                                "bind": ">",
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "prop": "180bfcef93f065e|stunned time"
+                                        }
+                                    },
+                                    {}
+                                ]
+                            }
+                        },
+                        "b": {
+                            "flags": "+",
+                            "instructions": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "180bfaef065362b-vec": {
+                                            "base": "66",
+                                            "init": {
+                                                "bind": "-",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "13"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180bfada85dd25f|spawn position"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "16",
+                                                    "tupleOffs": 1
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180bfac2a66f741|move speed"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "180bfabb9fdb3c8|patrol direction"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "-",
+                                                        "ops": [
+                                                            {
+                                                                "num": 1
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "180bfabb9fdb3c8|patrol direction"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": ">=",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180bfaef065362b|vec",
+                                                            "tupleOffs": 1
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180bfab8b951286|patrol distance"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "180bfabb9fdb3c8|patrol direction"
+                                                }
+                                            },
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "e+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "16",
+                                                    "tupleOffs": 1
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "-",
+                                                "ops": [
+                                                    {},
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180bfac2a66f741|move speed"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180bfaef065362b|vec"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "-",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180bfada85dd25f|spawn position"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "13"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "180bfabb9fdb3c8|patrol direction"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "-",
+                                                        "ops": [
+                                                            {
+                                                                "num": 1
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "180bfabb9fdb3c8|patrol direction"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": ">=",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180bfaef065362b|vec",
+                                                            "tupleOffs": 1
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180bfab8b951286|patrol distance"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "180bfabb9fdb3c8|patrol direction"
+                                                }
+                                            },
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "comment": ""
+                        }
+                    }
+                }
+            }
+        },
+        "180bf9cd11c24a4-Enemy Collider": {
+            "extends": "180bf7cc683e8c3|Player Kill Collider",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "5e": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {}
+                                ]
+                            }
+                        },
+                        "48": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "180bf9bf00dbc1c|Enemy Shape"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "180bf9bf00dbc1c-Enemy Shape": {
+            "flags": "+",
+            "extends": "40",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "4b": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 0.5
+                                    }
+                                ]
+                            }
+                        },
+                        "4c": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 2
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
