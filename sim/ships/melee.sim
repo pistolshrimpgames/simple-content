@@ -1,0 +1,181 @@
+{
+    "selected": [
+        2,
+        0,
+        2,
+        -1
+    ],
+    "scripts": [
+        "game/sim/ships/Arilou_ship.ai",
+        "game/sim/ships/Human_ship.ai",
+        {
+            "file": "game/sim/ships/Mmrnmhrm_ship.ai",
+            "panes": [
+                -1,
+                0,
+                -1,
+                -1
+            ],
+            "lines": [
+                -1,
+                1,
+                -1,
+                -1
+            ]
+        },
+        "game/sim/ships/Druuge_ship.ai",
+        {
+            "file": "game/sim/ships/Chmmr_ship.ai",
+            "panes": [
+                2,
+                -1,
+                -1,
+                -1
+            ],
+            "lines": [
+                1229,
+                -1,
+                -1,
+                -1
+            ]
+        },
+        "game/sim/ships/Urquan_ship.ai",
+        "game/sim/ships/Orz_ship.ai",
+        {
+            "file": "game/sim/ships/Melnorme_ship.ai",
+            "panes": [
+                -1,
+                1,
+                -1,
+                -1
+            ],
+            "lines": [
+                -1,
+                1,
+                -1,
+                -1
+            ]
+        },
+        {
+            "file": "game/sim/ships/Syreen_ship.ai",
+            "panes": [
+                0,
+                -1,
+                -1,
+                -1
+            ],
+            "lines": [
+                582,
+                -1,
+                -1,
+                -1
+            ]
+        },
+        "game/sim/ships/Spathi_ship.ai",
+        "game/sim/ships/Umgah_ship.ai",
+        "game/sim/ships/Ilwrath_ship.ai",
+        {
+            "file": "game/sim/ships/melee.ai",
+            "panes": [
+                -1,
+                -1,
+                0,
+                -1
+            ],
+            "lines": [
+                -1,
+                -1,
+                13,
+                -1
+            ]
+        },
+        "game/sim/ships/Shofixti_ship.ai",
+        "game/sim/ships/Kohr-Ah_ship.ai",
+        "game/sim/ships/Chenjesu_ship.ai",
+        "game/sim/ships/Yehat_ship.ai",
+        "game/sim/ships/Pkunk_ship.ai",
+        "game/sim/ships/Mycon_ship.ai",
+        "game/sim/ships/Utwig_ship.ai",
+        "game/sim/ships/VUX_ship.ai",
+        "game/sim/ships/ZoqFot_ship.ai",
+        "game/sim/ships/Androsyn_ship.ai",
+        "game/sim/ships/Thradd_ship.ai",
+        "game/sim/ships/Supox_ship.ai",
+        {
+            "file": "game/sim/ships/ship.ai",
+            "panes": [
+                -1,
+                -1,
+                1,
+                -1
+            ],
+            "lines": [
+                -1,
+                -1,
+                1,
+                -1
+            ]
+        },
+        {
+            "file": "game/sim/ships/melee_constants.ai",
+            "panes": [
+                -1,
+                -1,
+                2,
+                -1
+            ],
+            "lines": [
+                -1,
+                -1,
+                30,
+                -1
+            ]
+        },
+        "game/sim/ships/planet_pr.ai",
+        "game/sim/ships/bootstrap.ai",
+        "game/sim/ships/asteroids_pr.ai",
+        "game/sim/shared/gravity.ai",
+        "game/sim/shared/roster.ai",
+        "game/sim/shared/simulation_transit.ai",
+        "game/sim/shared/aliens.ai",
+        "game/sim/shared/math.ai",
+        "game/sim/shared/motion.ai",
+        "game/sim/shared/player_resources.ai",
+        {
+            "file": "game/sim/ships/ship_ai.ai",
+            "panes": [
+                1,
+                -1,
+                -1,
+                -1
+            ],
+            "lines": [
+                3,
+                -1,
+                -1,
+                -1
+            ]
+        },
+        "game/sim/shared/dialog.ai",
+        "game/sim/ships/melee_debug.ai",
+        {
+            "file": "game/sim/shared/combat/combat_system.ai",
+            "panes": [
+                -1,
+                -1,
+                3,
+                -1
+            ],
+            "lines": [
+                -1,
+                -1,
+                1,
+                -1
+            ]
+        },
+        "game/sim/shared/trigger_colliders.ai",
+        "game/sim/shared/combat/combat_triggers.ai",
+        "game/sim/shared/combat/effects.ai",
+        "game/sim/shared/combat/powers.ai"
+    ]
+}

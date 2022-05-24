@@ -1,0 +1,3188 @@
+{
+    "components": {
+        "17b1d97cc617ad9-Urquan Ship Mk2": {
+            "flags": "*",
+            "extends": "1809b62dc7cafa3|Melee Ship",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "17ca561b513fd12|thruster": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "captured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "17e7018459ddbfd|Urquan Ship Thruster"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17e55a44b4fdf3d|turning": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "captured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "17e7018459e9e5d|Urquan Ship Turning"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17bc6f246957acc|energy": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "captured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "17e7018459f19c0|Urquan Ship Energy"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17e6f61ccca5823|weapons": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "captured": 1,
+                                "bind": "+",
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "17e701845a05e0e|Urquan Blaster Weapon"
+                                        }
+                                    },
+                                    {
+                                        "obj": {
+                                            "inst": "17e701845a20131|Fighter Weapon"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "62": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 200
+                                    }
+                                ]
+                            }
+                        },
+                        "11": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 42
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "3": {
+                    "instructions": {
+                        "b": {
+                            "flags": "+",
+                            "instructions": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "17b31558a513ad5-general offset": {
+                                            "base": "66",
+                                            "init": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "17b31558a52edcc-": {
+                                    "extends": "180905f06626b7d|Melee Ship Collider",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "vec": {}
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "17b31558a513ad5|general offset"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17b31558a531e19-": {
+                                                    "flags": "+",
+                                                    "extends": "42",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "47": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {
+                                                                                    "x": 0.629,
+                                                                                    "y": 0.5,
+                                                                                    "z": 1.51399999
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "3": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "48"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {}
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "42"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180905f06626b7d|Melee Ship Collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                },
+                                "17b31558a54abc0-": {
+                                    "extends": "180905f06626b7d|Melee Ship Collider",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "vec": {
+                                                                    "x": 0.686,
+                                                                    "z": 0.114
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17b31558a55bc44-": {
+                                                    "flags": "+",
+                                                    "extends": "42",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "47": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {
+                                                                                    "x": 0.28599999,
+                                                                                    "y": 0.5,
+                                                                                    "z": 1.22899999
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "3": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "48"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {}
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "42"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180905f06626b7d|Melee Ship Collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                },
+                                "17b31558a569116-": {
+                                    "extends": "180905f06626b7d|Melee Ship Collider",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "vec": {
+                                                                    "x": -0.686,
+                                                                    "z": 0.114
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17b31558a57c3c8-": {
+                                                    "flags": "+",
+                                                    "extends": "42",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "47": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {
+                                                                                    "x": 0.28599999,
+                                                                                    "y": 0.5,
+                                                                                    "z": 1.28599999
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "3": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "48"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {}
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "42"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180905f06626b7d|Melee Ship Collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                },
+                                "17b31558a58c177-": {
+                                    "extends": "180905f06626b7d|Melee Ship Collider",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "vec": {
+                                                                    "z": 0.98499998
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "17b31558a513ad5|general offset"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "32": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "rot": {
+                                                                    "y": 45.00297908
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17b31558a5981d1-": {
+                                                    "flags": "+",
+                                                    "extends": "42",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "47": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {
+                                                                                    "x": 0.767,
+                                                                                    "y": 0.5,
+                                                                                    "z": 0.767
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "3": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "48"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {}
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "42"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180905f06626b7d|Melee Ship Collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                }
+                            },
+                            "comment": "Colliders"
+                        }
+                    }
+                },
+                "5": {
+                    "instructions": {
+                        "8": {
+                            "flags": "t+",
+                            "RHS": {
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "prop": "11"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "17e7018459ddbfd-Urquan Ship Thruster": {
+            "extends": "17ca55e868b0fde|Ship Thruster",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "17ca55edd0a9566|max speed": {
+                            "flags": "*",
+                            "init": {
+                                "bind": "*",
+                                "ops": [
+                                    {
+                                        "num": 30
+                                    },
+                                    {
+                                        "obj": {
+                                            "inst": "17ca4ab5732f61d|Ship Constants",
+                                            "prop": "17ca4ab0a93597e|thrust unit"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17ca55edd0b4706|thrust increment": {
+                            "flags": "*",
+                            "init": {
+                                "bind": "*",
+                                "ops": [
+                                    {
+                                        "num": 6
+                                    },
+                                    {
+                                        "obj": {
+                                            "inst": "17ca4ab5732f61d|Ship Constants",
+                                            "prop": "17ca4ab0a93597e|thrust unit"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17ca55edd0c7eb7|thrust wait": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 6
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "17e7018459e9e5d-Urquan Ship Turning": {
+            "extends": "17e599b53e2088e|Ship Turning",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "17e599b53e3c176|turn rate": {
+                            "flags": "*",
+                            "init": {
+                                "bind": "/",
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "17ca4ab5732f61d|Ship Constants",
+                                            "prop": "17ca4ab0a9254ef|max turn rate"
+                                        }
+                                    },
+                                    {
+                                        "num": 5
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "17e7018459f19c0-Urquan Ship Energy": {
+            "extends": "17e6ffef4e23be2|Ship Energy (Regenerating)",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "17e6f7ebb580b97|regen delay": {
+                            "flags": "*",
+                            "init": {
+                                "bind": "*",
+                                "ops": [
+                                    {
+                                        "num": 4
+                                    },
+                                    {
+                                        "obj": {
+                                            "inst": "17ca4ab5732f61d|Ship Constants",
+                                            "prop": "17ca4ab0a969e0b|UQM frame time"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17e6f7ebb562bc7|energy max": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 42
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "17e701845a05e0e-Urquan Blaster Weapon": {
+                    "extends": "17bc803e92b22e6|Ship Weapon",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17bc80762a55f44|firing trigger": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "captured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17e701845a1ab1a|Urquan Blaster Weapon Trigger"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc803e92d90d1|energy cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 6
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc803e92eb4b3|powers": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17f1e013d8caf22|Urquan Blaster Launcher [NEW]"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "flags": "td",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "17d9bb577dd9e09|button state"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17d9bb577dd9e09|button state"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17e701845a1ab1a-Urquan Blaster Weapon Trigger": {
+                    "extends": "17c3d060d7cd3c2|Ship Weapon Trigger - Continuous",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17c3d060d7de788|reload time": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 7
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "flags": "pd",
+                                    "LHS": {
+                                        "obj": {
+                                            "selector": -2,
+                                            "prop": "17bc8044a1489b5|should fire"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17d9bb38bbd09f2|do fire"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "d+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17d9bb38bbd09f2|do fire"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17c3d060d7ef557|reload finish time"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "4"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17c3d060d7de788|reload time"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": ">=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "4"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "17c3d060d7ef557|reload finish time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17f1e013d8caf22-Urquan Blaster Launcher [NEW]": {
+                    "extends": "17e2752b678033d|Power - Missile Launcher [NEW]",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e2752b6796ace|launch missile": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17f1e01987c8f7f|Urquan Blaster Missile"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e27573233e1af|create trigger": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17f1e01efdc4324|Urquan Blaster Combat Trigger"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "31": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "vec": {
+                                                    "z": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17f1e01987c8f7f-Urquan Blaster Missile": {
+                    "flags": "+*",
+                    "extends": "17e2746e493cd33|Missile [NEW]",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e2746e4984461|lifespan": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 60
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e2746e4995183|speed": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 60
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a93597e|thrust unit"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "62": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 201
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17f1e01efdc4324-Urquan Blaster Combat Trigger": {
+                    "extends": "17e0d221074de3c|Collider (Combat Trigger)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "48": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1791432b84e7311|Urquan Blaster Shape"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17f1e029884e1c7-Urquan Blaster Combat Trigger Interaction [Hit Combatant] (Damage)": {
+                    "extends": "17e0d5dbb3550da|Combat Trigger Interaction [Hit Combatant] (Damage)",
+                    "conjurer": "fffffffffffffffe|unconjured",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e0d5dea4592c6|damage": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 6
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1791432b84e7311-Urquan Blaster Shape": {
+                    "extends": "3f",
+                    "conjurer": "fffffffffffffffe|unconjured",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "4a": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 0.39999999
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "blaster"
+        },
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "180956a42c956ad-Fighter Weapon Controller": {
+                    "instances": "17f2d2175639f80|Melee Ship AI Weapon Controller",
+                    "conjurer": "17e701845a20131|Fighter Weapon",
+                    "sections": {
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "+",
+                                    "comment": "DG NOTE: This is just to stub out an automatic weapon controller from trying to exist for fighters. Will prevent AI from trying to launch fighters at all."
+                                }
+                            }
+                        }
+                    }
+                },
+                "17e701845a20131-Fighter Weapon": {
+                    "extends": "17e2bb5b041d774|Ship Weapon (Costs Crew)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1809169a33df9b4-fighters": {
+                                    "flags": "*",
+                                    "base": "178b8306c5f2d72|Fighter",
+                                    "init": {
+                                        "set": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e2bb609a1e7cf|crew cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 2
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc803e92ff381|_button component": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "captured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17bc7aebb3e7466|Ship Weapon Button - Secondary"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc80762a55f44|firing trigger": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "captured": 1,
+                                        "bind": "+",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17e701845a3b600|Fighter Weapon Trigger"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17e701da240bec2|Fighter Weapon Trigger - Crew Cost"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc803e92eb4b3|powers": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b1da2aae80666|Fighter Launcher Mk2"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17e701845a3b600-Fighter Weapon Trigger": {
+                    "extends": "17c3d060d7cd3c2|Ship Weapon Trigger - Continuous",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17c3d060d7de788|reload time": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 36
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17e701da240bec2-Fighter Weapon Trigger - Crew Cost": {
+                    "extends": "17e2bb9876a5327|Ship Weapon Trigger - Crew Cost"
+                },
+                "17b1da2aae80666-Fighter Launcher Mk2": {
+                    "extends": "17aeedb7335f2bf|Power",
+                    "conjurer": "17e701845a20131|Fighter Weapon",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17b1da69ba2a08c-cost - crew": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17b1da750f12ebc-cost - energy": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 8
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17aeedb73353cfd|power creator": {
+                                    "override": "17b1d97cc617ad9|Urquan Ship Mk2",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "l+",
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "18090e190359717-facing offset": {
+                                                            "base": "65",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "num": 150
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "18090e399f65f33-spawn dist offset": {
+                                                            "base": "65",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "num": 1
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "18090e1d08e7e08-spawn o": {
+                                                            "base": "67",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "17aeedb73353cfd|power creator",
+                                                                            "prop": "14"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "18090e1dd46c86c-spawn pos": {
+                                                            "base": "66",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "vec": {}
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "8": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "18090e190359717|facing offset"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "-",
+                                                                "ops": [
+                                                                    {},
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "18090e190359717|facing offset"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "=",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "1"
+                                                                }
+                                                            },
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "18090e1d08e7e08|spawn o",
+                                                            "tupleOffs": 2
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "18090e1d08e7e08|spawn o",
+                                                                    "tupleOffs": 2
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "18090e190359717|facing offset"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "18090e1dd46c86c|spawn pos"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "*",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "18090e1d08e7e08|spawn o",
+                                                                    "tupleOffs": 6
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "18090e399f65f33|spawn dist offset"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "18090e1dd46c86c|spawn pos"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "18090e1dd46c86c|spawn pos"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "17aeedb73353cfd|power creator",
+                                                                    "prop": "13"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17b1db288b4cbd2-": {
+                                                    "flags": "+*",
+                                                    "extends": "178b8306c5f2d72|Fighter",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "180951dcfb7734f|weapon": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -3
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "178b874f5d7a3a0|home": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -2,
+                                                                                    "prop": "17aeedb73353cfd|power creator"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "1809173573c3ff8|launch index": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -2,
+                                                                                    "prop": "1"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "13": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -2,
+                                                                                    "prop": "18090e1dd46c86c|spawn pos"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "14": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -2,
+                                                                                    "prop": "18090e1d08e7e08|spawn o"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "178b8306c5f2d72|Fighter"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "1809169a33df9b4|fighters"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "comment": "facing offset"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "num": 2
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "178b8306c5f2d72-Fighter": {
+                    "flags": "*",
+                    "extends": "17818c5353f36cf|Targetable (Rigid Body)",
+                    "conjurer": "17b1da2aae80666|Fighter Launcher Mk2",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "180951dcfb7734f-weapon": {
+                                    "base": "17e701845a20131|Fighter Weapon",
+                                    "init": {
+                                        "live": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "178b85146861595-target": {
+                                    "flags": "*",
+                                    "base": "17818c5353f36cf|Targetable (Rigid Body)",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "178b874f5d7a3a0-home": {
+                                    "flags": "*",
+                                    "base": "17b1d97cc617ad9|Urquan Ship Mk2",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "178b854beb8440d-destination bp": {
+                                    "flags": "*",
+                                    "base": "8f",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "180918158ac6a21-destination position": {
+                                    "flags": "*",
+                                    "base": "66",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "vec": {}
+                                            }
+                                        ]
+                                    }
+                                },
+                                "178b86bff749480-tracking delay duration": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 0.333
+                                            }
+                                        ]
+                                    }
+                                },
+                                "178b86c3f6e440a-tracking delay timer": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "+",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "178b86bff749480|tracking delay duration"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "4"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "178b8700a84dd07-return time": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 240
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "176ee76b43b1735|Melee Simulation",
+                                                    "prop": "1785ad77fd724f3|60th of a sec"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "178b870d691af59-lifespan": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "176ee76b43b1735|Melee Simulation",
+                                                    "prop": "1785ad77fd724f3|60th of a sec"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "178b8713fe4b1fc-lifespan timer": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "+",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "178b870d691af59|lifespan"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "176ee76b43b1735|Melee Simulation",
+                                                    "prop": "53"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "178b8c287cfaf66-speed": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 32
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17b3c21d8eaee6e-firing dist": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 3
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17b3c23441aac69-firing delay": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 24
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "176ee76b43b1735|Melee Simulation",
+                                                    "prop": "17985c0ca0360be|UQM frame time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17b3c240da9a779-next fire time": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "1809173573c3ff8-launch index": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "49": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "180918466362c4f|Fighter Collider (Trigger)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "16"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "14",
+                                                    "tupleOffs": 6
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "16",
+                                            "tupleOffs": 4
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "178b8c287cfaf66|speed"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a93597e|thrust unit"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180918158ac6a21|destination position"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "14",
+                                                            "tupleOffs": 6
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "178b8c287cfaf66|speed"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180918158ac6a21|destination position"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180918158ac6a21|destination position"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "13"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": "Initial destination will be just \"some distance\" away in the direction I'm heading"
+                                },
+                                "18090e95e8dc106-": {
+                                    "extends": "17b08ca6b93daf4|Targeting - Get Nearest Enemy",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "17b40bb786270c4|use team": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "ui-": "17c61c499ab6212|Combatant",
+                                                                    "prop": "17c61c750184638|team"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17b7eead36d27b7|target types": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "17c5657124b693d|Combat System",
+                                                                    "prop": "17c7137275ddc26|player combatants"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "178b85146861595|target"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "17b40c846b1d330|targets"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "17b08ca6b93daf4|Targeting - Get Nearest Enemy"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                },
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "1809174133fe272-fs": {
+                                                            "base": "178b8306c5f2d72|Fighter",
+                                                            "init": {
+                                                                "set": 1,
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -1
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "8": {
+                                                    "flags": "+",
+                                                    "contextValue": -2,
+                                                    "RHS": {
+                                                        "func": "NOT",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "178b85146861595|target"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "a": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "1809174133fe272|fs"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "3"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "sub": "180951dcfb7734f|weapon",
+                                                            "prop": "1809169a33df9b4|fighters"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "=",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "inst": -1,
+                                                                    "prop": "1809173573c3ff8|launch index"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "1809173573c3ff8|launch index"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    "sort": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                },
+                                                "a": {
+                                                    "flags": "+",
+                                                    "contextValue": -2,
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "178b854beb8440d|destination bp"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "3",
+                                                                            "prop": "178b854beb8440d|destination bp"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "1809174133fe272|fs"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "<>",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "inst": -1
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    },
+                                                    "sort": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                },
+                                                "b": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "180917686031c10-v": {
+                                                                    "base": "66",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {
+                                                                                    "x": -2
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "8": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "180917686031c10|v"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "bind": "-",
+                                                                        "ops": [
+                                                                            {},
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "180917686031c10|v"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "=",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "1809173573c3ff8|launch index"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "num": 1
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "180917574157ed0-": {
+                                                            "flags": "+",
+                                                            "extends": "8f",
+                                                            "sections": {
+                                                                "2": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "31": {
+                                                                            "flags": "*",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "selector": -2,
+                                                                                            "prop": "180917686031c10|v"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "90": {
+                                                                            "flags": "*",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "selector": -2,
+                                                                                            "prop": "178b85146861595|target"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "inst": "8f"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "obj": {
+                                                                    "prop": "178b854beb8440d|destination bp"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "comment": ""
+                                                }
+                                            },
+                                            "comment": ""
+                                        }
+                                    },
+                                    "comment": "Make chase point if non-existent, otherwise grab existing one"
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "contextValue": -1,
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "func": "NOT",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "49"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "contextValue": -1,
+                                            "instructions": {
+                                                "8": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "180918158ac6a21|destination position"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "178b854beb8440d|destination bp",
+                                                                            "prop": "91"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": ">",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "4"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "178b86c3f6e440a|tracking delay timer"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "8": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "17b3c240da9a779|next fire time"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "4"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "17b3c23441aac69|firing delay"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "17b3c24b53a86d5-": {
+                                                            "flags": "+",
+                                                            "extends": "8f",
+                                                            "sections": {
+                                                                "2": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "91": {
+                                                                            "flags": "*",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "selector": -2,
+                                                                                            "sub": "178b854beb8440d|destination bp",
+                                                                                            "prop": "91"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "3": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "8": {
+                                                                            "flags": "+",
+                                                                            "instructions": {
+                                                                                "1809528a49796f6-": {
+                                                                                    "flags": "+*",
+                                                                                    "extends": "180952613a1eb4b|Fighter Laser",
+                                                                                    "sections": {
+                                                                                        "2": {
+                                                                                            "flags": "+",
+                                                                                            "instructions": {
+                                                                                                "17b12a81ce26200|length": {
+                                                                                                    "flags": "*",
+                                                                                                    "init": {
+                                                                                                        "bind": "*",
+                                                                                                        "ops": [
+                                                                                                            {
+                                                                                                                "num": 30
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "obj": {
+                                                                                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                                                                                    "prop": "17ca4ab0a953195|distance unit"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                },
+                                                                                                "17b12b5a73bf0ad|current target": {
+                                                                                                    "flags": "*",
+                                                                                                    "init": {
+                                                                                                        "ops": [
+                                                                                                            {
+                                                                                                                "obj": {
+                                                                                                                    "selector": -3,
+                                                                                                                    "prop": "178b85146861595|target"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                },
+                                                                                                "17aeedb73353cfd|power creator": {
+                                                                                                    "flags": "*",
+                                                                                                    "init": {
+                                                                                                        "needed": 1,
+                                                                                                        "ops": [
+                                                                                                            {
+                                                                                                                "obj": {
+                                                                                                                    "selector": -3
+                                                                                                                }
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                },
+                                                                                                "17ca3b9a30fe92c|creator team": {
+                                                                                                    "flags": "*",
+                                                                                                    "init": {
+                                                                                                        "ops": [
+                                                                                                            {
+                                                                                                                "obj": {
+                                                                                                                    "selector": -3,
+                                                                                                                    "ui-": "17c61c499ab6212|Combatant",
+                                                                                                                    "prop": "17c61c750184638|team"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                },
+                                                                                                "90": {
+                                                                                                    "flags": "*",
+                                                                                                    "init": {
+                                                                                                        "ops": [
+                                                                                                            {
+                                                                                                                "obj": {
+                                                                                                                    "selector": -3
+                                                                                                                }
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    "LHS": {
+                                                                                        "obj": {
+                                                                                            "inst": "180952613a1eb4b|Fighter Laser"
+                                                                                        }
+                                                                                    },
+                                                                                    "RHS": {
+                                                                                        "obj": {
+                                                                                            "selector": -1
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "RHS": {
+                                                                                "bind": "<",
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "prop": "31",
+                                                                                            "tupleOffs": 4
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "selector": -2,
+                                                                                            "prop": "17b3c21d8eaee6e|firing dist"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "inst": "8f"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "obj": {
+                                                                    "selector": -1
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": ">",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "4"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "17b3c240da9a779|next fire time"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "8": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "178b85146861595|target"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -1
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": ">",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "4"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "178b8713fe4b1fc|lifespan timer"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "178b85146861595|target"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "178b854beb8440d|destination bp"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "8": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "180918158ac6a21|destination position"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "178b874f5d7a3a0|home",
+                                                                            "prop": "13"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": ">",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "4"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "178b86c3f6e440a|tracking delay timer"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "178b874f5d7a3a0|home"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": ""
+                                },
+                                "18090ed5736c945-": {
+                                    "extends": "8f",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "18090f02fb7f968-o": {
+                                                    "base": "67",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "rot": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "91": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "180918158ac6a21|destination position"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "18090f02fb7f968|o",
+                                                            "tupleOffs": 6
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "31"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "18090f02fb7f968|o",
+                                                            "tupleOffs": 2
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "18090f02fb7f968|o",
+                                                                    "tupleOffs": 2
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "14",
+                                                                    "tupleOffs": 2
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "16"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "18090f02fb7f968|o",
+                                                                    "tupleOffs": 6
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "16",
+                                                            "tupleOffs": 4
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "*",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "178b8c287cfaf66|speed"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                                    "prop": "17ca4ab0a93597e|thrust unit"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "8f"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "180918466362c4f-Fighter Collider (Trigger)": {
+                    "extends": "17e0d221074de3c|Collider (Combat Trigger)",
+                    "conjurer": "178b8306c5f2d72|Fighter",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "180918d857e51c4-home ship": {
+                                    "flags": "*",
+                                    "base": "17b1d97cc617ad9|Urquan Ship Mk2",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "178b874f5d7a3a0|home"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e0d23390303c9|interactions": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "bind": "+",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1809185c54fac85|Fighter Combat Trigger Interaction [Hit Combatant]"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "180918ef6646e1a|Fighter Combat Trigger Interaction - Return to Urquan"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e0d420f2105c6|team": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "ui-": "17c61c499ab6212|Combatant",
+                                                    "prop": "17c61c750184638|team"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "48": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "18091871a5e6414|Fighter Shape"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1809185c54fac85-Fighter Combat Trigger Interaction [Hit Combatant]": {
+                    "flags": "+",
+                    "extends": "17f040d5bed42f5|Combat Trigger Interaction [Hit Combatant]",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e07b2831fb891|filter": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1809571438a4c45|Fighter Combat Trigger Filter [Hit Combatant]"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e078420bbd49d|die on hit": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1809571438a4c45-Fighter Combat Trigger Filter [Hit Combatant]": {
+                    "flags": "+",
+                    "extends": "17e07b18e2e31d8|Combat Trigger Filter",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e07f1fddaf59e|object test": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1809572176fb8a8|Fighter Combat Trigger Filter Test - Ignore Planet"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1809572176fb8a8-Fighter Combat Trigger Filter Test - Ignore Planet": {
+                    "flags": "+",
+                    "extends": "17e07f317f3a977|Combat Trigger Filter Test",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e07f331faef12|passed": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17e07f331faef12|passed"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17e07f4055a8347|target hit"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17b317406db46a8|Planet"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "180918ef6646e1a-Fighter Combat Trigger Interaction - Return to Urquan": {
+                    "extends": "17f040d5bed42f5|Combat Trigger Interaction [Hit Combatant]",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e0368b0fb9811|effects": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f7b96816012|Effect - Heal"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e07b2831fb891|filter": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "180918c2510ba54|Fighter Combat Trigger Filter - Return to Urquan"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e078420bbd49d|die on hit": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "180918c2510ba54-Fighter Combat Trigger Filter - Return to Urquan": {
+                    "extends": "17e07b18e2e31d8|Combat Trigger Filter",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e07b18e2f2bcf|hits enemies": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "17e07b18e30eba1|hits allies": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e07b18e3177d3|interacts with type": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b1d97cc617ad9|Urquan Ship Mk2"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e07f1fddaf59e|object test": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1809191bac83086|Fighter Combat Trigger Filter Test - Return to Urquan"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1809191bac83086-Fighter Combat Trigger Filter Test - Return to Urquan": {
+                    "extends": "17e07f317f3a977|Combat Trigger Filter Test",
+                    "conjurer": "180918466362c4f|Fighter Collider (Trigger)",
+                    "sections": {
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17e07f331faef12|passed"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "180918d857e51c4|home ship"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "17e07f4055a8347|target hit"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "18090de7d8807f0-Combatant (Fighter)": {
+                    "flags": "+",
+                    "instances": "17c622cc9add7fa|Combatant (NPC)",
+                    "conjurer": "178b8306c5f2d72|Fighter",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17c75d44e5e8ec5|ignore types": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b65ed994bd12d|Effect - Planet Damage"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17c61c750184638|team": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "ui+": "17c61c499ab6212|Combatant",
+                                                    "sub": "178b874f5d7a3a0|home",
+                                                    "prop": "17c61c750184638|team"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "18091871a5e6414-Fighter Shape": {
+                    "extends": "3f",
+                    "conjurer": "fffffffffffffffe|unconjured",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "4a": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 0.1
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "180952613a1eb4b-Fighter Laser": {
+                    "flags": "*",
+                    "extends": "17b12a5bd3b38b6|Power - Laser",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17b3b8a5fb14517|damage": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17b12a8cb43868d|targeting scheme": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17aeedb7335efd3|lifespan": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 0.01
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "fighters"
+        },
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "17b1da04ee03a98+Urquan Melee Nav Agent Mk2": {
+                    "flags": "+",
+                    "extends": "178f5460f98876a|Roster Ship",
+                    "conjurer": "fffffffffffffffe|unconjured",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17f50ea4a91529c|alien": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17cf16e260c7e85|Alien List",
+                                                    "prop": "17f50e6acb8c50c|ur-quan"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "178f5460f98a7e8|ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b1d97cc617ad9|Urquan Ship Mk2"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "nav"
+        }
+    }
+}

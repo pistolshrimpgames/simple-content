@@ -1,0 +1,278 @@
+{
+    "components": {
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "17ca4ab5732f61d+Ship Constants": {
+                    "flags": "+*",
+                    "instances": "10",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17ca4ab0a91e7c0+60th of a sec": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            },
+                                            {
+                                                "num": 60
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ca4ab0a9254ef+max turn rate": {
+                                    "comment": "DG NOTE: 22.5 [angle in UQM] * 24 is 540; where does 576 come from?",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 576
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ca4ab0a93597e+thrust unit": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 0.34899998
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ca4ab0a946380-UQM arilou width": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 17
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ca4ab0a953195+distance unit": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "17ca4ab0a946380|UQM arilou width"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ca4ab0a969e0b+UQM frame time": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            },
+                                            {
+                                                "num": 24
+                                            }
+                                        ]
+                                    }
+                                },
+                                "180766aff22ca59+UQM facing amount": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "num": 360
+                                            },
+                                            {
+                                                "num": 16
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ca4ab0a97876d+jiffies per frame": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17ca4ab0a91e7c0|60th of a sec"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "180768983fae3fa+minimum turn rate": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 8
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "17ca4ab0a93597e|thrust unit"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "180710f9d1f971f+minimum thrust increment": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 4
+                                            }
+                                        ]
+                                    }
+                                },
+                                "18076793a5cca8f+computed min thrust increment": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "180710f9d1f971f|minimum thrust increment"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "17ca4ab0a93597e|thrust unit"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1807110070f5f29+minimum max speed": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 8
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "17ca4ab0a93597e|thrust unit"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "180769b6269639a+turn rate at 0 wait": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17ca4ab0a9254ef|max turn rate"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "18076bba146c76e+turn rate at 255 wait": {
+                                    "comment": "10.625 = seconds to make a 360 turn with 255 turn wait in UQM",
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "num": 360
+                                            },
+                                            {
+                                                "num": 10.625
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1807664d893a031+deg per sec per turn wait": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "18076bba146c76e|turn rate at 255 wait"
+                                                }
+                                            },
+                                            {
+                                                "num": 255
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "ship"
+        },
+        "17f044bee4e3df5+Collision Masks (Melee)": {
+            "flags": "*",
+            "extends": "17d3480382f8e58|Collision Masks",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "17f0449eb33c39f|combat trigger - collides with mask": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "prop": "17f9ee888793569|world, characters, world triggers, char triggers, affect triggers"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "17d342fed3f3576-Power System - Space": {
+            "flags": "+",
+            "extends": "17c52eb1685a075|Power System",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "17c52eb32d5eebe|frame time": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "17ca4ab5732f61d|Ship Constants",
+                                            "prop": "17ca4ab0a969e0b|UQM frame time"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

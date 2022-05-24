@@ -1,0 +1,1219 @@
+{
+    "components": {
+        "1806c5d898f01ae-Arilou Ship": {
+            "flags": "+*",
+            "extends": "1809b62dc7cafa3|Melee Ship",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "17ca561b513fd12|thruster": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "captured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "1806c5d8992d0ba|Arilou Thruster"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17e55a44b4fdf3d|turning": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "captured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "1806c5d89934798|Arilou Turning"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17bc6f246957acc|energy": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "captured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "1806c5d8994685f|Arilou Energy"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17e6f61ccca5823|weapons": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "captured": 1,
+                                "bind": "+",
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "1806c5d8995882c|Arilou Laser Weapon"
+                                        }
+                                    },
+                                    {
+                                        "obj": {
+                                            "inst": "1806c5d899c1eb8|Teleport Weapon"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "3": {
+                    "flags": "+",
+                    "instructions": {
+                        "1806c61d476627d-": {
+                            "extends": "180905f06626b7d|Melee Ship Collider",
+                            "sections": {
+                                "3": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "49"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {}
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "1806c61d4770a49-": {
+                                            "flags": "+",
+                                            "extends": "3f",
+                                            "sections": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "4a": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "num": 0.5
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "3": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "48"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {}
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "inst": "3f"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "LHS": {
+                                "obj": {
+                                    "inst": "180905f06626b7d|Melee Ship Collider"
+                                }
+                            },
+                            "RHS": {
+                                "obj": {
+                                    "selector": -1
+                                }
+                            }
+                        },
+                        "b": {
+                            "flags": "+",
+                            "instructions": {
+                                "1806c68879e8546-": {
+                                    "flags": "+",
+                                    "extends": "30",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "8a": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                },
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "vec": {
+                                                                    "z": 0.6
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "1806c68879f3a81-": {
+                                                    "flags": "+",
+                                                    "extends": "3f",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "4a": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "num": 0.19999999
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "3": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "48"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {}
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "3f"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "30"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                }
+                            },
+                            "comment": "DG HACK: Temp way is forward marker"
+                        }
+                    }
+                }
+            }
+        },
+        "1806c5d8992d0ba-Arilou Thruster": {
+            "extends": "17ca566f41b76fa|Ship Thruster (Inertialess)",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "17ca55edd0a9566|max speed": {
+                            "flags": "*",
+                            "init": {
+                                "bind": "*",
+                                "ops": [
+                                    {
+                                        "num": 40
+                                    },
+                                    {
+                                        "obj": {
+                                            "inst": "17ca4ab5732f61d|Ship Constants",
+                                            "prop": "17ca4ab0a93597e|thrust unit"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17ca55edd0b4706|thrust increment": {
+                            "flags": "*",
+                            "init": {
+                                "bind": "*",
+                                "ops": [
+                                    {
+                                        "num": 39
+                                    },
+                                    {
+                                        "obj": {
+                                            "inst": "17ca4ab5732f61d|Ship Constants",
+                                            "prop": "17ca4ab0a93597e|thrust unit"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "1806c5d89934798-Arilou Turning": {
+            "extends": "17e599b53e2088e|Ship Turning",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "17e599b53e3c176|turn rate": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "17ca4ab5732f61d|Ship Constants",
+                                            "prop": "17ca4ab0a9254ef|max turn rate"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "1806c5d8994685f-Arilou Energy": {
+            "extends": "17e6ffef4e23be2|Ship Energy (Regenerating)",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "17e6f7ebb580b97|regen delay": {
+                            "flags": "*",
+                            "init": {
+                                "bind": "*",
+                                "ops": [
+                                    {
+                                        "num": 7
+                                    },
+                                    {
+                                        "obj": {
+                                            "inst": "17ca4ab5732f61d|Ship Constants",
+                                            "prop": "17ca4ab0a969e0b|UQM frame time"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17e6f7ebb562bc7|energy max": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 20
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "b": {
+            "flags": "*",
+            "instructions": {
+                "1806c5d8995882c-Arilou Laser Weapon": {
+                    "flags": "+",
+                    "extends": "17bc803e92b22e6|Ship Weapon",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17bc80762a55f44|firing trigger": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "captured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1806c5d89966c2f|Arilou Laser Weapon Trigger"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc803e92d90d1|energy cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 2
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc803e92eb4b3|powers": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1806c6ee3fd856c|Arilou Laser"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1806c5d89966c2f-Arilou Laser Weapon Trigger": {
+                    "flags": "+",
+                    "extends": "17c3d060d7cd3c2|Ship Weapon Trigger - Continuous",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17c3d060d7de788|reload time": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 2
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1806c6ee3fd856c-Arilou Laser": {
+                    "flags": "+*",
+                    "extends": "17b12a5bd3b38b6|Power - Laser",
+                    "conjurer": "17aca96282d0115|Ship",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17b3b8a5fb14517|damage": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17b12a81ce26200|length": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 100
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a953195|distance unit"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17b12a8cb43868d|targeting scheme": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17eeff69c03b249|laser collider": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "captured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1806c6ee3fea10e|Arilou Laser Collider"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17aeedb7335efd3|lifespan": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a91e7c0|60th of a sec"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17aeedb73353cfd|power creator": {
+                                    "override": "17aca96282d0115|Ship",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "1806c7a59e7e8e7-": {
+                                    "flags": "+",
+                                    "extends": "1806c78aec085c6|Targeting - Arilou Laser",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "17b08e43d1b1bb8|source": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -3
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17b40bb786270c4|use team": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -3,
+                                                                    "ui-": "17c61c499ab6212|Combatant",
+                                                                    "prop": "17c61c750184638|team"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17b12b5a73bf0ad|current target"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "17b08e43d1b251a|return targets"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "1806c78aec085c6|Targeting - Arilou Laser"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "td+",
+                                    "comment": "pew"
+                                }
+                            }
+                        }
+                    }
+                },
+                "1806c78aec085c6-Targeting - Arilou Laser": {
+                    "flags": "+",
+                    "extends": "17b7eee993530f5|Targeting - Get Nearest Enemy Ship",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17b380b008f39de|max range": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 999999
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1806c6ee3fea10e-Arilou Laser Collider": {
+                    "flags": "+",
+                    "extends": "17eefd2c6762079|Laser Collider",
+                    "conjurer": "1806c6ee3fd856c|Arilou Laser",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "6c": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1806c6ee401eabc|Arilou Laser Contact"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "flags": "td",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "5b"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "5b"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "d",
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "1806c6ee3ff675c-Copy of Copy of c": {
+                                                            "base": "30",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "5b",
+                                                                            "prop": "1e"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "1806c6ee400803d-Copy of Copy of cb": {
+                                                            "base": "33",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "1806c6ee3ff675c|Copy of Copy of c",
+                                                                            "prop": "90"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "9": {
+                                                    "flags": "p",
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "1806c6ee3ff675c|Copy of Copy of c"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "1806c6ee3ff675c|Copy of Copy of c"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "flags": "p",
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "1806c6ee400803d|Copy of Copy of cb"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "1806c6ee400803d|Copy of Copy of cb"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": ""
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "5b"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1806c6ee401eabc-Arilou Laser Contact": {
+                    "extends": "18047e83028640b|Laser Contact",
+                    "conjurer": "1806c6ee3fea10e|Arilou Laser Collider",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "11": {
+                                    "flags": "+*",
+                                    "init": {
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "contextValue": -1,
+                                            "RHS": {
+                                                "bind": "=",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -3,
+                                                            "prop": "17aeedb73353cfd|power creator"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "sub": "1e",
+                                                            "prop": "90"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1806c6ee4025c8c-Arilou Laser Collider - On Touch (Re-Hits)": {
+                    "flags": "+",
+                    "extends": "17e0d23d5549644|Collider (Combat Trigger) - On Touch"
+                }
+            },
+            "comment": "laser"
+        },
+        "b": {
+            "flags": "*",
+            "instructions": {
+                "1806c5d899c1eb8-Teleport Weapon": {
+                    "flags": "+",
+                    "extends": "17bc803e92b22e6|Ship Weapon",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1806c831ea60266-rng seed": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "RNG": 1,
+                                        "bind": "+",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "4"
+                                                }
+                                            },
+                                            {
+                                                "num": 100000
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1806c88ef06100a-did teleport": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "17bc803e92ff381|_button component": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "captured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17bc7aebb3e7466|Ship Weapon Button - Secondary"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc80762a55f44|firing trigger": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "captured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1806c5d899de619|Teleport Weapon Trigger"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc803e92d90d1|energy cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 3
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "1806c88ef06100a|did teleport"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        },
+                                        "a": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "11"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "sub": "49",
+                                                    "prop": "5b"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "=",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": -1,
+                                                            "sub": "1e",
+                                                            "prop": "90"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "inst": "3b"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "sort": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "1806c88ef06100a|did teleport"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "1806c88ef06100a|did teleport"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "1806c849c0f3b2e-": {
+                                            "flags": "+",
+                                            "extends": "1806c82cf865608|Arilou Teleport Ship Positioning",
+                                            "sections": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "18043a12ac2d3ef|ship": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "live": 1,
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -3
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "18043a2c5223712|random": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "RNG": 1,
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "1806c831ea60266|rng seed"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "num": 100000
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "inst": "1806c82cf865608|Arilou Teleport Ship Positioning"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17d977adadb7e0e|firing"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1806c82cf865608-Arilou Teleport Ship Positioning": {
+                    "flags": "+",
+                    "extends": "18043a092010617|Roster - Random Ship Spawn Positioning",
+                    "conjurer": "1806c5d899c1eb8|Teleport Weapon",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "18043a12ac2d3ef|ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "live": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1806c5d899de619-Teleport Weapon Trigger": {
+                    "flags": "+",
+                    "extends": "17c3d060d7cd3c2|Ship Weapon Trigger - Continuous",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17c3d060d7de788|reload time": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 4
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "teleport"
+        },
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "1790ee17113b097+Arilou Melee Navigation Agent": {
+                    "flags": "+",
+                    "extends": "178f5460f98876a|Roster Ship",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17f50ea4a91529c|alien": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17cf16e260c7e85|Alien List",
+                                                    "prop": "1806c5edb57b6ae|arilou"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "178f5460f98a7e8|ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1806c5d898f01ae|Arilou Ship"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "nav"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+#DIALOG
+# First line above ^ indicates type of resource
+
+DIALOG_MESSAGE,Select Ship
+DIALOG_CHOICES,Next,Same,Chmmr,Human,Thraddash,Kohr-Ah,Ur-Quan,Pkunk,Yehat,Melnorme,Orz,Shofixti,Ilwrath,Androsynth,Syreen,Supox,Mycon,Utwig,Umgah,Mmrnmhrm,Druuge,Arilou,VUX,ZoqFotPik,Chenjesu,Spathi
+DIALOG_INPUT_BINDING,cancel
+
+DIALOG_CONTAINER,0
+CONTAINER_BOUNDING_BOX,100, 100, 300, 100
+CONTAINER_FONT_SIZE,16
+
+DIALOG_CONTAINER,1
+CONTAINER_BOUNDING_BOX, 100, 200, 300, 300
+CONTAINER_FONT_SIZE,20
+#CONTAINER_CHOICE_INDENT,10
+CONTAINER_CHOICE_SPACING,2
