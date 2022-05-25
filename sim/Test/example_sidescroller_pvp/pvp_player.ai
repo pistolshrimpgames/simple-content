@@ -1,0 +1,1139 @@
+{
+    "components": {
+        "180fca5aa2cfc32+PVP Player": {
+            "flags": "+*",
+            "extends": "180b592fd5ff2f1|Player",
+            "sections": {
+                "2": {
+                    "instructions": {
+                        "180fcc28135afd4+score": {
+                            "flags": "*",
+                            "base": "65",
+                            "init": {
+                                "ops": [
+                                    {}
+                                ]
+                            }
+                        },
+                        "180fca8b004596c-ammo recharge time": {
+                            "flags": "*",
+                            "base": "65",
+                            "init": {
+                                "ops": [
+                                    {}
+                                ]
+                            }
+                        },
+                        "180fca9dccccc2a-ammo recharge delay": {
+                            "base": "65",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 2
+                                    }
+                                ]
+                            }
+                        },
+                        "180fca906345715-ammo last frame": {
+                            "flags": "*",
+                            "base": "65",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "prop": "180bfc217de9ddd|ammo"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "180fd084350be33+lives": {
+                            "flags": "*",
+                            "base": "65",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 3
+                                    }
+                                ]
+                            }
+                        },
+                        "180bfc217de9ddd|ammo": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "3": {
+                    "flags": "+",
+                    "instructions": {
+                        "c": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "selector": 1,
+                                            "prop": "180fceff8d7e402|players"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "+",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": 1,
+                                                    "prop": "180fceff8d7e402|players"
+                                                }
+                                            },
+                                            {
+                                                "obj": {}
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "LHS": {
+                                "obj": {
+                                    "inst": "180fc9e25300bfc|Sidescroller PVP Simulation"
+                                }
+                            }
+                        }
+                    }
+                },
+                "5": {
+                    "flags": "+",
+                    "instructions": {
+                        "8": {
+                            "flags": "t+",
+                            "RHS": {
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "prop": "180fcc28135afd4|score"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "8": {
+                            "flags": "t+",
+                            "RHS": {
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "prop": "180fd084350be33|lives"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "8": {
+                            "instructions": {
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "180fca906345715|ammo last frame"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "180bfc217de9ddd|ammo"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180fca8b004596c|ammo recharge time"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "4"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180fca9dccccc2a|ammo recharge delay"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "<=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "180bfc217de9ddd|ammo"
+                                                }
+                                            },
+                                            {}
+                                        ]
+                                    }
+                                }
+                            },
+                            "RHS": {
+                                "bind": "<>",
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "prop": "180fca906345715|ammo last frame"
+                                        }
+                                    },
+                                    {
+                                        "obj": {
+                                            "prop": "180bfc217de9ddd|ammo"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "8": {
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180bfc217de9ddd|ammo"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180fca8b004596c|ammo recharge time"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": ">=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "4"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "180fca8b004596c|ammo recharge time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "RHS": {
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "prop": "180fca8b004596c|ammo recharge time"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "180fce0930eca54+Collectible Spawner": {
+            "flags": "*",
+            "instances": "10",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "180fce2b9ce3539-spawn delay": {
+                            "base": "65",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 3
+                                    }
+                                ]
+                            }
+                        },
+                        "180fce27a3f7446-next spawn time": {
+                            "flags": "*",
+                            "base": "65",
+                            "init": {
+                                "bind": "+",
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "prop": "4"
+                                        }
+                                    },
+                                    {
+                                        "obj": {
+                                            "prop": "180fce2b9ce3539|spawn delay"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "180fce46d17d766-rng": {
+                            "flags": "*",
+                            "base": "65",
+                            "init": {
+                                "RNG": 1,
+                                "ops": [
+                                    {}
+                                ]
+                            }
+                        }
+                    }
+                },
+                "5": {
+                    "flags": "+",
+                    "instructions": {
+                        "8": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "180fce27a3f7446|next spawn time"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "+",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "4"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "180fce2b9ce3539|spawn delay"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "180fce59797d462-spawn x": {
+                                                    "base": "65",
+                                                    "init": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                },
+                                                "180fce5d20b8dac-spawn y": {
+                                                    "base": "65",
+                                                    "init": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                },
+                                                "180fce61aa3f207-vel x": {
+                                                    "base": "65",
+                                                    "init": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                },
+                                                "180fce62a139914-vel y": {
+                                                    "base": "65",
+                                                    "init": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                },
+                                                "180fce6651f09ef-spawn vec": {
+                                                    "base": "66",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "vec": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "180fce6731bc6e5-spawn vel": {
+                                                    "base": "66",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "vec": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180fce59797d462|spawn x"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "num": 40
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180fce46d17d766|rng"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180fce59797d462|spawn x"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "-",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180fce59797d462|spawn x"
+                                                        }
+                                                    },
+                                                    {
+                                                        "num": 40
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180fce5d20b8dac|spawn y"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "num": 20
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180fce46d17d766|rng"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180fce5d20b8dac|spawn y"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180fce5d20b8dac|spawn y"
+                                                        }
+                                                    },
+                                                    {
+                                                        "num": 50
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180fce61aa3f207|vel x"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "num": 10
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180fce46d17d766|rng"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180fce61aa3f207|vel x"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "-",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180fce61aa3f207|vel x"
+                                                        }
+                                                    },
+                                                    {
+                                                        "num": 5
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180fce62a139914|vel y"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "num": -2
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180fce46d17d766|rng"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180fce6651f09ef|spawn vec",
+                                                    "tupleOffs": 1
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180fce59797d462|spawn x"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180fce6651f09ef|spawn vec",
+                                                    "tupleOffs": 2
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180fce5d20b8dac|spawn y"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180fce6731bc6e5|spawn vel",
+                                                    "tupleOffs": 1
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180fce61aa3f207|vel x"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180fce6731bc6e5|spawn vel",
+                                                    "tupleOffs": 2
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180fce62a139914|vel y"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "180fce39327c040-": {
+                                            "flags": "+*",
+                                            "extends": "180fcc2c0755b61|Collectible",
+                                            "sections": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "16": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "180fce6731bc6e5|spawn vel"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "13": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "180fce6651f09ef|spawn vec"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "inst": "180fcc2c0755b61|Collectible"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "comment": ""
+                                }
+                            },
+                            "RHS": {
+                                "bind": ">=",
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "prop": "4"
+                                        }
+                                    },
+                                    {
+                                        "obj": {
+                                            "prop": "180fce27a3f7446|next spawn time"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "180fcc2c0755b61+Collectible": {
+            "flags": "*",
+            "extends": "3b",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "180fcfe3f1870bd-death delay": {
+                            "base": "65",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 10
+                                    }
+                                ]
+                            }
+                        },
+                        "180fcfde06754cb-death time": {
+                            "flags": "*",
+                            "base": "65",
+                            "init": {
+                                "bind": "+",
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "prop": "4"
+                                        }
+                                    },
+                                    {
+                                        "obj": {
+                                            "prop": "180fcfe3f1870bd|death delay"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "180fcfe977048cd-about to die": {
+                            "flags": "*",
+                            "base": "65",
+                            "init": {
+                                "ops": [
+                                    {}
+                                ]
+                            }
+                        },
+                        "37": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 2
+                                    }
+                                ]
+                            }
+                        },
+                        "38": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 1
+                                    }
+                                ]
+                            }
+                        },
+                        "35": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 5
+                                    }
+                                ]
+                            }
+                        },
+                        "49": {
+                            "flags": "*",
+                            "init": {
+                                "set": 1,
+                                "needed": 1,
+                                "conjured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "180fcc302c57258|Collectible Collider"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "16": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "vec": {
+                                            "x": -3,
+                                            "y": -2
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "vec": {
+                                            "y": 100
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "1a": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 0.19999999
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "5": {
+                    "flags": "+",
+                    "instructions": {
+                        "b": {
+                            "flags": "+",
+                            "contextValue": -2,
+                            "instructions": {
+                                "b": {
+                                    "flags": "+",
+                                    "contextValue": -1,
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "contextValue": -1,
+                                            "RHS": {
+                                                "bind": ">=",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "4"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180fcfde06754cb|death time"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "+",
+                                            "contextValue": -1,
+                                            "RHS": {
+                                                "func": "NOT",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "49"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": ""
+                                },
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "11"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            },
+                            "comment": ""
+                        },
+                        "b": {
+                            "flags": "+",
+                            "instructions": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "180fd02c920df65-1 sec from death": {
+                                            "base": "65",
+                                            "init": {
+                                                "bind": "-",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180fcfde06754cb|death time"
+                                                        }
+                                                    },
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "contextValue": -256,
+                                    "instructions": {
+                                        "9": {
+                                            "flags": "t",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180fcfe977048cd|about to die"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": ">=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "4"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "180fd02c920df65|1 sec from death"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "comment": ""
+                        }
+                    }
+                }
+            }
+        },
+        "180fcc302c57258-Collectible Collider": {
+            "extends": "30",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "5c": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 0.8
+                                    }
+                                ]
+                            }
+                        },
+                        "5d": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 1
+                                    }
+                                ]
+                            }
+                        },
+                        "48": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "180fcc34f7726e8|Collectible Shape"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "32": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "rot": {
+                                            "z": 45.00005098
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "5": {
+                    "flags": "+",
+                    "instructions": {
+                        "a": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "180fcc85482b738-col": {
+                                                    "base": "30",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "3",
+                                                                    "prop": "1e"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "180fcc85483401f-player": {
+                                                    "base": "180fca5aa2cfc32|PVP Player",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "180fcc85482b738|col",
+                                                                    "prop": "90"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "c": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": 1,
+                                                            "prop": "180fcc28135afd4|score"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": 1,
+                                                                    "prop": "180fcc28135afd4|score"
+                                                                }
+                                                            },
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180fcc85483401f|player"
+                                                }
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": ""
+                                }
+                            },
+                            "LHS": {
+                                "obj": {
+                                    "prop": "5b"
+                                }
+                            },
+                            "RHS": {
+                                "bind": "=",
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": -1,
+                                            "sub": "1e",
+                                            "prop": "90"
+                                        }
+                                    },
+                                    {
+                                        "obj": {
+                                            "inst": "180b592fd5ff2f1|Player"
+                                        }
+                                    }
+                                ]
+                            },
+                            "sort": {
+                                "ops": [
+                                    {}
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "180fcc34f7726e8-Collectible Shape": {
+            "extends": "3f",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "4a": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 0.5
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

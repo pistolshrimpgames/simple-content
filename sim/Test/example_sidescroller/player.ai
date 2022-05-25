@@ -36,7 +36,7 @@
                                 ]
                             }
                         },
-                        "180b59c2377c7be-movespeed": {
+                        "180b59c2377c7be+movespeed": {
                             "base": "65",
                             "init": {
                                 "ops": [
@@ -46,7 +46,7 @@
                                 ]
                             }
                         },
-                        "180b5a54556f8b8-jump strength": {
+                        "180b5a54556f8b8+jump strength": {
                             "base": "65",
                             "init": {
                                 "ops": [
@@ -65,7 +65,7 @@
                                 ]
                             }
                         },
-                        "180b5aac6066ab9-gravity amt per frame": {
+                        "180b5aac6066ab9+gravity amt per frame": {
                             "flags": "*",
                             "base": "65",
                             "init": {
@@ -76,7 +76,7 @@
                                 ]
                             }
                         },
-                        "180b5ab033f8070-gravity top speed": {
+                        "180b5ab033f8070+gravity top speed": {
                             "flags": "*",
                             "base": "65",
                             "init": {
@@ -111,7 +111,7 @@
                                 ]
                             }
                         },
-                        "180bfc217de9ddd-ammo": {
+                        "180bfc217de9ddd+ammo": {
                             "flags": "*",
                             "base": "65",
                             "init": {
@@ -126,6 +126,18 @@
                             "init": {
                                 "ops": [
                                     {}
+                                ]
+                            }
+                        },
+                        "180fcb652543a1b+start position": {
+                            "base": "66",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "vec": {
+                                            "y": 4
+                                        }
+                                    }
                                 ]
                             }
                         },
@@ -170,6 +182,18 @@
                                 "ops": [
                                     {
                                         "num": 1
+                                    }
+                                ]
+                            }
+                        },
+                        "13": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "prop": "180fcb652543a1b|start position"
+                                        }
                                     }
                                 ]
                             }
@@ -227,10 +251,9 @@
                             }
                         },
                         "b": {
-                            "flags": "+",
                             "instructions": {
                                 "8": {
-                                    "flags": "t",
+                                    "flags": "t+",
                                     "RHS": {
                                         "ops": [
                                             {
@@ -857,7 +880,7 @@
                                 "ops": [
                                     {
                                         "rot": {
-                                            "y": 90.00007224
+                                            "y": 90.00014446
                                         }
                                     }
                                 ]

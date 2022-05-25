@@ -1,0 +1,49 @@
+{
+    "components": {
+        "180fca0a8c4acf8-bootstrap": {
+            "flags": "+",
+            "extends": "f",
+            "sections": {
+                "3": {
+                    "flags": "+",
+                    "instructions": {
+                        "180fca104c489ca-": {
+                            "flags": "+*",
+                            "extends": "180fca5aa2cfc32|PVP Player",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "180b59880564ddb|hold input": {
+                                            "flags": "*",
+                                            "init": {
+                                                "needed": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -3
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "LHS": {
+                                "obj": {
+                                    "inst": "180fca5aa2cfc32|PVP Player"
+                                }
+                            },
+                            "RHS": {
+                                "obj": {
+                                    "selector": -1
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

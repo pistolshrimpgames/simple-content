@@ -1,7 +1,7 @@
 {
     "components": {
         "180b5926bb5d9a1+Sidescroller Simulation": {
-            "flags": "+*",
+            "flags": "*",
             "instances": "20",
             "sections": {
                 "2": {
@@ -14,6 +14,22 @@
                                     {
                                         "vec": {
                                             "y": 4
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "180fc9e253c72d0-Copy of Sidescroller Simulation [SINGLETON]": {
+                            "flags": "*",
+                            "base": "180fc9e25300bfc|Copy of Sidescroller Simulation",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "singleton": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "180fc9e25300bfc|Copy of Sidescroller Simulation"
                                         }
                                     }
                                 ]
@@ -287,7 +303,7 @@
                                 "ops": [
                                     {
                                         "rot": {
-                                            "y": -90.00014446
+                                            "y": -90.00028886
                                         }
                                     }
                                 ]
@@ -309,186 +325,6 @@
                                 "obj": {
                                     "prop": "48"
                                 }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "180bf7c119bf620-Killplane": {
-            "flags": "*",
-            "extends": "33",
-            "sections": {
-                "2": {
-                    "flags": "+",
-                    "instructions": {
-                        "49": {
-                            "flags": "*",
-                            "init": {
-                                "set": 1,
-                                "needed": 1,
-                                "conjured": 1,
-                                "ops": [
-                                    {
-                                        "obj": {
-                                            "inst": "180bfa35cbd6c43|Killplane Collider"
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "180bfa35cbd6c43-Killplane Collider": {
-            "extends": "180bf7cc683e8c3|Player Kill Collider",
-            "sections": {
-                "2": {
-                    "flags": "+",
-                    "instructions": {
-                        "51": {
-                            "flags": "*",
-                            "init": {
-                                "ops": [
-                                    {
-                                        "num": 1
-                                    }
-                                ]
-                            }
-                        },
-                        "48": {
-                            "flags": "*",
-                            "init": {
-                                "needed": 1,
-                                "conjured": 1,
-                                "ops": [
-                                    {
-                                        "obj": {
-                                            "inst": "180bf7e04c40b4d|Killplane Box"
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "180bf7e04c40b4d-Killplane Box": {
-            "extends": "42",
-            "sections": {
-                "2": {
-                    "flags": "+",
-                    "instructions": {
-                        "47": {
-                            "flags": "*",
-                            "init": {
-                                "ops": [
-                                    {
-                                        "vec": {
-                                            "x": 300,
-                                            "y": 5,
-                                            "z": 1
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "180bf7cc683e8c3+Player Kill Collider": {
-            "flags": "+",
-            "extends": "30",
-            "sections": {
-                "5": {
-                    "flags": "+",
-                    "instructions": {
-                        "a": {
-                            "flags": "+",
-                            "instructions": {
-                                "b": {
-                                    "flags": "+",
-                                    "instructions": {
-                                        "2": {
-                                            "flags": "+",
-                                            "instructions": {
-                                                "180bf8a1dc4ca33-col": {
-                                                    "base": "30",
-                                                    "init": {
-                                                        "ops": [
-                                                            {
-                                                                "obj": {
-                                                                    "sub": "3",
-                                                                    "prop": "1e"
-                                                                }
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            }
-                                        },
-                                        "c": {
-                                            "flags": "+",
-                                            "instructions": {
-                                                "9": {
-                                                    "LHS": {
-                                                        "obj": {
-                                                            "selector": 1,
-                                                            "prop": "13"
-                                                        }
-                                                    },
-                                                    "RHS": {
-                                                        "ops": [
-                                                            {
-                                                                "obj": {
-                                                                    "inst": "180b5926bb5d9a1|Sidescroller Simulation",
-                                                                    "prop": "180bf8d3dd4c1cc|player start position"
-                                                                }
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            },
-                                            "LHS": {
-                                                "obj": {
-                                                    "sub": "180bf8a1dc4ca33|col",
-                                                    "prop": "90"
-                                                }
-                                            }
-                                        }
-                                    },
-                                    "comment": ""
-                                }
-                            },
-                            "LHS": {
-                                "obj": {
-                                    "prop": "5b"
-                                }
-                            },
-                            "RHS": {
-                                "bind": "=",
-                                "ops": [
-                                    {
-                                        "obj": {
-                                            "inst": -1,
-                                            "sub": "1e",
-                                            "prop": "90"
-                                        }
-                                    },
-                                    {
-                                        "obj": {
-                                            "inst": "180b592fd5ff2f1|Player"
-                                        }
-                                    }
-                                ]
-                            },
-                            "sort": {
-                                "ops": [
-                                    {}
-                                ]
                             }
                         }
                     }

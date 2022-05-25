@@ -1,0 +1,313 @@
+{
+    "components": {
+        "180fc9e25300bfc+Sidescroller PVP Simulation": {
+            "flags": "+*",
+            "instances": "20",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "180fd0860d0afde+score to win": {
+                            "base": "65",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 3
+                                    }
+                                ]
+                            }
+                        },
+                        "180fceff8d7e402+players": {
+                            "flags": "*",
+                            "base": "180fca5aa2cfc32|PVP Player",
+                            "init": {
+                                "set": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "180fce0dbcd0deb-Collectible Spawner [SINGLETON]": {
+                            "flags": "*",
+                            "base": "180fce0930eca54|Collectible Spawner",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "singleton": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "180fce0930eca54|Collectible Spawner"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "4f": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "vec": {
+                                            "z": 1
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "3": {
+                    "flags": "+",
+                    "instructions": {
+                        "180fca1d6643c2e-": {
+                            "flags": "*",
+                            "extends": "180fc9e2538eebe|Sidescroller Map (PVP)",
+                            "LHS": {
+                                "obj": {
+                                    "inst": "180fc9e2538eebe|Sidescroller Map (PVP)"
+                                }
+                            },
+                            "RHS": {
+                                "obj": {
+                                    "selector": -1
+                                }
+                            }
+                        },
+                        "180fc9e253330ca-": {
+                            "flags": "+*",
+                            "extends": "180fd121460444b|PVP Killplane",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "13": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "vec": {
+                                                            "y": -10
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "LHS": {
+                                "obj": {
+                                    "inst": "180fd121460444b|PVP Killplane"
+                                }
+                            },
+                            "RHS": {
+                                "obj": {
+                                    "selector": -1
+                                }
+                            }
+                        }
+                    }
+                },
+                "5": {
+                    "flags": "+",
+                    "instructions": {
+                        "a": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "180fcf1d157f2b8-winner": {
+                                                    "base": "180fca5aa2cfc32|PVP Player",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "3"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "a": {
+                                            "flags": "l+",
+                                            "instructions": {
+                                                "c": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "selector": 1,
+                                                                    "prop": "11"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {}
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "2"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "180fceff8d7e402|players"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "<>",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": -1
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180fcf1d157f2b8|winner"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "sort": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": ""
+                                }
+                            },
+                            "LHS": {
+                                "obj": {
+                                    "prop": "180fceff8d7e402|players"
+                                }
+                            },
+                            "RHS": {
+                                "bind": ">=",
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": -1,
+                                            "prop": "180fcc28135afd4|score"
+                                        }
+                                    },
+                                    {
+                                        "obj": {
+                                            "prop": "180fd0860d0afde|score to win"
+                                        }
+                                    }
+                                ]
+                            },
+                            "sort": {
+                                "ops": [
+                                    {}
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "180fc9e2538eebe-Sidescroller Map (PVP)": {
+            "flags": "+*",
+            "extends": "3b",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "49": {
+                            "flags": "*",
+                            "init": {
+                                "set": 1,
+                                "needed": 1,
+                                "conjured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "180fc9e253969d4|Sidescroller Map Collider (PVP)"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "180fc9e253969d4-Sidescroller Map Collider (PVP)": {
+            "extends": "30",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "5c": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {}
+                                ]
+                            }
+                        },
+                        "5e": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {}
+                                ]
+                            }
+                        },
+                        "32": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "rot": {
+                                            "y": -90.00028886
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "3": {
+                    "flags": "+",
+                    "instructions": {
+                        "180fc9e253af75b-game/sim/Test/example_sidescroller/test_sidescroller_map.obj": {
+                            "extends": "45",
+                            "LHS": {
+                                "obj": {
+                                    "inst": "45"
+                                }
+                            },
+                            "RHS": {
+                                "obj": {
+                                    "prop": "48"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
