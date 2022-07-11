@@ -413,7 +413,7 @@
                     }
                 },
                 "1774b187e752711+Playable (Rigid Body)": {
-                    "flags": "*",
+                    "flags": "+*",
                     "extends": "17818c5353f36cf|Targetable (Rigid Body)",
                     "conjurer": "17db679e18fcc25|Simulation Transitioner (Player)",
                     "sections": {
@@ -617,7 +617,7 @@
             "comment": "sim -> playable"
         },
         "b": {
-            "flags": "*",
+            "flags": "+*",
             "instructions": {
                 "17edb2bf6f76203+Simulation (Storage)": {
                     "flags": "*",
@@ -731,7 +731,7 @@
                     }
                 },
                 "17e79bf200f87a6-Simulation (Global)": {
-                    "flags": "+*",
+                    "flags": "*",
                     "extends": "20"
                 },
                 "17cddec4007ce74+Simulation (Transitioner)": {
@@ -739,7 +739,6 @@
                     "extends": "17e79bf200f87a6|Simulation (Global)",
                     "sections": {
                         "2": {
-                            "flags": "+",
                             "instructions": {
                                 "17cdded1fdde472+parent": {
                                     "flags": "*",
@@ -768,15 +767,11 @@
                                     }
                                 },
                                 "17f9400aa94e5a8+exit positions": {
-                                    "flags": "*",
+                                    "flags": "+*",
                                     "base": "66",
                                     "init": {
                                         "set": 1,
-                                        "ops": [
-                                            {
-                                                "vec": {}
-                                            }
-                                        ]
+                                        "scoped": 1
                                     }
                                 },
                                 "17cddf2cacde6e5+children": {
@@ -832,6 +827,20 @@
                                     "init": {
                                         "set": 1,
                                         "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1812bb91a4d32ed+player collision bodies": {
+                                    "flags": "*",
+                                    "base": "33",
+                                    "init": {
+                                        "set": 1,
                                         "ops": [
                                             {
                                                 "obj": {
@@ -1124,6 +1133,23 @@
                         "5": {
                             "flags": "+",
                             "instructions": {
+                                "9": {
+                                    "flags": "td",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "1812bb91a4d32ed|player collision bodies"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "1812bb91a4d32ed|player collision bodies"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "b": {
                                     "flags": "td",
                                     "comment": "Sim Present"
@@ -1163,7 +1189,7 @@
                                     }
                                 },
                                 "b": {
-                                    "flags": "td+",
+                                    "flags": "td",
                                     "instructions": {
                                         "a": {
                                             "flags": "l+",
@@ -2616,7 +2642,7 @@
             "comment": "sim"
         },
         "b": {
-            "flags": "*",
+            "flags": "+*",
             "instructions": {
                 "17db64e43a0cae7+Simulation Transitioner Definition": {
                     "flags": "+",
@@ -2707,18 +2733,6 @@
                                             }
                                         ]
                                     }
-                                },
-                                "17ee014c5f6edb1-on sim obj death event": {
-                                    "base": "17dd9f2eb1b8a7a|Simulation Transit Event (base)",
-                                    "init": {
-                                        "ops": [
-                                            {
-                                                "obj": {
-                                                    "selector": -1
-                                                }
-                                            }
-                                        ]
-                                    }
                                 }
                             }
                         },
@@ -2775,6 +2789,7 @@
                     }
                 },
                 "17f702263ba6cb9+Simulation Transitioner Definition (Player Base)": {
+                    "flags": "+",
                     "extends": "17db64e43a0cae7|Simulation Transitioner Definition",
                     "conjurer": "17cddec4007ce74|Simulation (Transitioner)",
                     "capturer": "fffffffffffffffe|unconjured",
@@ -2846,6 +2861,7 @@
                     }
                 },
                 "17dba82f72b3e61+Simulation Transitioner Definition (Player)": {
+                    "flags": "+",
                     "instances": "17f702263ba6cb9|Simulation Transitioner Definition (Player Base)",
                     "conjurer": "17cddec4007ce74|Simulation (Transitioner)",
                     "capturer": "fffffffffffffffe|unconjured",
@@ -2940,14 +2956,16 @@
             "comment": "sim -> transitioner - (1) definition"
         },
         "b": {
-            "flags": "*",
+            "flags": "+*",
             "instructions": {
                 "17cde00ffefcb46+Simulation Transitioner": {
+                    "flags": "+",
                     "extends": "10",
                     "conjurer": "17cddec4007ce74|Simulation (Transitioner)",
                     "capturer": "17cddec4007ce74|Simulation (Transitioner)",
                     "sections": {
                         "2": {
+                            "flags": "+",
                             "instructions": {
                                 "17dba8ab6e344fb+obj definition": {
                                     "flags": "*",
@@ -3662,6 +3680,7 @@
                     "extends": "17cde00ffefcb46|Simulation Transitioner"
                 },
                 "17db679e18fcc25+Simulation Transitioner (Player)": {
+                    "flags": "+",
                     "extends": "17cde00ffefcb46|Simulation Transitioner",
                     "sections": {
                         "2": {
@@ -4036,9 +4055,10 @@
             "comment": "sim -> transitioner"
         },
         "b": {
-            "flags": "*",
+            "flags": "+*",
             "instructions": {
                 "17d1121a133e2c5+Simulation Transitioner Persistent Data": {
+                    "flags": "+",
                     "extends": "10",
                     "sections": {
                         "2": {
@@ -4142,7 +4162,7 @@
                             }
                         },
                         "3": {
-                            "flags": "+",
+                            "flags": "d+",
                             "instructions": {
                                 "b": {
                                     "flags": "+",
@@ -4151,7 +4171,7 @@
                             }
                         },
                         "5": {
-                            "flags": "+",
+                            "flags": "d+",
                             "instructions": {
                                 "9": {
                                     "flags": "td",
@@ -4494,9 +4514,10 @@
             "comment": "sim -> transitioner - data storage"
         },
         "b": {
-            "flags": "*",
+            "flags": "+*",
             "instructions": {
                 "17dba90ad8488f7-Simulation Transitioner - Construct from Def": {
+                    "flags": "+",
                     "extends": "17dd9f2eb1b8a7a|Simulation Transit Event (base)",
                     "conjurer": "17dde171f094b1f|Simulation Transit (base)",
                     "sections": {
@@ -5462,9 +5483,10 @@
             "comment": "sim -> transitioner - (2) construct"
         },
         "b": {
-            "flags": "*",
+            "flags": "+*",
             "instructions": {
                 "17dba919313213c-Simulation Transitioner - Conjure Game Object from Sim Object": {
+                    "flags": "+",
                     "extends": "17dd9f2eb1b8a7a|Simulation Transit Event (base)",
                     "sections": {
                         "2": {
@@ -5487,6 +5509,7 @@
                     }
                 },
                 "17dbb3d6a9ddd44+Simulation Transitioner - Conjure Game Object from Sim Object (Default)": {
+                    "flags": "+",
                     "extends": "17dba919313213c|Simulation Transitioner - Conjure Game Object from Sim Object",
                     "sections": {
                         "3": {
@@ -5556,6 +5579,7 @@
                     }
                 },
                 "17dbb3d9d332b1e+Simulation Transitioner - Conjure Game Object from Sim Object (Player)": {
+                    "flags": "+",
                     "extends": "17dba919313213c|Simulation Transitioner - Conjure Game Object from Sim Object",
                     "sections": {
                         "2": {
@@ -5783,6 +5807,31 @@
                                                     "prop": "17cde030aefe7c9|conjured player"
                                                 }
                                             }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "sub": "17dba936be4d884|to sim",
+                                                    "prop": "1812bb91a4d32ed|player collision bodies"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "sub": "17dba936be4d884|to sim",
+                                                            "prop": "1812bb91a4d32ed|player collision bodies"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "selector": 1,
+                                                            "prop": "17cde030aefe7c9|conjured player"
+                                                        }
+                                                    }
+                                                ]
+                                            }
                                         }
                                     },
                                     "LHS": {
@@ -5799,9 +5848,10 @@
             "comment": "sim -> transitioner - (3) conjure"
         },
         "b": {
-            "flags": "*",
+            "flags": "+*",
             "instructions": {
                 "17dd9f2eb1b8a7a+Simulation Transit Event (base)": {
+                    "flags": "+",
                     "extends": "f",
                     "conjurer": "17dde171f094b1f|Simulation Transit (base)",
                     "sections": {
@@ -5897,7 +5947,6 @@
                     }
                 },
                 "17cb95651aea558+Simulation Transition Collider": {
-                    "flags": "+",
                     "extends": "30",
                     "sections": {
                         "2": {
@@ -6805,7 +6854,6 @@
                     }
                 },
                 "17dde171f094b1f-Simulation Transit (base)": {
-                    "flags": "+",
                     "extends": "f",
                     "sections": {
                         "2": {
@@ -9582,6 +9630,7 @@
                     }
                 },
                 "17ed6843b886e84+Simulation Transit - Remove Object from Sim": {
+                    "flags": "+",
                     "extends": "f",
                     "sections": {
                         "2": {
@@ -11269,6 +11318,7 @@
                     }
                 },
                 "17dba87645cdcf9-Simulation Transit - Get Object Definition from Sim": {
+                    "flags": "+",
                     "extends": "10",
                     "sections": {
                         "2": {
@@ -11413,93 +11463,95 @@
                                         },
                                         "b": {
                                             "flags": "p+",
-                                            "comment": "COULDN'T FIND ID!!!!!!"
-                                        },
-                                        "9": {
-                                            "flags": "p",
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "17dba87d86cdf55|obj"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "ops": [
-                                                    {
+                                            "instructions": {
+                                                "9": {
+                                                    "flags": "p",
+                                                    "LHS": {
                                                         "obj": {
                                                             "prop": "17dba87d86cdf55|obj"
                                                         }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "17dba87d86cdf55|obj"
+                                                                }
+                                                            }
+                                                        ]
                                                     }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "flags": "p",
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "17dba8b31ec9cbd|obj def"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "ops": [
-                                                    {
+                                                },
+                                                "9": {
+                                                    "flags": "p",
+                                                    "LHS": {
                                                         "obj": {
                                                             "prop": "17dba8b31ec9cbd|obj def"
                                                         }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "17dba8b31ec9cbd|obj def"
+                                                                }
+                                                            }
+                                                        ]
                                                     }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "flags": "p",
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "1800057eacaac52|def ID"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "ops": [
-                                                    {
+                                                },
+                                                "9": {
+                                                    "flags": "p",
+                                                    "LHS": {
                                                         "obj": {
                                                             "prop": "1800057eacaac52|def ID"
                                                         }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "1800057eacaac52|def ID"
+                                                                }
+                                                            }
+                                                        ]
                                                     }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "flags": "p",
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "17dba8bb66c2b64|t"
+                                                },
+                                                "9": {
+                                                    "flags": "p",
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "17dba8bb66c2b64|t"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "17dba8b31ec9cbd|obj def",
+                                                                    "prop": "17db65243471045|ID"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "flags": "p",
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "17dba8b31ec9cbd|obj def"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -1
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
                                                 }
                                             },
-                                            "RHS": {
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "sub": "17dba8b31ec9cbd|obj def",
-                                                            "prop": "17db65243471045|ID"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "flags": "p",
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "17dba8b31ec9cbd|obj def"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "selector": -1
-                                                        }
-                                                    }
-                                                ]
-                                            }
+                                            "comment": "COULDN'T FIND ID!!!!!!"
                                         }
                                     },
                                     "comment": ""

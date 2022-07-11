@@ -89,31 +89,6 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
-                                "17b5b1433359a9c-affecting objects": {
-                                    "flags": "*",
-                                    "base": "17818c5353f36cf|Targetable (Rigid Body)",
-                                    "init": {
-                                        "set": 1,
-                                        "ops": [
-                                            {
-                                                "obj": {
-                                                    "selector": -1
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
-                                "17b5b191b4e2b58-gravity max range": {
-                                    "flags": "*",
-                                    "base": "65",
-                                    "init": {
-                                        "ops": [
-                                            {
-                                                "num": 100
-                                            }
-                                        ]
-                                    }
-                                },
                                 "1809a45eab1d30e+gravity field": {
                                     "flags": "*",
                                     "base": "17b5b6f2ae079bd|Gravity Field",
@@ -191,7 +166,7 @@
                                         "ops": [
                                             {
                                                 "rot": {
-                                                    "y": 179.99999972
+                                                    "y": 179.99999969
                                                 }
                                             }
                                         ]

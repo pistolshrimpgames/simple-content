@@ -238,7 +238,7 @@
                                                         "ops": [
                                                             {
                                                                 "rot": {
-                                                                    "y": -23.5759945
+                                                                    "y": -23.57601839
                                                                 }
                                                             }
                                                         ]
@@ -364,7 +364,7 @@
                                                         "ops": [
                                                             {
                                                                 "rot": {
-                                                                    "y": 23.57599261
+                                                                    "y": 23.57601651
                                                                 }
                                                             }
                                                         ]
@@ -490,7 +490,7 @@
                                                         "ops": [
                                                             {
                                                                 "rot": {
-                                                                    "y": 23.57599261
+                                                                    "y": 23.57601651
                                                                 }
                                                             }
                                                         ]
@@ -616,7 +616,7 @@
                                                         "ops": [
                                                             {
                                                                 "rot": {
-                                                                    "y": -23.5759945
+                                                                    "y": -23.57601839
                                                                 }
                                                             }
                                                         ]
@@ -1025,7 +1025,7 @@
             }
         },
         "b": {
-            "flags": "*",
+            "flags": "+*",
             "instructions": {
                 "17e2c269310ad21-Ship Weapon - Orz Cannon Turning": {
                     "extends": "17bc803e92b22e6|Ship Weapon",
@@ -1307,6 +1307,7 @@
                     }
                 },
                 "17e2c5e8117279c-Power - Missile Launcher (Orz Cannon)": {
+                    "flags": "+",
                     "extends": "17e2752b678033d|Power - Missile Launcher",
                     "conjurer": "17e2b3dcf2ef5ea|Ship Weapon - Orz Cannon",
                     "sections": {
@@ -1343,6 +1344,31 @@
                                         "ops": [
                                             {
                                                 "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17aeedb73353cfd|power creator": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -3
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "90": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -3
+                                                }
                                             }
                                         ]
                                     }
@@ -1630,7 +1656,7 @@
                                         "ops": [
                                             {
                                                 "rot": {
-                                                    "y": 179.99999995
+                                                    "y": 179.99999993
                                                 }
                                             }
                                         ]

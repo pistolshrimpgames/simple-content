@@ -297,7 +297,6 @@
                                             "flags": "+",
                                             "instructions": {
                                                 "b": {
-                                                    "flags": "+",
                                                     "instructions": {
                                                         "8": {
                                                             "flags": "+",
@@ -1311,7 +1310,6 @@
                                                     "comment": "Toggle Planet"
                                                 },
                                                 "b": {
-                                                    "flags": "+",
                                                     "instructions": {
                                                         "8": {
                                                             "flags": "+",
@@ -1728,6 +1726,170 @@
                                                     },
                                                     "comment": "Destroy Ship"
                                                 },
+                                                "b": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "8": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "a": {
+                                                                    "flags": "l+",
+                                                                    "instructions": {
+                                                                        "b": {
+                                                                            "flags": "+",
+                                                                            "instructions": {
+                                                                                "2": {
+                                                                                    "flags": "+",
+                                                                                    "instructions": {
+                                                                                        "181bb68f4b276c3-r": {
+                                                                                            "base": "17b36c0354722e6|Roster",
+                                                                                            "init": {
+                                                                                                "ops": [
+                                                                                                    {
+                                                                                                        "obj": {
+                                                                                                            "prop": "2"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "c": {
+                                                                                    "flags": "+",
+                                                                                    "instructions": {
+                                                                                        "9": {
+                                                                                            "LHS": {
+                                                                                                "obj": {
+                                                                                                    "selector": 1,
+                                                                                                    "prop": "181bb7025c1509d|wait to show ship select"
+                                                                                                }
+                                                                                            },
+                                                                                            "RHS": {
+                                                                                                "ops": [
+                                                                                                    {
+                                                                                                        "num": 1
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    "LHS": {
+                                                                                        "obj": {
+                                                                                            "prop": "181bb68f4b276c3|r"
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "c": {
+                                                                                    "flags": "+",
+                                                                                    "instructions": {
+                                                                                        "9": {
+                                                                                            "LHS": {
+                                                                                                "obj": {
+                                                                                                    "selector": 1,
+                                                                                                    "prop": "11"
+                                                                                                }
+                                                                                            },
+                                                                                            "RHS": {
+                                                                                                "ops": [
+                                                                                                    {}
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    "LHS": {
+                                                                                        "obj": {
+                                                                                            "sub": "181bb68f4b276c3|r",
+                                                                                            "prop": "17cde030aefe7c9|conjured player"
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "comment": ""
+                                                                        }
+                                                                    },
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "inst": "17ca4bd9f3a4b76|Player Rosters",
+                                                                            "prop": "17ca4be0ad89172|rosters"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "num": 1
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "sort": {
+                                                                        "ops": [
+                                                                            {}
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "c": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "181bb6f50fb121c-": {
+                                                                            "flags": "+*",
+                                                                            "extends": "181bb641811bfa1|Melee Match Configure Dialog",
+                                                                            "sections": {
+                                                                                "2": {
+                                                                                    "flags": "+",
+                                                                                    "instructions": {
+                                                                                        "17ee5dff4d6ad5b|initiator": {
+                                                                                            "flags": "*",
+                                                                                            "init": {
+                                                                                                "ops": [
+                                                                                                    {
+                                                                                                        "obj": {
+                                                                                                            "selector": -3
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "LHS": {
+                                                                                "obj": {
+                                                                                    "inst": "181bb641811bfa1|Melee Match Configure Dialog"
+                                                                                }
+                                                                            },
+                                                                            "RHS": {
+                                                                                "obj": {
+                                                                                    "selector": 1,
+                                                                                    "prop": "59"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "inst": "176ee76b43b1735|Melee Simulation"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "=",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "17f570492af28e4|debug dialog data",
+                                                                            "prop": "17eb6c8a176a894|result"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "num": 10
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "comment": "Start Match"
+                                                },
                                                 "9": {
                                                     "LHS": {
                                                         "obj": {
@@ -2001,6 +2163,7 @@
             }
         },
         "17f574407d29e54-AI Ship Select Dialog Data": {
+            "flags": "+",
             "extends": "17f4d40662eba32|Ship Select Dialog Data",
             "sections": {
                 "4": {

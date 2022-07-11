@@ -153,15 +153,6 @@
                                         ]
                                     }
                                 },
-                                "17ebcd9bfa09f0f-max speed original": {
-                                    "flags": "*",
-                                    "base": "65",
-                                    "init": {
-                                        "ops": [
-                                            {}
-                                        ]
-                                    }
-                                },
                                 "17ebcd9bfa17bc0+in field": {
                                     "base": "65",
                                     "init": {
@@ -195,14 +186,6 @@
                                             {
                                                 "rot": {}
                                             }
-                                        ]
-                                    }
-                                },
-                                "17ebcd9bfa52ea3-scratch": {
-                                    "base": "65",
-                                    "init": {
-                                        "ops": [
-                                            {}
                                         ]
                                     }
                                 }

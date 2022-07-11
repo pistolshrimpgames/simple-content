@@ -417,7 +417,7 @@
                                                         "ops": [
                                                             {
                                                                 "rot": {
-                                                                    "y": 45.00133517
+                                                                    "y": 45.00138619
                                                                 }
                                                             }
                                                         ]
@@ -531,7 +531,7 @@
                                                         "ops": [
                                                             {
                                                                 "rot": {
-                                                                    "y": -45.00133625
+                                                                    "y": -45.00138727
                                                                 }
                                                             }
                                                         ]
@@ -1346,58 +1346,6 @@
                                 "8": {
                                     "flags": "+",
                                     "instructions": {
-                                        "b": {
-                                            "flags": "d+",
-                                            "contextValue": -1,
-                                            "instructions": {
-                                                "18090b614e3f3eb-": {
-                                                    "flags": "+",
-                                                    "extends": "1802f8cde0f0338|Syreen Crew in Space Missile Launcher",
-                                                    "sections": {
-                                                        "2": {
-                                                            "flags": "+",
-                                                            "instructions": {
-                                                                "31": {
-                                                                    "flags": "*",
-                                                                    "init": {
-                                                                        "ops": [
-                                                                            {
-                                                                                "vec": {
-                                                                                    "z": 10
-                                                                                }
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                },
-                                                                "90": {
-                                                                    "flags": "*",
-                                                                    "init": {
-                                                                        "ops": [
-                                                                            {
-                                                                                "obj": {
-                                                                                    "selector": -3
-                                                                                }
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    },
-                                                    "LHS": {
-                                                        "obj": {
-                                                            "inst": "1802f8cde0f0338|Syreen Crew in Space Missile Launcher"
-                                                        }
-                                                    },
-                                                    "RHS": {
-                                                        "obj": {
-                                                            "selector": -1
-                                                        }
-                                                    }
-                                                }
-                                            },
-                                            "comment": "TEST ONLY - fire a crew in space"
-                                        },
                                         "a": {
                                             "flags": "l+",
                                             "instructions": {

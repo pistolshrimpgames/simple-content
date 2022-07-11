@@ -207,12 +207,26 @@
                     }
                 },
                 "17cc925c0ec2758+Turn To": {
+                    "flags": "+",
                     "extends": "f",
                     "conjurer": "33",
                     "sections": {
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181686c48251387+turn object": {
+                                    "base": "33",
+                                    "init": {
+                                        "live": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17cc9283fbd1b10+target position": {
                                     "flags": "*",
                                     "base": "66",
@@ -258,6 +272,16 @@
                                     "init": {
                                         "ops": [
                                             {}
+                                        ]
+                                    }
+                                },
+                                "181687cde9c4868-delta o": {
+                                    "base": "67",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "rot": {}
+                                            }
                                         ]
                                     }
                                 },
@@ -307,7 +331,8 @@
                                                         "ops": [
                                                             {
                                                                 "obj": {
-                                                                    "selector": -3
+                                                                    "selector": -2,
+                                                                    "prop": "181686c48251387|turn object"
                                                                 }
                                                             }
                                                         ]
@@ -353,6 +378,64 @@
                                                     "LHS": {
                                                         "obj": {
                                                             "selector": -2,
+                                                            "prop": "17cc92db56dba50|o",
+                                                            "tupleOffs": 2
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "17cc92db56dba50|o",
+                                                                    "tupleOffs": 2
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "sub": "181686c48251387|turn object",
+                                                                    "prop": "14",
+                                                                    "tupleOffs": 2
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "181687cde9c4868|delta o",
+                                                            "tupleOffs": 2
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "-",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "17cc92db56dba50|o",
+                                                                    "tupleOffs": 2
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "sub": "181686c48251387|turn object",
+                                                                    "prop": "14",
+                                                                    "tupleOffs": 2
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
                                                             "prop": "17cc93212249bc0|x"
                                                         }
                                                     },
@@ -362,7 +445,7 @@
                                                             {
                                                                 "obj": {
                                                                     "selector": -2,
-                                                                    "prop": "17cc92db56dba50|o",
+                                                                    "prop": "181687cde9c4868|delta o",
                                                                     "tupleOffs": 2
                                                                 }
                                                             }
@@ -371,7 +454,7 @@
                                                 },
                                                 "8": {
                                                     "flags": "+",
-                                                    "contextValue": 3,
+                                                    "contextValue": -2,
                                                     "instructions": {
                                                         "9": {
                                                             "LHS": {
@@ -391,21 +474,14 @@
                                                         "9": {
                                                             "LHS": {
                                                                 "obj": {
-                                                                    "selector": -3,
+                                                                    "selector": -2,
+                                                                    "sub": "181686c48251387|turn object",
                                                                     "prop": "14",
                                                                     "tupleOffs": 2
                                                                 }
                                                             },
                                                             "RHS": {
-                                                                "bind": "+",
                                                                 "ops": [
-                                                                    {
-                                                                        "obj": {
-                                                                            "selector": -3,
-                                                                            "prop": "14",
-                                                                            "tupleOffs": 2
-                                                                        }
-                                                                    },
                                                                     {
                                                                         "obj": {
                                                                             "selector": -2,
@@ -475,7 +551,8 @@
                                                 "9": {
                                                     "LHS": {
                                                         "obj": {
-                                                            "selector": -3,
+                                                            "selector": -2,
+                                                            "sub": "181686c48251387|turn object",
                                                             "prop": "14",
                                                             "tupleOffs": 2
                                                         }
@@ -485,7 +562,8 @@
                                                         "ops": [
                                                             {
                                                                 "obj": {
-                                                                    "selector": -3,
+                                                                    "selector": -2,
+                                                                    "sub": "181686c48251387|turn object",
                                                                     "prop": "14",
                                                                     "tupleOffs": 2
                                                                 }
@@ -972,7 +1050,7 @@
                                             "instructions": {
                                                 "8": {
                                                     "flags": "+",
-                                                    "contextValue": 4,
+                                                    "contextValue": -1,
                                                     "instructions": {
                                                         "9": {
                                                             "LHS": {

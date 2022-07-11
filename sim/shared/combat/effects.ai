@@ -167,6 +167,7 @@
                     }
                 },
                 "17c76524c978c63+Effect - Damage": {
+                    "flags": "+",
                     "extends": "17c764ea72845ee|Effect",
                     "sections": {
                         "2": {
@@ -277,6 +278,242 @@
                                                 "obj": {
                                                     "selector": -2,
                                                     "prop": "17c765387e8d60f|damage"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1819807b018af03+On Damage Callback (Invulnerability Time)": {
+                    "flags": "+",
+                    "extends": "18048a2c036a3f2|On Damage Callback",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1819808646e1b86+invulnerability time": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 0.5
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "181980d10cf92ac-": {
+                                    "flags": "+",
+                                    "extends": "1819808b6d53ad1|Invulnerability Time",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "18198094f5eb0e7|end at time": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "4"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "1819808646e1b86|invulnerability time"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "1819808b6d53ad1|Invulnerability Time"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -3,
+                                            "prop": "59"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1819808b6d53ad1-Invulnerability Time": {
+                    "flags": "+",
+                    "extends": "10",
+                    "conjurer": "17c61c499ab6212|Combatant",
+                    "capturer": "fffffffffffffffe|unconjured",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "18198094f5eb0e7-end at time": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "selector": -2,
+                                            "prop": "17c75d44e5e8ec5|ignore types"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "+",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17c75d44e5e8ec5|ignore types"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17c76524c978c63|Effect - Damage"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "4": {
+                            "flags": "+"
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "a": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "b": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "181980bd7403a1d-dmg": {
+                                                                    "base": "17c76524c978c63|Effect - Damage",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "3"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "17c75d44e5e8ec5|ignore types"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "-",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "17c75d44e5e8ec5|ignore types"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "181980bd7403a1d|dmg"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "comment": ""
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17c75d44e5e8ec5|ignore types"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "=",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": -1
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "inst": "17c76524c978c63|Effect - Damage"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "sort": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": ">=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "4"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "18198094f5eb0e7|end at time"
                                                 }
                                             }
                                         ]
@@ -1293,6 +1530,100 @@
                                         }
                                     },
                                     "comment": "KNOCKED BACK"
+                                }
+                            }
+                        }
+                    }
+                },
+                "18169070cb7e3d6+Effect - While Touching (base)": {
+                    "flags": "+",
+                    "extends": "17c764ea72845ee|Effect",
+                    "conjurer": "1806cb786f5a387|Combatant (Ship)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "18169070cb9e005-initiating col": {
+                                    "base": "17e0d221074de3c|Collider (Combat Trigger)",
+                                    "init": {
+                                        "failable": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "sub": "17c764f25fd912c|initiating contact",
+                                                    "prop": "5a"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17c764f25fd912c|initiating contact": {
+                                    "override": "17ffc3272e5019a|Combat Trigger Contact",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "a": {
+                                            "flags": "+",
+                                            "contextValue": -1,
+                                            "LHS": {
+                                                "obj": {
+                                                    "sub": "18169070cb9e005|initiating col",
+                                                    "prop": "17d534489a4347c|active touches"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "=",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": -1,
+                                                            "prop": "17d5345179d1450|touching"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17d3987f79e2e1b|owner"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "sort": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": ""
                                 }
                             }
                         }

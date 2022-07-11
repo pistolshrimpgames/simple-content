@@ -15,6 +15,7 @@
                                     "base": "17cf15997e5a882|Alien Definition",
                                     "init": {
                                         "set": 1,
+                                        "needed": 1,
                                         "unconjured": 1,
                                         "scoped": 1
                                     },
@@ -550,6 +551,121 @@
                                                     }
                                                 ]
                                             }
+                                        },
+                                        "9": {
+                                            "flags": "d",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181b0b9c4a3c739|custom 1"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "d",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181b10f98b8b7a3|custom 2"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "d",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181b10f9808ecd9|custom 3"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "d",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181b10f97301424|custom 4"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "d",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181b10f99785d0a|custom 5"
+                                                        }
+                                                    }
+                                                ]
+                                            }
                                         }
                                     }
                                 },
@@ -864,6 +980,71 @@
                                             }
                                         ]
                                     }
+                                },
+                                "181b0b9c4a3c739+custom 1": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "181b0b3a0436423|Alien Definition (Custom 1)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "181b10f98b8b7a3+custom 2": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "181b1088a1971ba|Alien Definition (Custom 2)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "181b10f9808ecd9+custom 3": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "181b10ae7e24442|Alien Definition (Custom 3)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "181b10f97301424+custom 4": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "181b10cbf92fd9a|Alien Definition (Custom 4)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "181b10f99785d0a+custom 5": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "181b10e46dafffa|Alien Definition (Custom 5)"
+                                                }
+                                            }
+                                        ]
+                                    }
                                 }
                             }
                         },
@@ -881,12 +1062,33 @@
                                             }
                                         ]
                                     }
+                                },
+                                "a": {
+                                    "flags": "td+",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "17cf16ea3b55157|all aliens"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    },
+                                    "sort": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
                                 }
                             }
                         }
                     }
                 },
                 "17f561032c1414c+Get Alien from ID": {
+                    "flags": "+",
                     "extends": "f",
                     "sections": {
                         "2": {
@@ -1139,6 +1341,19 @@
                                         ]
                                     }
                                 },
+                                "181b0cc3b6fcaa1+roster ship": {
+                                    "base": "178f5460f98876a|Roster Ship",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad58e5f9021+ship RU salvage amt": {
                                     "base": "65",
                                     "init": {
@@ -1181,12 +1396,97 @@
                         }
                     }
                 },
+                "181b0e7a5909a3d+Alien Definition [Sideloaded]": {
+                    "flags": "+",
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "c": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "a": {
+                                            "flags": "+",
+                                            "contextValue": -1,
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": 1,
+                                                    "prop": "17cf16ea3b55157|all aliens"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "=",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": -1
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {}
+                                                    }
+                                                ]
+                                            },
+                                            "sort": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": 1,
+                                                    "prop": "17cf16ea3b55157|all aliens"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": 1,
+                                                            "prop": "17cf16ea3b55157|all aliens"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {}
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "17cf16e260c7e85|Alien List"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
                 "17f50d7fc4258aa+Alien Definition (Chmmr)": {
+                    "flags": "+",
                     "extends": "17cf15997e5a882|Alien Definition",
                     "sections": {
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17eef652761e4b1|Chmmr Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1220,11 +1520,25 @@
                     }
                 },
                 "17d2a607b218449+Alien Definition (Human)": {
+                    "flags": "+",
                     "extends": "17cf15997e5a882|Alien Definition",
                     "sections": {
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b0e5ef84f83f4|Human Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1265,6 +1579,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b091674b31a02|Thraddash MK2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1305,6 +1632,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b3ceeeb33e5c3|Kohr-Ah Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1345,6 +1685,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b1da04ee03a98|Urquan Melee Nav Agent Mk2"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1385,6 +1738,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b1831f2349daa|Pkunk Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1425,6 +1791,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b183a1b1f9a14|Yehat Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1465,6 +1844,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17af87ff341238a|Melnorme Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1505,6 +1897,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17e2b3b95d4d5c1|Orz Melee Navigation Agent Mk2"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1545,6 +1950,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b751ebfcd5834|Shofixti MK2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1585,6 +2003,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1793844c0c6c501|Ilwrath Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1625,6 +2056,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1799c7b658f1184|Androsynth Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1665,6 +2109,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "178fb31136ab076|Syreen Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1705,6 +2162,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "179aa32747b5d15|Supox Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1745,6 +2215,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "179864ee73b013c|Mycon Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1785,6 +2268,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1798bb671f206d0|Utwig Mk2 Melee Navigation"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1825,6 +2321,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b55bb753c6d71|Umgah MK2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1865,6 +2374,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17913be99325693|Mmrnmhrm Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1905,6 +2427,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "178ffcb2deb9acc|Druuge Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1945,6 +2480,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1790ee17113b097|Arilou Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -1985,6 +2533,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1798ff68f6e846b|VUX Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -2025,6 +2586,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17990b1e5e5f20e|ZoqFot Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -2065,6 +2639,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "179440925fe8b92|Chenjesu Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {
@@ -2106,6 +2693,19 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b0d28056e3dd6|Spathi Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17d2ad5798fcda0|ship cost": {
                                     "flags": "*",
                                     "init": {

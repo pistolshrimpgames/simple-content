@@ -10,16 +10,6 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
-                                "17f522245b078d9-enable cheatmode": {
-                                    "base": "65",
-                                    "init": {
-                                        "ops": [
-                                            {
-                                                "num": 1
-                                            }
-                                        ]
-                                    }
-                                },
                                 "1785ad77fd724f3+60th of a sec": {
                                     "base": "65",
                                     "init": {
@@ -30,16 +20,6 @@
                                             },
                                             {
                                                 "num": 60
-                                            }
-                                        ]
-                                    }
-                                },
-                                "1786afd054cd098+max turn rate": {
-                                    "base": "65",
-                                    "init": {
-                                        "ops": [
-                                            {
-                                                "num": 576
                                             }
                                         ]
                                     }
@@ -94,24 +74,6 @@
                                         ]
                                     }
                                 },
-                                "179ed5ea7466cb2+jiffies per frame": {
-                                    "base": "65",
-                                    "init": {
-                                        "bind": "/",
-                                        "ops": [
-                                            {
-                                                "obj": {
-                                                    "prop": "1785ad77fd724f3|60th of a sec"
-                                                }
-                                            },
-                                            {
-                                                "obj": {
-                                                    "prop": "17985c0ca0360be|UQM frame time"
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
                                 "17ce6a7114b227c+adventure mode": {
                                     "base": "65",
                                     "init": {
@@ -157,6 +119,16 @@
                                         ]
                                     }
                                 },
+                                "17ff63dce964abf-TEMP size": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 120.471
+                                            }
+                                        ]
+                                    }
+                                },
                                 "1782799e9a03835-size": {
                                     "base": "65",
                                     "init": {
@@ -169,19 +141,9 @@
                                             },
                                             {
                                                 "obj": {
-                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "sub": "17ebbb41228392c|Ship Constants [SINGLETON]",
                                                     "prop": "17ca4ab0a953195|distance unit"
                                                 }
-                                            }
-                                        ]
-                                    }
-                                },
-                                "17ff63dce964abf-TEMP size": {
-                                    "base": "65",
-                                    "init": {
-                                        "ops": [
-                                            {
-                                                "num": 120.471
                                             }
                                         ]
                                     }
@@ -193,20 +155,6 @@
                                         "set": 1,
                                         "needed": 1,
                                         "conjured": 1,
-                                        "ops": [
-                                            {
-                                                "obj": {
-                                                    "selector": -1
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
-                                "17cf0ee97c35f49-use enemy agents": {
-                                    "flags": "*",
-                                    "base": "178f5460f98876a|Roster Ship",
-                                    "init": {
-                                        "set": 1,
                                         "ops": [
                                             {
                                                 "obj": {
@@ -258,34 +206,6 @@
                                         ]
                                     }
                                 },
-                                "1787f3ea878b9ce+playables": {
-                                    "flags": "*",
-                                    "base": "1774b187e752711|Playable (Rigid Body)",
-                                    "init": {
-                                        "set": 1,
-                                        "ops": [
-                                            {
-                                                "obj": {
-                                                    "selector": -1
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
-                                "17b1cecc275cdf1+targetables": {
-                                    "flags": "*",
-                                    "base": "17818c5353f36cf|Targetable (Rigid Body)",
-                                    "init": {
-                                        "set": 1,
-                                        "ops": [
-                                            {
-                                                "obj": {
-                                                    "selector": -1
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
                                 "1802edc5016a265-temp gen fleet hold": {
                                     "flags": "*",
                                     "base": "17fdbeb9398d327|Resource Hold - Fleet Ships",
@@ -309,6 +229,37 @@
                                             {
                                                 "obj": {
                                                     "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "181bb8681e3d59b+match": {
+                                    "flags": "*",
+                                    "base": "181bb332dddf384|Melee Match",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ebbb4122ba364-Alien List [SINGLETON]": {
+                                    "flags": "*",
+                                    "base": "17cf16e260c7e85|Alien List",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "singleton": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17cf16e260c7e85|Alien List"
                                                 }
                                             }
                                         ]
@@ -378,22 +329,6 @@
                                         ]
                                     }
                                 },
-                                "17ebbb4122ba364-Alien List [SINGLETON]": {
-                                    "flags": "*",
-                                    "base": "17cf16e260c7e85|Alien List",
-                                    "init": {
-                                        "needed": 1,
-                                        "conjured": 1,
-                                        "singleton": 1,
-                                        "ops": [
-                                            {
-                                                "obj": {
-                                                    "inst": "17cf16e260c7e85|Alien List"
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
                                 "180b4b28b9aec87-Collision Masks [SINGLETON]": {
                                     "flags": "*",
                                     "base": "17d3480382f8e58|Collision Masks",
@@ -452,13 +387,12 @@
                                     }
                                 },
                                 "36": {
-                                    "flags": "*",
+                                    "flags": "+*",
                                     "init": {
                                         "scoped": 1
                                     },
                                     "instructions": {
                                         "9": {
-                                            "flags": "d",
                                             "LHS": {
                                                 "obj": {
                                                     "prop": "6",
@@ -476,7 +410,6 @@
                                             }
                                         },
                                         "9": {
-                                            "flags": "d",
                                             "LHS": {
                                                 "obj": {
                                                     "prop": "6",
@@ -494,6 +427,7 @@
                                             }
                                         },
                                         "9": {
+                                            "flags": "d",
                                             "LHS": {
                                                 "obj": {
                                                     "prop": "6",
@@ -511,6 +445,7 @@
                                             }
                                         },
                                         "9": {
+                                            "flags": "d",
                                             "LHS": {
                                                 "obj": {
                                                     "prop": "6",
@@ -532,7 +467,6 @@
                             }
                         },
                         "3": {
-                            "flags": "+",
                             "instructions": {
                                 "9": {
                                     "flags": "p",
@@ -545,7 +479,7 @@
                                         "ops": [
                                             {
                                                 "obj": {
-                                                    "prop": "1782799e9a03835|size"
+                                                    "prop": "17ff63dce964abf|TEMP size"
                                                 }
                                             }
                                         ]
@@ -1217,19 +1151,6 @@
                         "2": {
                             "flags": "+",
                             "instructions": {
-                                "17f4d2d54409de5-for roster": {
-                                    "flags": "*",
-                                    "base": "17b36c0354722e6|Roster",
-                                    "init": {
-                                        "ops": [
-                                            {
-                                                "obj": {
-                                                    "selector": -2
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
                                 "17ee5df892d1f06|data": {
                                     "override": "17f4d40662eba32|Ship Select Dialog Data",
                                     "flags": "*",
@@ -1266,9 +1187,6 @@
                                     }
                                 }
                             }
-                        },
-                        "3": {
-                            "flags": "+"
                         },
                         "4": {
                             "flags": "+",
@@ -1782,6 +1700,7 @@
                                     "flags": "*",
                                     "base": "17cf15997e5a882|Alien Definition",
                                     "init": {
+                                        "conjured": 1,
                                         "ops": [
                                             {
                                                 "obj": {
@@ -1809,112 +1728,20 @@
                         "3": {
                             "flags": "+",
                             "instructions": {
-                                "a": {
-                                    "flags": "l+",
-                                    "instructions": {
-                                        "17f55d505e7b044-": {
-                                            "flags": "+",
-                                            "extends": "178f5460f98876a|Roster Ship",
-                                            "sections": {
-                                                "3": {
-                                                    "flags": "+",
-                                                    "instructions": {
-                                                        "8": {
-                                                            "flags": "+",
-                                                            "instructions": {
-                                                                "9": {
-                                                                    "LHS": {
-                                                                        "obj": {
-                                                                            "prop": "17f50ea4a91529c|alien"
-                                                                        }
-                                                                    },
-                                                                    "RHS": {
-                                                                        "ops": [
-                                                                            {
-                                                                                "obj": {
-                                                                                    "prop": "17f50ea4a91529c|alien"
-                                                                                }
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                },
-                                                                "9": {
-                                                                    "LHS": {
-                                                                        "obj": {
-                                                                            "selector": -2,
-                                                                            "prop": "17cf15f500515a4|return agent"
-                                                                        }
-                                                                    },
-                                                                    "RHS": {
-                                                                        "ops": [
-                                                                            {
-                                                                                "obj": {}
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                }
-                                                            },
-                                                            "RHS": {
-                                                                "bind": "=",
-                                                                "ops": [
-                                                                    {
-                                                                        "obj": {
-                                                                            "selector": -2,
-                                                                            "prop": "17cf15f1f85a919|input alien"
-                                                                        }
-                                                                    },
-                                                                    {
-                                                                        "obj": {
-                                                                            "prop": "17f50ea4a91529c|alien"
-                                                                        }
-                                                                    }
-                                                                ]
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            },
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "2"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "obj": {
-                                                    "selector": -1
-                                                }
-                                            }
-                                        },
-                                        "8": {
-                                            "flags": "+",
-                                            "contextValue": -1,
-                                            "RHS": {
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "17cf15f500515a4|return agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    },
+                                "9": {
                                     "LHS": {
                                         "obj": {
-                                            "inst": "17ca4bd9f3a4b76|Player Rosters",
-                                            "prop": "17f50eba7890f2d|ship definitions"
+                                            "prop": "17cf15f500515a4|return agent"
                                         }
                                     },
                                     "RHS": {
                                         "ops": [
                                             {
-                                                "num": 1
+                                                "obj": {
+                                                    "sub": "17cf15f1f85a919|input alien",
+                                                    "prop": "181b0cc3b6fcaa1|roster ship"
+                                                }
                                             }
-                                        ]
-                                    },
-                                    "sort": {
-                                        "ops": [
-                                            {}
                                         ]
                                     }
                                 }
@@ -1929,7 +1756,7 @@
             "flags": "+*",
             "instructions": {
                 "1809b62dc7cafa3+Melee Ship": {
-                    "flags": "+*",
+                    "flags": "*",
                     "extends": "17aca96282d0115|Ship",
                     "sections": {
                         "2": {
@@ -3180,7 +3007,6 @@
             }
         },
         "17eb25d249c9f6c-TEMP Ship Bounce Collider Hack": {
-            "flags": "+",
             "extends": "10",
             "conjurer": "17aca96282d0115|Ship",
             "capturer": "fffffffffffffffe|unconjured",

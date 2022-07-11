@@ -23,545 +23,6 @@
                                             }
                                         ]
                                     }
-                                },
-                                "17f50eba7890f2d+ship definitions": {
-                                    "flags": "+*",
-                                    "base": "178f5460f98876a|Roster Ship",
-                                    "init": {
-                                        "set": 1,
-                                        "unconjured": 1,
-                                        "scoped": 1
-                                    },
-                                    "instructions": {
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "17eef652761e4b1|Chmmr Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "17b0e5ef84f83f4|Human Mk2 Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "17b3ceeeb33e5c3|Kohr-Ah Mk2 Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "17af87ff341238a|Melnorme Mk2 Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "17e2b3b95d4d5c1|Orz Melee Navigation Agent Mk2"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "17b1831f2349daa|Pkunk Mk2 Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "17b751ebfcd5834|Shofixti MK2 Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "17b091674b31a02|Thraddash MK2 Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "17b1da04ee03a98|Urquan Melee Nav Agent Mk2"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "17b183a1b1f9a14|Yehat Mk2 Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "1793844c0c6c501|Ilwrath Mk2 Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "1799c7b658f1184|Androsynth Mk2 Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "178fb31136ab076|Syreen Mk2 Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "179aa32747b5d15|Supox Mk2 Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "179864ee73b013c|Mycon Mk2 Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "1798bb671f206d0|Utwig Mk2 Melee Navigation"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "17b55bb753c6d71|Umgah MK2 Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "17913be99325693|Mmrnmhrm Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "178ffcb2deb9acc|Druuge Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "1790ee17113b097|Arilou Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "1798ff68f6e846b|VUX Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "17990b1e5e5f20e|ZoqFot Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "179440925fe8b92|Chenjesu Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        "9": {
-                                            "LHS": {
-                                                "obj": {
-                                                    "prop": "6"
-                                                }
-                                            },
-                                            "RHS": {
-                                                "bind": "+",
-                                                "ops": [
-                                                    {
-                                                        "obj": {
-                                                            "prop": "6"
-                                                        }
-                                                    },
-                                                    {
-                                                        "obj": {
-                                                            "inst": "17b0d28056e3dd6|Spathi Mk2 Melee Navigation Agent"
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    }
                                 }
                             }
                         }
@@ -572,7 +33,6 @@
                     "extends": "17b36c0354722e6|Roster",
                     "sections": {
                         "3": {
-                            "flags": "+",
                             "instructions": {
                                 "c": {
                                     "flags": "d+",
@@ -875,7 +335,6 @@
                     }
                 },
                 "1802a1567321b54-Resource Hold - Fleet Ships (Melee Dev)": {
-                    "flags": "+",
                     "extends": "17fdbeb9398d327|Resource Hold - Fleet Ships",
                     "sections": {
                         "2": {
@@ -890,9 +349,10 @@
                                     },
                                     "instructions": {
                                         "8": {
-                                            "flags": "ld+",
+                                            "flags": "lpd+",
                                             "instructions": {
                                                 "9": {
+                                                    "flags": "p",
                                                     "LHS": {
                                                         "obj": {
                                                             "prop": "6"
@@ -953,9 +413,13 @@
                                                 }
                                             },
                                             "RHS": {
+                                                "bind": "+",
                                                 "ops": [
                                                     {
                                                         "num": 24
+                                                    },
+                                                    {
+                                                        "num": 5
                                                     }
                                                 ]
                                             }
@@ -980,7 +444,7 @@
                             "flags": "+",
                             "instructions": {
                                 "b": {
-                                    "flags": "+",
+                                    "flags": "p+",
                                     "comment": ""
                                 }
                             }
@@ -2198,6 +1662,7 @@
                                     }
                                 },
                                 "17f511574ec1a03+use ship select dialog": {
+                                    "flags": "+*",
                                     "base": "65",
                                     "init": {
                                         "scoped": 1
@@ -2453,6 +1918,159 @@
                                         ]
                                     }
                                 },
+                                "181bb7025c1509d+wait to show ship select": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "181bb7cf8b8e5d6+wait to spawn ship": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "181bb5ed6b96dd9+show dialogs before ship select": {
+                                    "flags": "+*",
+                                    "base": "17ee5deb70cb063|Dialog",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "unconjured": 1,
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "181bbde2af01881-match": {
+                                                            "base": "181bb332dddf384|Melee Match",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "17ce194b748f776|in sim",
+                                                                            "prop": "181bb8681e3d59b|match"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "8": {
+                                                    "flags": "p+",
+                                                    "instructions": {
+                                                        "8": {
+                                                            "flags": "p+",
+                                                            "instructions": {
+                                                                "9": {
+                                                                    "flags": "p",
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "bind": "+",
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "6"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "obj": {
+                                                                                    "inst": "181bbc2a7cfe210|Melee Match Pick Team Dialog"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "<>",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "181bbde2af01881|match",
+                                                                            "prop": "181bb35e4f660fd|number of teams"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "num": -1
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "181bbde2af01881|match"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": ""
+                                        }
+                                    }
+                                },
+                                "181bbbddc9f6695+showing dialog": {
+                                    "flags": "*",
+                                    "base": "17ee5deb70cb063|Dialog",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "181bbbe1b1ef07d+showing dialog data": {
+                                    "flags": "*",
+                                    "base": "17ee5de61d0dd5d|Dialog Data",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "181bb53cf91a6b8+roster team": {
+                                    "flags": "*",
+                                    "base": "181bb355396d0d6|Melee Team",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "17cde01590f46e8|input": {
                                     "flags": "*",
                                     "init": {
@@ -2592,6 +2210,23 @@
                                         ]
                                     }
                                 },
+                                "9": {
+                                    "flags": "p",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "181bb5ed6b96dd9|show dialogs before ship select"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "181bb5ed6b96dd9|show dialogs before ship select"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 "8": {
                                     "instructions": {
                                         "8": {
@@ -2650,6 +2285,53 @@
                                             {
                                                 "obj": {
                                                     "prop": "17f511574ec1a03|use ship select dialog"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "181e10af7bc347c-": {
+                                                    "flags": "+",
+                                                    "extends": "17b84bad8e929f4|Roster Event",
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "sub": "181bb8681e3d59b|match",
+                                                            "prop": "181e10a9163ef59|roster initialize callback"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "sub": "181bb8681e3d59b|match",
+                                                            "prop": "181e10a9163ef59|roster initialize callback"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "181bb8681e3d59b|match"
                                                 }
                                             }
                                         ]
@@ -2845,10 +2527,265 @@
                                     "instructions": {
                                         "8": {
                                             "flags": "+",
-                                            "contextValue": -3,
+                                            "contextValue": -2,
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181bb7025c1509d|wait to show ship select"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "+",
                                             "instructions": {
                                                 "8": {
                                                     "flags": "+",
+                                                    "instructions": {
+                                                        "b": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "2": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "181e0f0b8ac2e6d-callback succeeds": {
+                                                                            "base": "65",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {}
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "181e0f05dd60411-": {
+                                                                    "flags": "+",
+                                                                    "extends": "17b84bad8e929f4|Roster Event",
+                                                                    "sections": {
+                                                                        "3": {
+                                                                            "flags": "+",
+                                                                            "instructions": {
+                                                                                "9": {
+                                                                                    "LHS": {
+                                                                                        "obj": {
+                                                                                            "selector": -2,
+                                                                                            "prop": "181e0f0b8ac2e6d|callback succeeds"
+                                                                                        }
+                                                                                    },
+                                                                                    "RHS": {
+                                                                                        "ops": [
+                                                                                            {
+                                                                                                "obj": {
+                                                                                                    "prop": "11"
+                                                                                                }
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "sub": "181bb8681e3d59b|match",
+                                                                            "prop": "181e0e6a54cd020|allow ship select callback"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "obj": {
+                                                                            "selector": -1
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "8": {
+                                                                    "flags": "+",
+                                                                    "contextValue": -5,
+                                                                    "RHS": {
+                                                                        "func": "NOT",
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "181e0f0b8ac2e6d|callback succeeds"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "comment": ""
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "sub": "181bb8681e3d59b|match",
+                                                                    "prop": "181e0e6a54cd020|allow ship select callback"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "181bb8681e3d59b|match"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "b": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "181bbbf4c6f0118-dialog def": {
+                                                                    "base": "17ee5deb70cb063|Dialog",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "181bb5ed6b96dd9|show dialogs before ship select"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "flags": "p",
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "181bb5ed6b96dd9|show dialogs before ship select"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "-",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "181bb5ed6b96dd9|show dialogs before ship select"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "181bbbf4c6f0118|dialog def"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "181bbc0203eed32-": {
+                                                            "flags": "+",
+                                                            "extends": "17ee5deb70cb063|Dialog",
+                                                            "sections": {
+                                                                "2": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "17ee5dff4d6ad5b|initiator": {
+                                                                            "flags": "*",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "selector": -2
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "181bbbf4c6f0118|dialog def"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "obj": {
+                                                                    "prop": "181bbbddc9f6695|showing dialog"
+                                                                }
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "181bbbe1b1ef07d|showing dialog data"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "181bbbddc9f6695|showing dialog",
+                                                                            "prop": "17ee5df892d1f06|data"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "comment": ""
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181bb5ed6b96dd9|show dialogs before ship select"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "+",
+                                            "contextValue": -2,
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181bbbddc9f6695|showing dialog"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "181bbbe1b1ef07d|showing dialog data"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "+",
+                                            "contextValue": -3,
+                                            "instructions": {
+                                                "8": {
                                                     "instructions": {
                                                         "9": {
                                                             "LHS": {
@@ -3079,7 +3016,6 @@
                                                     }
                                                 },
                                                 "8": {
-                                                    "flags": "+",
                                                     "contextValue": -1,
                                                     "instructions": {
                                                         "8": {
@@ -3344,6 +3280,19 @@
                                                 ]
                                             }
                                         },
+                                        "8": {
+                                            "flags": "+",
+                                            "contextValue": -2,
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181bb7cf8b8e5d6|wait to spawn ship"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
                                         "9": {
                                             "LHS": {
                                                 "obj": {
@@ -3365,9 +3314,9 @@
                                             }
                                         },
                                         "b": {
-                                            "flags": "+",
                                             "instructions": {
                                                 "b": {
+                                                    "flags": "+",
                                                     "contextValue": -256,
                                                     "instructions": {
                                                         "8": {
@@ -3509,7 +3458,6 @@
                                             "comment": "Get new fleet ship (if available)"
                                         },
                                         "8": {
-                                            "flags": "+",
                                             "instructions": {
                                                 "8": {
                                                     "flags": "+",
@@ -3558,7 +3506,6 @@
                                             }
                                         },
                                         "8": {
-                                            "flags": "+",
                                             "instructions": {
                                                 "1802ef240a71cdf-": {
                                                     "flags": "+",
@@ -3686,7 +3633,6 @@
                                             }
                                         },
                                         "180439cae73ad2b-": {
-                                            "flags": "+",
                                             "extends": "1804396560b3be7|Roster - Create Ship",
                                             "sections": {
                                                 "2": {
@@ -3870,7 +3816,7 @@
                                     }
                                 },
                                 "1804397095a7dc3-": {
-                                    "flags": "+*",
+                                    "flags": "*",
                                     "extends": "17aca96282d0115|Ship",
                                     "sections": {
                                         "2": {
@@ -4049,6 +3995,107 @@
                                             "prop": "17cde030aefe7c9|conjured player"
                                         }
                                     }
+                                },
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "181e100dc86da22-melee sim": {
+                                                    "base": "176ee76b43b1735|Melee Simulation",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "1804396b50bd520|from roster",
+                                                                    "prop": "17ce194b748f776|in sim"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "181e1009fde00b1-match": {
+                                                    "base": "181bb332dddf384|Melee Match",
+                                                    "init": {
+                                                        "failable": 1,
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "181e100dc86da22|melee sim",
+                                                                    "prop": "181bb8681e3d59b|match"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "181e10042ff1788-match callback": {
+                                                    "base": "17b84bad8e929f4|Roster Event",
+                                                    "init": {
+                                                        "failable": 1,
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "181e1009fde00b1|match",
+                                                                    "prop": "181e0f31bfae9cb|conjure ship callback"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "181e101723f87ba-": {
+                                                    "flags": "+",
+                                                    "extends": "17b84bad8e929f4|Roster Event",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "17b84bad8eafb4a|roster": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "live": 1,
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -2,
+                                                                                    "prop": "1804396b50bd520|from roster"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "181e10042ff1788|match callback"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181e10042ff1788|match callback"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": ""
                                 }
                             }
                         }
@@ -4315,22 +4362,12 @@
                                 "17f50ea4a91529c+alien": {
                                     "base": "17cf15997e5a882|Alien Definition",
                                     "init": {
+                                        "unconjured": 1,
                                         "ops": [
                                             {
                                                 "obj": {
                                                     "selector": -1
                                                 }
-                                            }
-                                        ]
-                                    }
-                                },
-                                "17fe7339b1301f5-my definition": {
-                                    "base": "178f5460f98876a|Roster Ship",
-                                    "init": {
-                                        "unconjured": 1,
-                                        "ops": [
-                                            {
-                                                "obj": {}
                                             }
                                         ]
                                     }
@@ -4355,19 +4392,6 @@
                                             {
                                                 "obj": {
                                                     "inst": "17f0df7c27911fd|Melee Ship AI"
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
-                                "17f79f0ebf18021+ship Nav Object": {
-                                    "base": "69",
-                                    "init": {
-                                        "unconjured": 1,
-                                        "ops": [
-                                            {
-                                                "obj": {
-                                                    "inst": "17f0dfb1458d052|Melee Ship Nav Object"
                                                 }
                                             }
                                         ]
@@ -4709,9 +4733,7 @@
                                                     "prop": "18043a2c5223712|random"
                                                 }
                                             },
-                                            {
-                                                "num": 359
-                                            }
+                                            {}
                                         ]
                                     }
                                 }
@@ -4983,6 +5005,80 @@
                                                     },
                                                     "comment": ""
                                                 },
+                                                "b": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "181e0feef4dfecb-match finalize": {
+                                                                    "base": "180438efbd3eca6|Ship Death Sequence - Finalize",
+                                                                    "init": {
+                                                                        "failable": 1,
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -3,
+                                                                                    "sub": "181bb8681e3d59b|match",
+                                                                                    "prop": "181e0f41d0a8a9c|ship death callback"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "8": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "181e0ff690faec5-": {
+                                                                    "flags": "+",
+                                                                    "extends": "180438efbd3eca6|Ship Death Sequence - Finalize",
+                                                                    "sections": {
+                                                                        "2": {
+                                                                            "flags": "+",
+                                                                            "instructions": {
+                                                                                "180aaa0804016bf|roster": {
+                                                                                    "flags": "*",
+                                                                                    "init": {
+                                                                                        "live": 1,
+                                                                                        "ops": [
+                                                                                            {
+                                                                                                "obj": {
+                                                                                                    "selector": -3
+                                                                                                }
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "181e0feef4dfecb|match finalize"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "obj": {
+                                                                            "selector": -1
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "181e0feef4dfecb|match finalize"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "comment": ""
+                                                },
                                                 "c": {
                                                     "flags": "+",
                                                     "instructions": {
@@ -5043,7 +5139,6 @@
                     }
                 },
                 "180438efbd3eca6+Ship Death Sequence - Finalize": {
-                    "flags": "+",
                     "extends": "f",
                     "sections": {
                         "2": {
@@ -5066,7 +5161,8 @@
                         }
                     }
                 },
-                "17b84bad8e929f4-Roster Event": {
+                "17b84bad8e929f4+Roster Event": {
+                    "flags": "+",
                     "extends": "10",
                     "conjurer": "17b36c0354722e6|Roster",
                     "sections": {

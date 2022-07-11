@@ -1,6 +1,7 @@
 {
     "components": {
         "17d533e22d52e62+Collider (Trigger)": {
+            "flags": "+",
             "extends": "30",
             "sections": {
                 "2": {
@@ -10,6 +11,7 @@
                             "flags": "*",
                             "base": "17d5341b07d9fc5|Collider (Trigger) - On Touch",
                             "init": {
+                                "unconjured": 1,
                                 "ops": [
                                     {
                                         "obj": {

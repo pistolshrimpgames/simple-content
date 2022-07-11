@@ -509,7 +509,7 @@
                                                         "ops": [
                                                             {
                                                                 "rot": {
-                                                                    "y": -7.00033838
+                                                                    "y": -7.00034459
                                                                 }
                                                             }
                                                         ]
@@ -643,7 +643,7 @@
                                                         "ops": [
                                                             {
                                                                 "rot": {
-                                                                    "y": 7.00034656
+                                                                    "y": 7.00035273
                                                                 }
                                                             }
                                                         ]
@@ -1500,7 +1500,7 @@
                     }
                 },
                 "17f278e86b37ac7-Blade Missile Launcher": {
-                    "extends": "17e2752b678033d|Power - Missile Launcher [NEW]",
+                    "extends": "17e2752b678033d|Power - Missile Launcher",
                     "conjurer": "33",
                     "capturer": "33",
                     "sections": {
@@ -1537,7 +1537,7 @@
                 },
                 "17f278e5e8de5ab-Blade Missile": {
                     "flags": "*",
-                    "extends": "17e27aad92e2e2c|Missile - Homing [NEW]",
+                    "extends": "17e27aad92e2e2c|Missile - Homing",
                     "conjurer": "17b3cef105ddd03|Kohr-Ah Ship Mk2",
                     "sections": {
                         "2": {
@@ -2871,7 +2871,7 @@
                 },
                 "180aafde13c1c52-Kohr-Ah FRIED Missile Launcher [NEW]": {
                     "flags": "+",
-                    "extends": "17e2752b678033d|Power - Missile Launcher [NEW]",
+                    "extends": "17e2752b678033d|Power - Missile Launcher",
                     "sections": {
                         "2": {
                             "flags": "+",
@@ -2916,7 +2916,7 @@
                 },
                 "180aafd977ca588-Kohr-Ah FRIED Missile [NEW]": {
                     "flags": "*",
-                    "extends": "17e2746e493cd33|Missile [NEW]",
+                    "extends": "17e2746e493cd33|Missile",
                     "sections": {
                         "2": {
                             "flags": "+",
@@ -3251,19 +3251,6 @@
                                             {
                                                 "obj": {
                                                     "inst": "17b3cef105ddd03|Kohr-Ah Ship Mk2"
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
-                                "17f79f0ebf18021|ship Nav Object": {
-                                    "flags": "*",
-                                    "init": {
-                                        "unconjured": 1,
-                                        "ops": [
-                                            {
-                                                "obj": {
-                                                    "inst": "17f23c76fbf1ba7|Kohr-Ah Nav"
                                                 }
                                             }
                                         ]

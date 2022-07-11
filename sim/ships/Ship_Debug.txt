@@ -2,4 +2,4 @@
 # First line above ^ indicates type of resource
 
 DIALOG_MESSAGE,Debug
-DIALOG_CHOICES,Change Ship, Change AI, Remove AI, Toggle AI Brain, Toggle Godmode, Toggle Planet, Toggle Gravity, Toggle Asteroids, Destroy Ship
+DIALOG_CHOICES,Change Ship, Change AI, Remove AI, Toggle AI Brain, Toggle Godmode, Toggle Planet, Toggle Gravity, Toggle Asteroids, Destroy Ship, Start Match

@@ -85,54 +85,6 @@
                                         ]
                                     }
                                 },
-                                "180766aff22ca59+UQM facing amount": {
-                                    "base": "65",
-                                    "init": {
-                                        "bind": "/",
-                                        "ops": [
-                                            {
-                                                "num": 360
-                                            },
-                                            {
-                                                "num": 16
-                                            }
-                                        ]
-                                    }
-                                },
-                                "17ca4ab0a97876d+jiffies per frame": {
-                                    "base": "65",
-                                    "init": {
-                                        "bind": "/",
-                                        "ops": [
-                                            {
-                                                "obj": {
-                                                    "prop": "17ca4ab0a91e7c0|60th of a sec"
-                                                }
-                                            },
-                                            {
-                                                "obj": {
-                                                    "prop": "17ca4ab0a969e0b|UQM frame time"
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
-                                "180768983fae3fa+minimum turn rate": {
-                                    "base": "65",
-                                    "init": {
-                                        "bind": "*",
-                                        "ops": [
-                                            {
-                                                "num": 8
-                                            },
-                                            {
-                                                "obj": {
-                                                    "prop": "17ca4ab0a93597e|thrust unit"
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
                                 "180710f9d1f971f+minimum thrust increment": {
                                     "base": "65",
                                     "init": {
@@ -172,18 +124,6 @@
                                             {
                                                 "obj": {
                                                     "prop": "17ca4ab0a93597e|thrust unit"
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
-                                "180769b6269639a+turn rate at 0 wait": {
-                                    "base": "65",
-                                    "init": {
-                                        "ops": [
-                                            {
-                                                "obj": {
-                                                    "prop": "17ca4ab0a9254ef|max turn rate"
                                                 }
                                             }
                                         ]

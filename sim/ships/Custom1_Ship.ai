@@ -1,0 +1,1194 @@
+{
+    "components": {
+        "181b0af4cea5825-Custom 1 Ship": {
+            "flags": "+*",
+            "extends": "1809b62dc7cafa3|Melee Ship",
+            "sections": {
+                "2": {
+                    "instructions": {
+                        "17ca561b513fd12|thruster": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "captured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "181b0af4ced7919|Custom 1 Thruster"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17e55a44b4fdf3d|turning": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "captured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "181b0af4cee9e66|Custom 1 Turning"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17bc6f246957acc|energy": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "captured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "181b0af4cef6d14|Custom 1 Energy"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17e6f61ccca5823|weapons": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "captured": 1,
+                                "bind": "+",
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "181b0af4cf0b225|Custom 1 Primary Weapon"
+                                        }
+                                    },
+                                    {
+                                        "obj": {
+                                            "inst": "181b0af4cf73923|Custom 1 Ship Secondary Weapon"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "11": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 16
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "3": {
+                    "flags": "+",
+                    "instructions": {
+                        "b": {
+                            "flags": "+",
+                            "instructions": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "181b0ddebdd74b3-general offset": {
+                                            "base": "66",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "vec": {
+                                                            "z": 0.19999999
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "181b0ddebdefec3-": {
+                                    "extends": "180905f06626b7d|Melee Ship Collider",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "vec": {}
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "181b0ddebdd74b3|general offset"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "32": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "rot": {
+                                                                    "x": 90.00000028
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "181b0ddebdff919-": {
+                                                    "flags": "+",
+                                                    "extends": "40",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "4b": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "num": 0.19999999
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "4c": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "num": 1.39999999
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "40"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "prop": "48"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180905f06626b7d|Melee Ship Collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                },
+                                "181b0ddebe09d8a-": {
+                                    "extends": "180905f06626b7d|Melee Ship Collider",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "vec": {
+                                                                    "z": 1
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "181b0ddebdd74b3|general offset"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "181b0ddebe1b666-": {
+                                                    "flags": "+",
+                                                    "extends": "42",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "47": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {
+                                                                                    "x": 0.057,
+                                                                                    "y": 0.19999999,
+                                                                                    "z": 0.19999999
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "42"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "prop": "48"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180905f06626b7d|Melee Ship Collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                },
+                                "181b0ddebe2770b-": {
+                                    "extends": "180905f06626b7d|Melee Ship Collider",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "vec": {
+                                                                    "x": -0.3,
+                                                                    "z": -0.64999999
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "181b0ddebdd74b3|general offset"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "32": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "rot": {
+                                                                    "y": 45.0014372
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "181b0ddebe37a9b-": {
+                                                    "flags": "+",
+                                                    "extends": "42",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "47": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {
+                                                                                    "x": 0.28599999,
+                                                                                    "y": 0.19999999,
+                                                                                    "z": 0.57099999
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "42"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "prop": "48"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180905f06626b7d|Melee Ship Collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                },
+                                "181b0ddebe4ced3-": {
+                                    "extends": "180905f06626b7d|Melee Ship Collider",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "vec": {
+                                                                    "x": 0.3,
+                                                                    "z": -0.64999999
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "181b0ddebdd74b3|general offset"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "32": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "rot": {
+                                                                    "y": -45.00143828
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "181b0ddebe5c37a-": {
+                                                    "flags": "+",
+                                                    "extends": "42",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "47": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {
+                                                                                    "x": 0.28599999,
+                                                                                    "y": 0.19999999,
+                                                                                    "z": 0.57099999
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "42"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "prop": "48"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180905f06626b7d|Melee Ship Collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                },
+                                "181b0ddebe616da-": {
+                                    "extends": "180905f06626b7d|Melee Ship Collider",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "vec": {
+                                                                    "x": -0.44999999,
+                                                                    "z": -0.69999999
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "181b0ddebdd74b3|general offset"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "181b0ddebe7bc6d-": {
+                                                    "flags": "+",
+                                                    "extends": "42",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "47": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {
+                                                                                    "x": 0.057,
+                                                                                    "y": 0.3,
+                                                                                    "z": 0.69999999
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "42"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "prop": "48"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180905f06626b7d|Melee Ship Collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                },
+                                "181b0ddebe8cc49-": {
+                                    "extends": "180905f06626b7d|Melee Ship Collider",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "vec": {
+                                                                    "x": 0.44999999,
+                                                                    "z": -0.69999999
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "181b0ddebdd74b3|general offset"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "181b0ddebe9d717-": {
+                                                    "flags": "+",
+                                                    "extends": "42",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "47": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {
+                                                                                    "x": 0.057,
+                                                                                    "y": 0.3,
+                                                                                    "z": 0.69999999
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "42"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "prop": "48"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180905f06626b7d|Melee Ship Collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                }
+                            },
+                            "comment": "Syreen Colliders"
+                        }
+                    }
+                }
+            }
+        },
+        "181b0af4ced7919-Custom 1 Thruster": {
+            "extends": "17ca55e868b0fde|Ship Thruster"
+        },
+        "181b0af4cee9e66-Custom 1 Turning": {
+            "extends": "17e599b53e2088e|Ship Turning"
+        },
+        "181b0af4cef6d14-Custom 1 Energy": {
+            "extends": "17e6ffef4e23be2|Ship Energy (Regenerating)"
+        },
+        "b": {
+            "flags": "*",
+            "instructions": {
+                "181b0af4cf0b225-Custom 1 Primary Weapon": {
+                    "extends": "17bc803e92b22e6|Ship Weapon",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17bc80762a55f44|firing trigger": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "captured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "181b0af4cf167f4|Custom 1 Primary Weapon Trigger"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc803e92d90d1|energy cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 2
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc803e92eb4b3|powers": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "181b0af4cf25a77|Custom 1 Missile Launcher"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "181b0af4cf167f4-Custom 1 Primary Weapon Trigger": {
+                    "extends": "17c3d060d7cd3c2|Ship Weapon Trigger - Continuous",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17c3d060d7de788|reload time": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 6
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "181b0af4cf25a77-Custom 1 Missile Launcher": {
+                    "extends": "17e2752b678033d|Power - Missile Launcher",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e2752b6796ace|launch missile": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "181b0af4cf30adf|Custom 1 Missile"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e27573233e1af|create trigger": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "181b0af4cf4f765|Custom 1 Missile - Collider"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "31": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "vec": {
+                                                    "z": 1.75
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "181b0af4cf30adf-Custom 1 Missile": {
+                    "flags": "*",
+                    "extends": "17e2746e493cd33|Missile",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e2746e4984461|lifespan": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 120
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "176ee76b43b1735|Melee Simulation",
+                                                    "prop": "1785ad77fd724f3|60th of a sec"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e2746e4995183|speed": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 12
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "176ee76b43b1735|Melee Simulation",
+                                                    "prop": "1786b00e6d2144f|thrust unit"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "181b0af4cf4f765-Custom 1 Missile - Collider": {
+                    "extends": "17e0d221074de3c|Collider (Combat Trigger)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e0d23390303c9|interactions": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "181b0af4cf53a38|Custom 1 Missile - Interaction"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "48": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "181b0af4cf60d63|Custom 1 Missile - Shape"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "181b0af4cf53a38-Custom 1 Missile - Interaction": {
+                    "instances": "17e0d5dbb3550da|Combat Trigger Interaction [Hit Combatant] (Damage)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e0d5dea4592c6|damage": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 4
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e078420bbd49d|die on hit": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "181b0af4cf60d63-Custom 1 Missile - Shape": {
+                    "instances": "42",
+                    "conjurer": "fffffffffffffffe|unconjured",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "47": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "vec": {
+                                                    "x": 0.14999999,
+                                                    "y": 0.14999999,
+                                                    "z": 0.85
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "primary (example missile)"
+        },
+        "b": {
+            "flags": "*",
+            "instructions": {
+                "181b0af4cf73923-Custom 1 Ship Secondary Weapon": {
+                    "extends": "17bc803e92b22e6|Ship Weapon",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17bc803e92ff381|_button component": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "captured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17bc7aebb3e7466|Ship Weapon Button - Secondary"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc80762a55f44|firing trigger": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "captured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "181b0af4cf8f3b7|Custom 1 Ship Secondary Weapon Trigger"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "181b0af4cf8f3b7-Custom 1 Ship Secondary Weapon Trigger": {
+                    "flags": "+",
+                    "extends": "17c3d060d7cd3c2|Ship Weapon Trigger - Continuous"
+                }
+            },
+            "comment": "secondary"
+        },
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "181b0b3a0436423-Alien Definition (Custom 1)": {
+                    "flags": "+",
+                    "instances": "181b0e7a5909a3d|Alien Definition [Sideloaded]",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "181b0af4cf9d3c4|Custom 1 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 42
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17cf16fbf1575d8|id": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 24
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "aliens"
+        },
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "181b0af4cf9d3c4+Custom 1 Melee Navigation Agent": {
+                    "flags": "+",
+                    "extends": "178f5460f98876a|Roster Ship",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17f50ea4a91529c|alien": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "181b0b3a0436423|Alien Definition (Custom 1)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "178f5460f98a7e8|ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "181b0af4cea5825|Custom 1 Ship"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "nav"
+        }
+    }
+}

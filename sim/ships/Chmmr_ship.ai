@@ -1,7 +1,7 @@
 {
     "components": {
         "17eef65275790af-Chmmr Ship": {
-            "flags": "+*",
+            "flags": "*",
             "extends": "1809b62dc7cafa3|Melee Ship",
             "sections": {
                 "2": {
@@ -322,9 +322,10 @@
                                                                 ]
                                                             }
                                                         },
-                                                        "1803ef0dc75c6e2-game/sim/ships/chmmr/collision/chmmr_fuselage_mid.obj": {
+                                                        "1803ef0dc75c6e2-": {
                                                             "flags": "+",
                                                             "extends": "43",
+                                                            "path": "game/sim/ships/chmmr/collision/chmmr_fuselage_mid.obj",
                                                             "sections": {
                                                                 "2": {
                                                                     "flags": "+",
@@ -456,9 +457,10 @@
                                                                 ]
                                                             }
                                                         },
-                                                        "1803f0d39b5b341-game/sim/ships/chmmr/collision/chmmr_fuselage_left.obj": {
+                                                        "1803f0d39b5b341-": {
                                                             "flags": "+",
                                                             "extends": "43",
+                                                            "path": "game/sim/ships/chmmr/collision/chmmr_fuselage_left.obj",
                                                             "sections": {
                                                                 "2": {
                                                                     "flags": "+",
@@ -590,9 +592,10 @@
                                                                 ]
                                                             }
                                                         },
-                                                        "1803f0f7189af09-game/sim/ships/chmmr/collision/chmmr_wing_left.obj": {
+                                                        "1803f0f7189af09-": {
                                                             "flags": "+",
                                                             "extends": "43",
+                                                            "path": "game/sim/ships/chmmr/collision/chmmr_wing_left.obj",
                                                             "sections": {
                                                                 "2": {
                                                                     "flags": "+",
@@ -724,9 +727,10 @@
                                                                 ]
                                                             }
                                                         },
-                                                        "1803f1ca39c0b90-game/sim/ships/chmmr/collision/chmmr_pod_left.obj": {
+                                                        "1803f1ca39c0b90-": {
                                                             "flags": "+",
                                                             "extends": "43",
+                                                            "path": "game/sim/ships/chmmr/collision/chmmr_pod_left.obj",
                                                             "sections": {
                                                                 "2": {
                                                                     "flags": "+",
@@ -858,9 +862,10 @@
                                                                 ]
                                                             }
                                                         },
-                                                        "1803f1091a349fc-game/sim/ships/chmmr/collision/chmmr_fuselage_right.obj": {
+                                                        "1803f1091a349fc-": {
                                                             "flags": "+",
                                                             "extends": "43",
+                                                            "path": "game/sim/ships/chmmr/collision/chmmr_fuselage_right.obj",
                                                             "sections": {
                                                                 "2": {
                                                                     "flags": "+",
@@ -992,9 +997,10 @@
                                                                 ]
                                                             }
                                                         },
-                                                        "1803f1f4174824f-game/sim/ships/chmmr/collision/chmmr_wing_right.obj": {
+                                                        "1803f1f4174824f-": {
                                                             "flags": "+",
                                                             "extends": "43",
+                                                            "path": "game/sim/ships/chmmr/collision/chmmr_wing_right.obj",
                                                             "sections": {
                                                                 "2": {
                                                                     "flags": "+",
@@ -1126,9 +1132,10 @@
                                                                 ]
                                                             }
                                                         },
-                                                        "1803f1ff8d78bf1-game/sim/ships/chmmr/collision/chmmr_pod_right.obj": {
+                                                        "1803f1ff8d78bf1-": {
                                                             "flags": "+",
                                                             "extends": "43",
+                                                            "path": "game/sim/ships/chmmr/collision/chmmr_pod_right.obj",
                                                             "sections": {
                                                                 "2": {
                                                                     "flags": "+",
@@ -1707,7 +1714,7 @@
                                                                 "ops": [
                                                                     {
                                                                         "rot": {
-                                                                            "y": 50.0009094
+                                                                            "y": 50.00096632
                                                                         }
                                                                     }
                                                                 ]
@@ -1825,7 +1832,7 @@
                                                                 "ops": [
                                                                     {
                                                                         "rot": {
-                                                                            "y": 40.00070748
+                                                                            "y": 40.00075171
                                                                         }
                                                                     }
                                                                 ]
@@ -2579,7 +2586,7 @@
                                                         "ops": [
                                                             {
                                                                 "rot": {
-                                                                    "y": 45.00384256
+                                                                    "y": 45.00389349
                                                                 }
                                                             }
                                                         ]
@@ -2713,7 +2720,7 @@
                                                         "ops": [
                                                             {
                                                                 "rot": {
-                                                                    "y": 45.00384256
+                                                                    "y": 45.00389349
                                                                 }
                                                             }
                                                         ]
@@ -3232,7 +3239,7 @@
                                                         "ops": [
                                                             {
                                                                 "rot": {
-                                                                    "y": 45.00384256
+                                                                    "y": 45.00389349
                                                                 }
                                                             }
                                                         ]
@@ -3366,7 +3373,7 @@
                                                         "ops": [
                                                             {
                                                                 "rot": {
-                                                                    "y": 45.00384256
+                                                                    "y": 45.00389349
                                                                 }
                                                             }
                                                         ]
@@ -4216,7 +4223,6 @@
             "flags": "+*",
             "instructions": {
                 "178a939eb457acf-ZapSat Body Point": {
-                    "flags": "+",
                     "extends": "8f",
                     "conjurer": "17eef65275790af|Chmmr Ship",
                     "sections": {
@@ -5155,7 +5161,6 @@
                     }
                 },
                 "17ef0395392a3a1-ZapSat Collider (Fire Trigger)": {
-                    "flags": "+",
                     "extends": "17e0d221074de3c|Collider (Combat Trigger)",
                     "conjurer": "17f08ccb1be6888|ZapSat Fire Trigger Collision Body",
                     "sections": {
@@ -5293,7 +5298,6 @@
                     }
                 },
                 "17ef0438e9296ea-ZapSat Fire Trigger Interaction [Hit Combatant]": {
-                    "flags": "+",
                     "extends": "17f040d5bed42f5|Combat Trigger Interaction [Hit Combatant]",
                     "sections": {
                         "2": {
@@ -5332,7 +5336,6 @@
                     }
                 },
                 "17f0a027268cf14-ZapSat Fire Trigger Interaction [Hit Trigger]": {
-                    "flags": "+",
                     "extends": "17f040da472b5f9|Combat Trigger Interaction [Hit Trigger]",
                     "sections": {
                         "2": {
@@ -5380,7 +5383,6 @@
                     }
                 },
                 "1809092f965eb8c-ZapSat Trigger Filter Test": {
-                    "flags": "+",
                     "extends": "17e07f317f3a977|Combat Trigger Filter Test",
                     "sections": {
                         "3": {
@@ -5416,6 +5418,7 @@
                             "flags": "+",
                             "instructions": {
                                 "1809a9739e6942e-other c": {
+                                    "flags": "*",
                                     "base": "30",
                                     "init": {
                                         "ops": [
@@ -5429,6 +5432,7 @@
                                     }
                                 },
                                 "1809a970f1f204c-other cb": {
+                                    "flags": "*",
                                     "base": "33",
                                     "init": {
                                         "ops": [

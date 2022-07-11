@@ -1,7 +1,7 @@
 {
     "components": {
         "b": {
-            "flags": "+*",
+            "flags": "*",
             "instructions": {
                 "17c5657124b693d+Combat System": {
                     "flags": "*",
@@ -985,6 +985,7 @@
             "flags": "*",
             "instructions": {
                 "17c61c499ab6212+Combatant": {
+                    "flags": "+",
                     "instances": "10",
                     "conjurer": "17818c5353f36cf|Targetable (Rigid Body)",
                     "capturer": "33",
@@ -1181,6 +1182,7 @@
                                     "base": "17b1cf1834dd8d9|Team",
                                     "init": {
                                         "needed": 1,
+                                        "conjured": 1,
                                         "ops": [
                                             {
                                                 "obj": {
@@ -1218,7 +1220,6 @@
                                     "comment": "(DEBUG) New combatant"
                                 },
                                 "8": {
-                                    "flags": "+",
                                     "instructions": {
                                         "b": {
                                             "flags": "p+",
@@ -1463,6 +1464,23 @@
                                             }
                                         ]
                                     }
+                                },
+                                "9": {
+                                    "flags": "td",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "59"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "59"
+                                                }
+                                            }
+                                        ]
+                                    }
                                 }
                             }
                         }
@@ -1555,7 +1573,7 @@
             "comment": "combat -> combatant"
         },
         "b": {
-            "flags": "*",
+            "flags": "+*",
             "instructions": {
                 "17d3038b10778bb-Simulation Team": {
                     "extends": "17b1cf1834dd8d9|Team",
@@ -1589,6 +1607,7 @@
                     }
                 },
                 "17b1cf1834dd8d9+Team": {
+                    "flags": "+",
                     "extends": "10",
                     "sections": {
                         "2": {
@@ -1783,10 +1802,10 @@
                             }
                         },
                         "5": {
-                            "flags": "+",
+                            "flags": "d+",
                             "instructions": {
                                 "b": {
-                                    "flags": "d+",
+                                    "flags": "+",
                                     "instructions": {
                                         "9": {
                                             "flags": "t",
@@ -2644,7 +2663,7 @@
             "comment": "combat -> team"
         },
         "b": {
-            "flags": "*",
+            "flags": "+*",
             "instructions": {
                 "180244c48b4f3d2+Filter Targetable Objects": {
                     "extends": "f",
@@ -3178,12 +3197,14 @@
                     }
                 },
                 "17b40bc09997a36+Targeting Scheme - Range Enemy": {
+                    "flags": "+",
                     "extends": "17b380a9bead31f|Targeting Scheme - Range",
                     "sections": {
                         "2": {
                             "flags": "+",
                             "instructions": {
                                 "17b40c846b1d330+targets": {
+                                    "flags": "*",
                                     "base": "33",
                                     "init": {
                                         "set": 1,
@@ -3979,6 +4000,7 @@
                     }
                 },
                 "17b08ca6b93daf4+Targeting - Get Nearest Enemy": {
+                    "flags": "+",
                     "extends": "17b40bc09997a36|Targeting Scheme - Range Enemy",
                     "sections": {
                         "2": {
@@ -4072,7 +4094,6 @@
                                                                     "flags": "+",
                                                                     "instructions": {
                                                                         "9": {
-                                                                            "flags": "p",
                                                                             "LHS": {
                                                                                 "obj": {
                                                                                     "selector": -2,
