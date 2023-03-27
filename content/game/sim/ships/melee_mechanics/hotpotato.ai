@@ -1,0 +1,1914 @@
+{
+    "components": {
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "185121c34f9b864-Hot Potato (base)": {
+                    "flags": "*",
+                    "extends": "3b",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "185123832d3dc7c-impulse on hit": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 4
+                                            }
+                                        ]
+                                    }
+                                },
+                                "185124578800447-angular impulse on hit": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 10
+                                            }
+                                        ]
+                                    }
+                                },
+                                "185122685229be2-use countdown time": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 5
+                                            }
+                                        ]
+                                    }
+                                },
+                                "185121c644906d6+countdown timer": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "1851231b27200eb-hot potato time until explosion": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 100
+                                            }
+                                        ]
+                                    }
+                                },
+                                "37": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": "2|9859991d|4ccba341"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "35": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 2
+                                            }
+                                        ]
+                                    }
+                                },
+                                "49": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "18512202cfa9e10|Hot Potato Collider"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "11"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": ">=",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "4"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "185121c644906d6|countdown timer"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "1851231b27200eb|hot potato time until explosion"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "-",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "185121c644906d6|countdown timer"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "4"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "185121c644906d6|countdown timer"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "18512520ba38a6c+Hot Potato": {
+                    "flags": "+*",
+                    "extends": "185121c34f9b864|Hot Potato (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "185126d613b6fc3-spawned fragments": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "4": {
+                            "flags": "+",
+                            "instructions": {
+                                "185122bbf7d684a-": {
+                                    "flags": "d",
+                                    "extends": "1851228f3a894d5|Explosion Missile Launcher",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "17ca3b9a30fe92c|creator team": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "ui-": "185121d301bb6ef|Combatant (Hot Potato)",
+                                                                    "prop": "17c61c750184638|team"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "1851228f3a894d5|Explosion Missile Launcher"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "14",
+                                            "tupleOffs": 1
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "14",
+                                            "tupleOffs": 3
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "contextValue": -1,
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "185126d613b6fc3|spawned fragments"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "185126d613b6fc3|spawned fragments"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "l+",
+                                            "instructions": {
+                                                "b": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "1851253ce8b2d09-o": {
+                                                                    "base": "67",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "rot": {}
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "185125c436a3b6b-offset vec": {
+                                                                    "base": "66",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {}
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "185125c94b3be30-offset dist": {
+                                                                    "base": "65",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "num": 1.5
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "185125d028a69d3-spawn pos": {
+                                                                    "base": "66",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {}
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "1851253ce8b2d09|o",
+                                                                    "tupleOffs": 2
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "*",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "1"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "num": 90
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "1851253ce8b2d09|o",
+                                                                    "tupleOffs": 2
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "1851253ce8b2d09|o",
+                                                                            "tupleOffs": 2
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "num": 45
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "flags": "p",
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "185125c436a3b6b|offset vec"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "*",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "1851253ce8b2d09|o",
+                                                                            "tupleOffs": 6
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "185125c94b3be30|offset dist"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "1851253ce8b2d09|o",
+                                                                    "tupleOffs": 2
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "1851253ce8b2d09|o",
+                                                                            "tupleOffs": 2
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "14",
+                                                                            "tupleOffs": 2
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "185125bc29325ab-": {
+                                                            "flags": "+",
+                                                            "extends": "8f",
+                                                            "sections": {
+                                                                "2": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "31": {
+                                                                            "flags": "*",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "selector": -2,
+                                                                                            "prop": "185125c436a3b6b|offset vec"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "3": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "9": {
+                                                                            "flags": "p",
+                                                                            "LHS": {
+                                                                                "obj": {
+                                                                                    "selector": -2,
+                                                                                    "prop": "185125d028a69d3|spawn pos"
+                                                                                }
+                                                                            },
+                                                                            "RHS": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "prop": "91"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "inst": "8f"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "obj": {
+                                                                    "selector": -1
+                                                                }
+                                                            }
+                                                        },
+                                                        "18512547714a763-": {
+                                                            "flags": "+*",
+                                                            "extends": "1851250f00b452b|Hot Potato Fragment",
+                                                            "sections": {
+                                                                "2": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "13": {
+                                                                            "flags": "*",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "selector": -2,
+                                                                                            "prop": "185125d028a69d3|spawn pos"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "14": {
+                                                                            "flags": "*",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "selector": -2,
+                                                                                            "prop": "1851253ce8b2d09|o"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "inst": "1851250f00b452b|Hot Potato Fragment"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "obj": {
+                                                                    "selector": -1
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "comment": ""
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 4
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "<=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1851250f00b452b-Hot Potato Fragment": {
+                    "flags": "+*",
+                    "extends": "185121c34f9b864|Hot Potato (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1851256935bb5a7-initial impulse": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 16
+                                            }
+                                        ]
+                                    }
+                                },
+                                "185126e22e3d4d8-did death": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "185122685229be2|use countdown time": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "185121c644906d6|countdown timer": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "+",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "4"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "185122685229be2|use countdown time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "49": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1851251368b389d|Hot Potato Fragment Collider"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "16": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "14",
+                                                    "tupleOffs": 6
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "1851256935bb5a7|initial impulse"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "contextValue": -1,
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "185126e22e3d4d8|did death"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "185126e22e3d4d8|did death"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "185126e89a10994-": {
+                                            "flags": "+",
+                                            "extends": "1851228f3a894d5|Explosion Missile Launcher",
+                                            "sections": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "17ca3b9a30fe92c|creator team": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "ui-": "185121d301bb6ef|Combatant (Hot Potato)",
+                                                                            "prop": "17c61c750184638|team"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "inst": "1851228f3a894d5|Explosion Missile Launcher"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "<=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "18512202cfa9e10-Hot Potato Collider": {
+                    "flags": "+",
+                    "extends": "30",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "5c": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "5e": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "48": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "18512208bac09f2|Hot Potato Shape"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8b": {
+                                    "flags": "*",
+                                    "init": {
+                                        "flags": 1,
+                                        "ops": [
+                                            {
+                                                "num": "15|0|80000000d506ad83"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "6c": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "185124a6a9381d8|Hot Potato Contact"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "90": {
+                                    "override": "185121c34f9b864|Hot Potato (base)",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "c": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "selector": 1,
+                                                                    "prop": "185121c644906d6|countdown timer"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "4"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": 1,
+                                                                            "prop": "185122685229be2|use countdown time"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "90"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "func": "NOT",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "sub": "90",
+                                                            "prop": "185121c644906d6|countdown timer"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "5b"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1851251368b389d-Hot Potato Fragment Collider": {
+                    "flags": "+",
+                    "extends": "18512202cfa9e10|Hot Potato Collider",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "48": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "185125a8a11bf75|Hot Potato Fragment Shape"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "32": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "rot": {
+                                                    "y": -45
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "185124a6a9381d8-Hot Potato Contact": {
+                    "extends": "56",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "11": {
+                                    "flags": "+*",
+                                    "init": {
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "b": {
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "185124b53947645-ship": {
+                                                            "base": "17aca96282d0115|Ship",
+                                                            "init": {
+                                                                "failable": 1,
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "1e",
+                                                                            "prop": "90"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "8": {
+                                                    "flags": "+",
+                                                    "contextValue": -2,
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "num": 1
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "185124b53947645|ship"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": "Ship"
+                                        },
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "185124bb238739e-hot potato": {
+                                                            "base": "185121c34f9b864|Hot Potato (base)",
+                                                            "init": {
+                                                                "failable": 1,
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "1e",
+                                                                            "prop": "90"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "8": {
+                                                    "flags": "+",
+                                                    "contextValue": -256,
+                                                    "instructions": {
+                                                        "8": {
+                                                            "flags": "+",
+                                                            "contextValue": -3,
+                                                            "instructions": {
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "num": 1
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "185124bb238739e|hot potato",
+                                                                            "prop": "185121c644906d6|countdown timer"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "185124bb238739e|hot potato"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": "Other Hot Potato"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "18512208bac09f2-Hot Potato Shape": {
+                    "extends": "42",
+                    "conjurer": "fffffffffffffffe|unconjured",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "47": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "vec": {
+                                                    "x": 3,
+                                                    "y": 1,
+                                                    "z": 3
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "185125a8a11bf75-Hot Potato Fragment Shape": {
+                    "flags": "+",
+                    "extends": "42",
+                    "conjurer": "fffffffffffffffe|unconjured",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "47": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "vec": {
+                                                    "x": 1.5,
+                                                    "y": 1,
+                                                    "z": 1.5
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "185121d301bb6ef-Combatant (Hot Potato)": {
+                    "instances": "17c61c499ab6212|Combatant",
+                    "conjurer": "185121c34f9b864|Hot Potato (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "180244bb01cc63d|targetable": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "17d3987f79e2e1b|owner": {
+                                    "override": "185121c34f9b864|Hot Potato (base)",
+                                    "init": {
+                                        "live": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d5da2613dc647|conjure on being hit": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1851223a6ac6299|Hot Potato Conjure on Hit"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17c75d44e5e8ec5|ignore types": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17c764ea72845ee|Effect"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17c61c750184638|team": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17c5657124b693d|Combat System",
+                                                    "prop": "17c566290645e16|simulation team"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1851223a6ac6299-Hot Potato Conjure on Hit": {
+                    "extends": "17ca8e5b9710c4d|Combat Trigger Interaction Conjure on Hit",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1851225e4f40e10-hot potato": {
+                                    "base": "185121c34f9b864|Hot Potato (base)",
+                                    "init": {
+                                        "live": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "sub": "17ca900b78936f3|combatant hit",
+                                                    "prop": "17d3987f79e2e1b|owner"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ca900b78936f3|combatant hit": {
+                                    "override": "185121d301bb6ef|Combatant (Hot Potato)",
+                                    "init": {
+                                        "live": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "sub": "1851225e4f40e10|hot potato",
+                                                    "prop": "185121c644906d6|countdown timer"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "4"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "sub": "1851225e4f40e10|hot potato",
+                                                            "prop": "185122685229be2|use countdown time"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "func": "NOT",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "sub": "1851225e4f40e10|hot potato",
+                                                    "prop": "185121c644906d6|countdown timer"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "1851238f6b21f1c-v": {
+                                                    "base": "66",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "vec": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "1851238f6b21f1c|v"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "sub": "17ca8e60961b023|contact",
+                                                            "prop": "14",
+                                                            "tupleOffs": 5
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "sub": "1851225e4f40e10|hot potato",
+                                                            "prop": "185123832d3dc7c|impulse on hit"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "sub": "1851225e4f40e10|hot potato",
+                                                    "prop": "16"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "-",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "sub": "1851225e4f40e10|hot potato",
+                                                            "prop": "16"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "1851238f6b21f1c|v"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "sub": "1851225e4f40e10|hot potato",
+                                                    "prop": "17",
+                                                    "tupleOffs": 2
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "-",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "sub": "1851225e4f40e10|hot potato",
+                                                            "prop": "17",
+                                                            "tupleOffs": 2
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "sub": "1851225e4f40e10|hot potato",
+                                                            "prop": "185124578800447|angular impulse on hit"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "18512419e936060-": {
+                                            "flags": "d",
+                                            "extends": "8f",
+                                            "sections": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "90": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "1851225e4f40e10|hot potato"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "91": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "sub": "17ca8e60961b023|contact",
+                                                                            "prop": "13"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "3": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "8": {
+                                                            "flags": "d+",
+                                                            "contextValue": -1,
+                                                            "instructions": {
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "sub": "1851225e4f40e10|hot potato",
+                                                                            "prop": "17",
+                                                                            "tupleOffs": 2
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "bind": "+",
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -2,
+                                                                                    "sub": "1851225e4f40e10|hot potato",
+                                                                                    "prop": "17",
+                                                                                    "tupleOffs": 2
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "num": 10
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": ">=",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "31",
+                                                                            "tupleOffs": 1
+                                                                        }
+                                                                    },
+                                                                    {}
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "sub": "1851225e4f40e10|hot potato",
+                                                                    "prop": "17",
+                                                                    "tupleOffs": 2
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "-",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "sub": "1851225e4f40e10|hot potato",
+                                                                            "prop": "17",
+                                                                            "tupleOffs": 2
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "num": 10
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "inst": "8f"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "comment": "Add impulse"
+                                }
+                            }
+                        }
+                    }
+                },
+                "b": {
+                    "flags": "+*",
+                    "instructions": {
+                        "1851228f3a894d5-Explosion Missile Launcher": {
+                            "flags": "+",
+                            "extends": "17e2752b678033d|Power - Missile Launcher",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "17e2752b6796ace|launch missile": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "1851228f3a9fd11|Explosion Missile"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "17e27573233e1af|create trigger": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "182414568502e5e|ship weapon": {
+                                            "flags": "*",
+                                            "init": {
+                                                "failable": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "32": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "rot": {
+                                                            "y": 45
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "1851228f3a9fd11-Explosion Missile": {
+                            "flags": "+*",
+                            "extends": "17e2746e493cd33|Missile",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "17e2746e4984461|lifespan FOR A MISSILE": {
+                                            "flags": "*",
+                                            "init": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "num": 6
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "inst": "17ca4ab5732f61d|Ship Constants",
+                                                            "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "1821d172476b2ee|missile hijacked": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "num": -1
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "49": {
+                                            "flags": "*",
+                                            "init": {
+                                                "set": 1,
+                                                "needed": 1,
+                                                "conjured": 1,
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "1851275c4b12e10|Explosion Collider"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "inst": "1851276bf13e4aa|Explosion Collider (Xaxis)"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "1851228f3aa8945-Explosion Collider (OLD)": {
+                            "extends": "17e0d221074de3c|Collider (Combat Trigger)",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "17e0d23390303c9|interactions": {
+                                            "flags": "*",
+                                            "init": {
+                                                "set": 1,
+                                                "needed": 1,
+                                                "conjured": 1,
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "1851228f3abf66b|Explosion Missile Interaction [Hit Combatant]"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "inst": "17f042da9673f0e|Combat Trigger Interaction [Hit Trigger] (Damage)"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "48": {
+                                            "flags": "*",
+                                            "init": {
+                                                "needed": 1,
+                                                "conjured": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "1851228f3aca213|Explosion Missile Shape"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "1851275c4b12e10-Explosion Collider": {
+                            "flags": "+",
+                            "extends": "17e0d221074de3c|Collider (Combat Trigger)",
+                            "conjurer": "1851228f3a9fd11|Explosion Missile",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "17e0d23390303c9|interactions": {
+                                            "flags": "*",
+                                            "init": {
+                                                "set": 1,
+                                                "needed": 1,
+                                                "conjured": 1,
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "1851228f3abf66b|Explosion Missile Interaction [Hit Combatant]"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "inst": "17f042da9673f0e|Combat Trigger Interaction [Hit Trigger] (Damage)"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "17e0d420f2105c6|team": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "sub": "17e2746e49abf33|launcher",
+                                                            "prop": "17ca3b9a30fe92c|creator team"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "48": {
+                                            "flags": "*",
+                                            "init": {
+                                                "needed": 1,
+                                                "conjured": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "1851275312c1eee|Explosion Missile Box"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "1851276bf13e4aa-Explosion Collider (Xaxis)": {
+                            "extends": "1851275c4b12e10|Explosion Collider",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "32": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "rot": {
+                                                            "y": 90
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "1851228f3abf66b-Explosion Missile Interaction [Hit Combatant]": {
+                            "extends": "17e0d5dbb3550da|Combat Trigger Interaction [Hit Combatant] (Damage)",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "17e0d5dea4592c6|damage": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "num": 16
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "17e07b2831fb891|filter": {
+                                            "flags": "*",
+                                            "init": {
+                                                "needed": 1,
+                                                "conjured": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "185126fd855e6e6|Explosion Missile Filter"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "17e078420bbd49d|die on hit": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "185126fd855e6e6-Explosion Missile Filter": {
+                            "flags": "+",
+                            "extends": "17e07b18e2e31d8|Combat Trigger Filter",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "17e07b18e30eba1|hits allies": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "1851275312c1eee-Explosion Missile Box": {
+                            "flags": "+",
+                            "extends": "42",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "47": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "vec": {
+                                                            "x": 1.25,
+                                                            "y": 0.5,
+                                                            "z": 1.25
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "5": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "47",
+                                                    "tupleOffs": 3
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "47",
+                                                            "tupleOffs": 3
+                                                        }
+                                                    },
+                                                    {
+                                                        "num": 0.8
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "1851228f3aca213-Explosion Missile Shape": {
+                            "extends": "3f",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "4a": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "num": 2
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "5": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "4a"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "4a"
+                                                        }
+                                                    },
+                                                    {
+                                                        "num": 0.1
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "comment": "hot potato explosion"
+                }
+            },
+            "comment": "melee mechanics"
+        }
+    }
+}

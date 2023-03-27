@@ -1,0 +1,10 @@
+{
+    "scripts": [
+        "game/sim/Test/example_sidescroller/killplane.ai",
+        "game/sim/Test/example_sidescroller/player.ai",
+        "game/sim/Test/example_sidescroller_pvp/bootstrap.ai",
+        "game/sim/Test/example_sidescroller_pvp/example_sidescroller_pvp.ai",
+        "game/sim/Test/example_sidescroller_pvp/pvp_killplane.ai",
+        "game/sim/Test/example_sidescroller_pvp/pvp_player.ai"
+    ]
+}

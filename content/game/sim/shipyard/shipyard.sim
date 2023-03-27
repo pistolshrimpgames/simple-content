@@ -1,0 +1,13 @@
+{
+    "scripts": [
+        "game/sim/shared/adventure/minerals.ai",
+        "game/sim/shared/combat/combat_system.ai",
+        "game/sim/shared/market.ai",
+        "game/sim/shared/simulation_transit_melee.ai",
+        "game/sim/ships/melee_constants.ai",
+        "game/sim/ships/ship_select.ai",
+        "game/sim/shipyard/bootstrap.ai",
+        "game/sim/shipyard/shipyard.ai",
+        ">game/sim/shared/global"
+    ]
+}

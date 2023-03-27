@@ -1,0 +1,33 @@
+{
+    "components": {
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "186ccf508d3e48b+Mineral Definition": {
+                    "flags": "+",
+                    "extends": "10",
+                    "conjurer": "fffffffffffffffe|unconjured",
+                    "ingest": "game/sim/shared/ingest/UQM2 Data - Minerals.csv",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "186ccf568eb72ba+value": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "resources -> mineral"
+        }
+    }
+}

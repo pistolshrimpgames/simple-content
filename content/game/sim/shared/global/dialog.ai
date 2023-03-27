@@ -1,0 +1,1384 @@
+{
+    "components": {
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "17ee5e19f55d95b+Show Dialog for Player": {
+                    "extends": "f",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17ee5e1e53da1f9+dialog": {
+                                    "flags": "*",
+                                    "base": "17ee5deb70cb063|Dialog",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17ee5deb70cb063|Dialog"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ee5e2a7b6656f+player": {
+                                    "flags": "*",
+                                    "base": "17db679e18fcc25|Simulation Transitioner (Player)",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "17ee5e3059d6825-": {
+                                    "flags": "+*",
+                                    "extends": "17ee5deb70cb063|Dialog",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "17ee5dff4d6ad5b|initiator": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "17ee5e2a7b6656f|player"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "17ee5e1e53da1f9|dialog"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "prop": "17ee5e1e53da1f9|dialog"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17ee5deb70cb063+Dialog": {
+                    "flags": "+",
+                    "extends": "1f",
+                    "sections": {
+                        "2": {
+                            "instructions": {
+                                "17ee5df892d1f06+data": {
+                                    "flags": "*",
+                                    "base": "17ee5de61d0dd5d|Dialog Data",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17ee5de61d0dd5d|Dialog Data"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ee5dff4d6ad5b+initiator": {
+                                    "flags": "*",
+                                    "base": "17db679e18fcc25|Simulation Transitioner (Player)",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "180444ddf601686+DEV - stun combatants": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "182848772f275f4+stun dialog user": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "180f1e63db6974d+client id": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "180f1e8747680ee-input": {
+                                                            "base": "18",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "17ee5dff4d6ad5b|initiator",
+                                                                            "prop": "17cde01590f46e8|input"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "180f1e8747680ee|input",
+                                                                    "prop": "60"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": ""
+                                        }
+                                    }
+                                },
+                                "1828a0ef81b8caf+close on result": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "62": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1234
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "a": {
+                                            "flags": "l+",
+                                            "instructions": {
+                                                "a": {
+                                                    "flags": "l+",
+                                                    "instructions": {
+                                                        "b": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "2": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "180444cb970f6c9-c": {
+                                                                            "base": "17c61c499ab6212|Combatant",
+                                                                            "init": {
+                                                                                "failable": 1,
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "sub": "2",
+                                                                                            "prop": "59"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "c": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "180444cb9715fa0-": {
+                                                                            "flags": "+",
+                                                                            "extends": "180444631d37d35|Debug Stun During Dialog",
+                                                                            "sections": {
+                                                                                "2": {
+                                                                                    "flags": "+",
+                                                                                    "instructions": {
+                                                                                        "18044470a1b19ee|watch dialog": {
+                                                                                            "flags": "*",
+                                                                                            "init": {
+                                                                                                "ops": [
+                                                                                                    {
+                                                                                                        "obj": {
+                                                                                                            "selector": -2
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "LHS": {
+                                                                                "obj": {
+                                                                                    "inst": "180444631d37d35|Debug Stun During Dialog"
+                                                                                }
+                                                                            },
+                                                                            "RHS": {
+                                                                                "obj": {
+                                                                                    "selector": 1,
+                                                                                    "prop": "17c75d44e5d3e53|effects active"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "180444cb970f6c9|c"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "comment": ""
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "sub": "2",
+                                                            "prop": "17b1cf2a844b888|targetables"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    },
+                                                    "sort": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "inst": "17c5657124b693d|Combat System",
+                                                    "prop": "17c5661a8d50e4e|teams"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            },
+                                            "sort": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "180444ddf601686|DEV - stun combatants"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "1828488005c5037-cb": {
+                                                            "base": "33",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "17ee5dff4d6ad5b|initiator",
+                                                                            "prop": "17cde030aefe7c9|conjured player"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "1828487a1f251e9-c": {
+                                                            "base": "17c61c499ab6212|Combatant",
+                                                            "init": {
+                                                                "failable": 1,
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "1828488005c5037|cb",
+                                                                            "prop": "59"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "c": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "1828487a1f3239f-": {
+                                                            "flags": "+",
+                                                            "extends": "180444631d37d35|Debug Stun During Dialog",
+                                                            "sections": {
+                                                                "2": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "18044470a1b19ee|watch dialog": {
+                                                                            "flags": "*",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "selector": -2
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "inst": "180444631d37d35|Debug Stun During Dialog"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "obj": {
+                                                                    "selector": 1,
+                                                                    "prop": "17c75d44e5d3e53|effects active"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "1828487a1f251e9|c"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "comment": ""
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "182848772f275f4|stun dialog user"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "c": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": 1,
+                                                            "prop": "1843a085792203c|dialogs"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": 1,
+                                                                    "prop": "1843a085792203c|dialogs"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17ee5dff4d6ad5b|initiator"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17ee5dff4d6ad5b|initiator"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "d",
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "t+",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "17ee5e130443bca-r": {
+                                                            "base": "65",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "17ee5df892d1f06|data",
+                                                                            "prop": "17eb6c8a176a894|result"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "9": {
+                                                    "flags": "t",
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "17ee5e130443bca|r"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "17ee5e130443bca|r"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": "dialog active"
+                                        }
+                                    },
+                                    "comment": "DEBUG"
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "182473d0317d36b-result": {
+                                                            "base": "1821340f0f2ab63|Dialog Result",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "17ee5df892d1f06|data",
+                                                                            "prop": "18213412ce2f385|dialog result"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "182473ca75d2378-choice": {
+                                                            "base": "18213426c415d34|Dialog Choice",
+                                                            "init": {
+                                                                "failable": 1,
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "182473d0317d36b|result",
+                                                                            "prop": "1821342f0f21d1a|choice"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "182473ccc278f32-choice callback": {
+                                                            "base": "18247398155f55f|Dialog Choice Callback",
+                                                            "init": {
+                                                                "failable": 1,
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "182473ca75d2378|choice",
+                                                                            "prop": "182473b7fd679d7|callback on pick"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "8": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "182473bdfff9db3-": {
+                                                            "flags": "+",
+                                                            "extends": "18247398155f55f|Dialog Choice Callback",
+                                                            "sections": {
+                                                                "2": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "182473b1df6ec32|result": {
+                                                                            "flags": "*",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "selector": -2,
+                                                                                            "prop": "182473d0317d36b|result"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "182473ccc278f32|choice callback"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "obj": {
+                                                                    "selector": -1
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "182473ccc278f32|choice callback"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": ""
+                                        },
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "11"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "1828a0ef81b8caf|close on result"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "<>",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "sub": "17ee5df892d1f06|data",
+                                                    "prop": "17eb6c8a176a894|result"
+                                                }
+                                            },
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "180444631d37d35-Debug Stun During Dialog": {
+                    "flags": "+",
+                    "extends": "17c763b33f29734|Effect - Stun",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "18044470a1b19ee-watch dialog": {
+                                    "flags": "*",
+                                    "base": "17ee5deb70cb063|Dialog",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "184d50c2d70fac6-remembered linear": {
+                                    "flags": "*",
+                                    "base": "66",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "184d50c8b37459f-remembered angular": {
+                                    "flags": "*",
+                                    "base": "66",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "17c7641cdcfe2ba|duration": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "+",
+                                    "comment": "DG ERROR TODO 12.2.22 - When trying to initialize remembered in property block,"
+                                },
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "184d50c2d70fac6|remembered linear"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "sub": "17d3987f79e2e1b|owner",
+                                                    "prop": "16"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "184d50c8b37459f|remembered angular"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "sub": "17d3987f79e2e1b|owner",
+                                                    "prop": "17"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "selector": -2,
+                                            "sub": "17d3987f79e2e1b|owner",
+                                            "prop": "16"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "selector": -2,
+                                            "sub": "17d3987f79e2e1b|owner",
+                                            "prop": "17"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "4": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "selector": -2,
+                                            "sub": "17d3987f79e2e1b|owner",
+                                            "prop": "16"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "184d50c2d70fac6|remembered linear"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "selector": -2,
+                                            "sub": "17d3987f79e2e1b|owner",
+                                            "prop": "17"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "184d50c8b37459f|remembered angular"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "flags": "td",
+                                    "LHS": {
+                                        "obj": {
+                                            "selector": -2,
+                                            "prop": "17d3987f79e2e1b|owner"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17d3987f79e2e1b|owner"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "func": "NOT",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "18044470a1b19ee|watch dialog"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17ee5de61d0dd5d+Dialog Data": {
+                    "flags": "+",
+                    "extends": "17f5670d1e7d960|UI Data",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181f44fa9f39b2f+choices": {
+                                    "flags": "*",
+                                    "base": "18213426c415d34|Dialog Choice",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "18213412ce2f385+dialog result": {
+                                    "flags": "*",
+                                    "base": "1821340f0f2ab63|Dialog Result",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1821340f0f2ab63|Dialog Result"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1821340f0f2ab63+Dialog Result": {
+                    "flags": "+",
+                    "extends": "10",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "18213419dc97299+choice index": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "1821342f0f21d1a+choice": {
+                                    "flags": "*",
+                                    "base": "18213426c415d34|Dialog Choice",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1833d2d494ce2ec+selecteds": {
+                                    "flags": "*",
+                                    "base": "18213426c415d34|Dialog Choice",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "18213426c415d34+Dialog Choice": {
+                    "flags": "+",
+                    "extends": "10",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "182475042f6dfd0-itsme": {
+                                    "base": "10",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {}
+                                            }
+                                        ]
+                                    }
+                                },
+                                "182473b7fd679d7+callback on pick": {
+                                    "base": "18247398155f55f|Dialog Choice Callback",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "18247398155f55f+Dialog Choice Callback": {
+                    "flags": "+",
+                    "extends": "f",
+                    "conjurer": "17ee5deb70cb063|Dialog",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1827f90193b862f+dialog data": {
+                                    "flags": "*",
+                                    "base": "17ee5de61d0dd5d|Dialog Data",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17ee5df892d1f06|data"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "182473b1df6ec32+result": {
+                                    "flags": "*",
+                                    "base": "1821340f0f2ab63|Dialog Result",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1827e63bc95797e+result choice": {
+                                    "flags": "*",
+                                    "base": "18213426c415d34|Dialog Choice",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "sub": "182473b1df6ec32|result",
+                                                    "prop": "1821342f0f21d1a|choice"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "dialog"
+        },
+        "17f5670d1e7d960-UI Data": {
+            "extends": "10",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "17eb6c7e5c7ce54+values": {
+                            "flags": "*",
+                            "base": "65",
+                            "init": {
+                                "set": 1,
+                                "ops": [
+                                    {}
+                                ]
+                            }
+                        },
+                        "17eb6c8a176a894+result": {
+                            "flags": "*",
+                            "base": "65",
+                            "init": {
+                                "ops": [
+                                    {}
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "182eafe2957a5e0+Conversation Flags": {
+                    "flags": "+",
+                    "extends": "10",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "182eafe616f5640+HOSTILE": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "186c338b908461e+judge-organizer": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "186e146b62a5a1c+judge-organizer-LOCAL-about-self": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "186e14e04f91c36+judge-organizer-LOCAL-threat": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "186c34f13b46d3e+judge-alien1": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "186c34f98e27585+judge-alien2": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "186c7acff5efcdb+judge-creature": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "186cc78c381e101+judge-snack1": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "186cc78fde96549+judge-snack2": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "186cc78fb5bd38e+judge-snack3": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "186cc78f8fd5f55+judge-snack4": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "186cc78f624629f+judge-snack5": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "186bd7b581b3705+Spathi-Disposition": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "186cd107a32db37+Gary-state": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "d"
+                        }
+                    }
+                },
+                "17eb21196dc17bd+Conversation Data": {
+                    "flags": "+",
+                    "extends": "17f5670d1e7d960|UI Data",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17eb729de64ca2f-initialized": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "17eb6cc557e8391-num values": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": -1
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "flags": "td",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "17eb6c7e5c7ce54|values"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17eb6c7e5c7ce54|values"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "17eb729de64ca2f|initialized"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "8": {
+                                                    "flags": "l+",
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "17eb6c7e5c7ce54|values"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "17eb6c7e5c7ce54|values"
+                                                                        }
+                                                                    },
+                                                                    {}
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "-",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "17eb6cc557e8391|num values"
+                                                                }
+                                                            },
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": ">=",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17eb6cc557e8391|num values"
+                                                        }
+                                                    },
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "func": "NOT",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17eb729de64ca2f|initialized"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "adventure -> conversation"
+        }
+    }
+}

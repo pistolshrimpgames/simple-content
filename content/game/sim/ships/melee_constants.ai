@@ -1,0 +1,399 @@
+{
+    "components": {
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "17ca4ab5732f61d+Ship Constants": {
+                    "flags": "+*",
+                    "instances": "10",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17ca4ab0a91e7c0+60th of a sec": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            },
+                                            {
+                                                "num": 60
+                                            }
+                                        ]
+                                    }
+                                },
+                                "183ce952898b61b+turn rates based on turn wait": {
+                                    "flags": "+",
+                                    "base": "65",
+                                    "init": {
+                                        "set": 1,
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "b": {
+                                                    "comment": "denominator is \"how long it takes me to make a full rotation\""
+                                                }
+                                            },
+                                            "comment": "formula is: 360 / ((turn_wait+1)*15)+1)*(1/24)"
+                                        },
+                                        "8": {
+                                            "flags": "l+",
+                                            "instructions": {
+                                                "b": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "183d23ad6889f97-turn wait": {
+                                                                    "base": "65",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "1"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "183d23b3057411f-x": {
+                                                                    "base": "65",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {}
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "183d23b3057411f|x"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "183d23ad6889f97|turn wait"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "num": 1
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "183d23b3057411f|x"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "*",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "183d23b3057411f|x"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "num": 15
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "183d23b3057411f|x"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "183d23b3057411f|x"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "num": 1
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "183d23b3057411f|x"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "*",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "183d23b3057411f|x"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "183d23b3057411f|x"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "/",
+                                                                "ops": [
+                                                                    {
+                                                                        "num": 360
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "183d23b3057411f|x"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "183d23b3057411f|x"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "comment": ""
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 15
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "17ca4ab0a9254ef+max turn rate": {
+                                    "comment": "DG NOTE: 22.5 [angle in UQM] * 24 is 540; where does 576 come from?",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 540
+                                            }
+                                        ]
+                                    }
+                                },
+                                "183c975082dee9b+max turn rate per frame": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17ca4ab0a9254ef|max turn rate"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "17ca4ab0a91e7c0|60th of a sec"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ca4ab0a93597e+thrust unit": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 0.34899998
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ca4ab0a946380-UQM arilou width": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 17
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ca4ab0a953195+distance unit": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "17ca4ab0a946380|UQM arilou width"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ca4ab0a969e0b+UQM frame time": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            },
+                                            {
+                                                "num": 24
+                                            }
+                                        ]
+                                    }
+                                },
+                                "180710f9d1f971f+minimum thrust increment": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 4
+                                            }
+                                        ]
+                                    }
+                                },
+                                "18076793a5cca8f+computed min thrust increment": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "180710f9d1f971f|minimum thrust increment"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "17ca4ab0a93597e|thrust unit"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1807110070f5f29+minimum max speed": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 8
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "17ca4ab0a93597e|thrust unit"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "18076bba146c76e+turn rate at 255 wait": {
+                                    "comment": "10.625 = seconds to make a 360 turn with 255 turn wait in UQM",
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "num": 360
+                                            },
+                                            {
+                                                "num": 10.625
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1807664d893a031+deg per sec per turn wait": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "18076bba146c76e|turn rate at 255 wait"
+                                                }
+                                            },
+                                            {
+                                                "num": 255
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "ship"
+        },
+        "17d342fed3f3576-Power System - Space": {
+            "flags": "+",
+            "extends": "17c52eb1685a075|Power System",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "17c52eb32d5eebe|frame time": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "17ca4ab5732f61d|Ship Constants",
+                                            "prop": "17ca4ab0a969e0b|UQM frame time"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "Title": "Damaged Ship",
+    "Cancellable": false,
+    "Choice Formats": [
+        { "Simple Condition": "salvage", "Text": "{alien.(TYPE_NAME)}: Salvage for {alien.ship salvage value} RU" },
+        { "Simple Condition": "repair", "Text": "{alien.(TYPE_NAME)}: Repair for {alien.ship repair cost} RU" }
+    ]
+}

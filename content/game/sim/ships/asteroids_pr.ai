@@ -1,0 +1,1239 @@
+{
+    "components": {
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "17bc71d0357c077+Asteroid Generator": {
+                    "flags": "+*",
+                    "extends": "10",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17bc71e6125a0cd-max asteroids": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 12
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc71e61262d48-asteroids": {
+                                    "flags": "*",
+                                    "base": "33",
+                                    "init": {
+                                        "set": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc71e61277d71-asteroid team owner": {
+                                    "flags": "*",
+                                    "base": "1f",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc71e61281f6e-asteroid team": {
+                                    "flags": "*",
+                                    "base": "17b1cf1834dd8d9|Team",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17eb2716013649f-random": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "RNG": 1,
+                                        "bind": "+",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "4"
+                                                }
+                                            },
+                                            {
+                                                "num": 100000
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1869f8f7c148d06-generate asteroids": {
+                                    "flags": "+*",
+                                    "base": "33",
+                                    "init": {
+                                        "set": 1,
+                                        "unconjured": 1,
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "inst": "1869f89a55d9a2b|Asteroid 1"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "inst": "1869f8e7ff57351|Asteroid 2"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "inst": "1869f8e82dd8a03|Asteroid 3"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "17bc71ed8e57bfa-": {
+                                    "flags": "d*",
+                                    "extends": "1f",
+                                    "sections": {
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17bc71e61277d71|asteroid team owner"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17bc71ed8e6f639-": {
+                                                    "flags": "+",
+                                                    "extends": "17b1cf5e9629040|Team - Add Team",
+                                                    "sections": {
+                                                        "3": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "selector": -3,
+                                                                            "prop": "17bc71e61281f6e|asteroid team"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "17b3c70382b46ca|return team"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "17b1cf5e9629040|Team - Add Team"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "1f"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "l+",
+                                    "instructions": {
+                                        "185126a1801c411-": {
+                                            "flags": "d*",
+                                            "extends": "18512520ba38a6c|Hot Potato",
+                                            "sections": {
+                                                "3": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "b": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "2": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "185126aa5810b85-Copy of starfield size": {
+                                                                            "base": "65",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "num": 128
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "185126aa58291e8-Copy of n": {
+                                                                            "base": "65",
+                                                                            "init": {
+                                                                                "bind": "/",
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "prop": "185126aa5810b85|Copy of starfield size"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "num": 2
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "b": {
+                                                                    "flags": "+",
+                                                                    "comment": "Note: I should not appear inside a planet, but I am not yet protecting from that"
+                                                                },
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "13",
+                                                                            "tupleOffs": 1
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "bind": "*",
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "185126aa5810b85|Copy of starfield size"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -2,
+                                                                                    "prop": "17eb2716013649f|random"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "13",
+                                                                            "tupleOffs": 1
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "bind": "-",
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "13",
+                                                                                    "tupleOffs": 1
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "185126aa58291e8|Copy of n"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "13",
+                                                                            "tupleOffs": 3
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "bind": "*",
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "185126aa5810b85|Copy of starfield size"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -2,
+                                                                                    "prop": "17eb2716013649f|random"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "13",
+                                                                            "tupleOffs": 3
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "bind": "-",
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "13",
+                                                                                    "tupleOffs": 3
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "185126aa58291e8|Copy of n"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "comment": "Assign position"
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "17bc71e61262d48|asteroids"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "17bc71e61262d48|asteroids"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {}
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "inst": "18512520ba38a6c|Hot Potato"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        },
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "1869f9087a8dd3d-a": {
+                                                            "base": "17b889eafb4cf4e|Asteroid (base)",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -1
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "1869f8f7c148d06|generate asteroids",
+                                                            "tupleOffs": 9
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "func": "CEIL",
+                                                        "bind": "*",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "17eb2716013649f|random"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "1869f8f7c148d06|generate asteroids"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "1869f9087a8dd3d|a"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "1869f8f7c148d06|generate asteroids",
+                                                                    "tupleOffs": 8
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17bc7214f9d5f13-": {
+                                                    "flags": "+*",
+                                                    "extends": "17b889eafb4cf4e|Asteroid (base)",
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "1869f9087a8dd3d|a"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "prop": "17bc71e61262d48|asteroids"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "comment": ""
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "-",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17bc71e6125a0cd|max asteroids"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "17bc71e61262d48|asteroids"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17ea3293a24c4e8+Combatant (Asteroid)": {
+                    "flags": "+",
+                    "instances": "17c622c7b230ec1|Combatant (Non-Player)",
+                    "conjurer": "17b889eafb4cf4e|Asteroid (base)",
+                    "capturer": "33"
+                },
+                "17b889eafb4cf4e+Asteroid (base)": {
+                    "flags": "*",
+                    "extends": "17818c5353f36cf|Targetable (Rigid Body)",
+                    "conjurer": "17bc71d0357c077|Asteroid Generator",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "35": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 20
+                                            }
+                                        ]
+                                    }
+                                },
+                                "49": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1869f8a3276d7a7|Asteroid Collider (base)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "11": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 10
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "17b99134a9a2004-starfield size": {
+                                                    "base": "65",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 128
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17b99134a9b351c-n": {
+                                                    "base": "65",
+                                                    "init": {
+                                                        "bind": "/",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "17b99134a9a2004|starfield size"
+                                                                }
+                                                            },
+                                                            {
+                                                                "num": 2
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "b": {
+                                            "flags": "+",
+                                            "comment": "Note: I should not appear inside a planet, but I am not yet protecting from that"
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "13",
+                                                    "tupleOffs": 1
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17b99134a9a2004|starfield size"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17eb2716013649f|random"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "13",
+                                                    "tupleOffs": 1
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "-",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "13",
+                                                            "tupleOffs": 1
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17b99134a9b351c|n"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "13",
+                                                    "tupleOffs": 3
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17b99134a9a2004|starfield size"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17eb2716013649f|random"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "13",
+                                                    "tupleOffs": 3
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "-",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "13",
+                                                            "tupleOffs": 3
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17b99134a9b351c|n"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": "Assign position"
+                                },
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "17b990f50773837-speed": {
+                                                    "base": "65",
+                                                    "init": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "14",
+                                                    "tupleOffs": 2
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17eb2716013649f|random"
+                                                        }
+                                                    },
+                                                    {
+                                                        "num": 360
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17b990f50773837|speed"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "func": "TRUNC",
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17eb2716013649f|random"
+                                                        }
+                                                    },
+                                                    {
+                                                        "num": 16
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17b990f50773837|speed"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17b990f50773837|speed"
+                                                        }
+                                                    },
+                                                    {
+                                                        "num": 4
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17b990f50773837|speed"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17b990f50773837|speed"
+                                                        }
+                                                    },
+                                                    {
+                                                        "num": 4
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17b990f50773837|speed"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17b990f50773837|speed"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "inst": "17ca4ab5732f61d|Ship Constants",
+                                                            "prop": "17ca4ab0a93597e|thrust unit"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "16"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "14",
+                                                            "tupleOffs": 6
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17b990f50773837|speed"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": "Assign velocity"
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "d+",
+                            "instructions": {
+                                "9": {
+                                    "flags": "t",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "16"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "16"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1869f8a3276d7a7-Asteroid Collider (base)": {
+                    "flags": "+",
+                    "extends": "30",
+                    "conjurer": "17b889eafb4cf4e|Asteroid (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "5e": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "48": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1869f8a81b08a83|Asteroid Shape (base)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1869f8a81b08a83-Asteroid Shape (base)": {
+                    "extends": "3f",
+                    "conjurer": "1869f8a3276d7a7|Asteroid Collider (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1869f8b075def39-rad pct": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "1869f8b075e6188-init rad": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "4a"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1869f8b075f4f83-asteroid": {
+                                    "flags": "*",
+                                    "base": "17b889eafb4cf4e|Asteroid (base)",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -3
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "4a": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "num": 21
+                                            },
+                                            {
+                                                "num": 34
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "1869f8b075def39|rad pct"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "sub": "1869f8b075f4f83|asteroid",
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            {
+                                                "num": 10
+                                            }
+                                        ]
+                                    }
+                                },
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "4a"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "1869f8b075def39|rad pct"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "1869f8b075e6188|init rad"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1869f89a55d9a2b-Asteroid 1": {
+                    "flags": "*",
+                    "extends": "17b889eafb4cf4e|Asteroid (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "49": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1869f8dcfe72e5b|Asteroid 1 Collider"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1869f8dcfe72e5b-Asteroid 1 Collider": {
+                    "extends": "1869f8a3276d7a7|Asteroid Collider (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "48": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1869f8dfce62a44|Asteroid 1 Shape"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1869f8dfce62a44-Asteroid 1 Shape": {
+                    "extends": "1869f8a81b08a83|Asteroid Shape (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "4a": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "num": 10
+                                            },
+                                            {
+                                                "num": 34
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1869f8e7ff57351-Asteroid 2": {
+                    "flags": "*",
+                    "extends": "17b889eafb4cf4e|Asteroid (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "49": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1869f8e7ff6742a|Asteroid 2 Collider"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1869f8e7ff6742a-Asteroid 2 Collider": {
+                    "extends": "1869f8a3276d7a7|Asteroid Collider (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "48": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1869f8e7ff74e1d|Asteroid 2 Shape"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1869f8e7ff74e1d-Asteroid 2 Shape": {
+                    "extends": "1869f8a81b08a83|Asteroid Shape (base)"
+                },
+                "1869f8e82dd8a03-Asteroid 3": {
+                    "flags": "*",
+                    "extends": "17b889eafb4cf4e|Asteroid (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "49": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1869f8e82decb08|Asteroid 3 Collider"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1869f8e82decb08-Asteroid 3 Collider": {
+                    "extends": "1869f8a3276d7a7|Asteroid Collider (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "48": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1869f8e82df85b7|Asteroid 3 Shape"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1869f8e82df85b7-Asteroid 3 Shape": {
+                    "flags": "+",
+                    "extends": "1869f8a81b08a83|Asteroid Shape (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "4a": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "num": 5
+                                            },
+                                            {
+                                                "num": 34
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "melee"
+        }
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "Cameras": [
+        {
+            "Name": "Default",
+            "Features": [ "Normalize", "TargetAllPlayers", "IncludeAllPlayers", "Orthographic" ],
+            "Focal Length": 20.08,
+            "Maximum Focal Length": "ZoomHalfWrap",
+            "Aspect Ratio": 1,
+            "Tethers Property": "extra captures.Combatant.opponents",
+            "Background Color": [ 0,0, 0, 1 ]
+        },
+        {
+            "Name": "All Players-Tether-Auto Zoom",
+            "Simple Condition": "extra captures.Combatant.opponents.$COUNT$ > 0",
+            "Features": [ "Normalize", "TargetAllPlayers", "IncludeAllPlayers", "Orthographic" ],
+            "Focal Length": 20.08,
+            "Maximum Focal Length": "ZoomHalfWrap",
+            "Aspect Ratio": 1,
+            "CAMERA_INCLUDE_DISTANCE_FROM_LOOKAT": "0.4",
+            "#CAMERA_INCLUDE_DISTANCE_FROM_PLAYER": "0.4",
+            "#CAMERA_INCLUDE_DISTANCE_FROM_TETHER": "0.4",
+            "Tethers Property": "extra captures.Combatant.opponents"
+        },
+        {
+            "Name": "Force Target",
+            "Simple Condition": "extra captures.Combatant.hitting target.$COUNT$ > 0",
+            "Features": [ "Normalize", "TargetAllPlayers", "IncludeAllPlayers", "Orthographic" ],
+            "Focal Length": 20.08,
+            "Maximum Focal Length": "ZoomHalfWrap",
+            "Aspect Ratio": 1,
+            "CAMERA_TETHER_INCLUDE_DISTANCE": "10.0",
+            "Tethers Property": "extra captures.Combatant.hitting target"
+        },
+        {
+            "Name": "Starbase",
+            "Simple Condition": "player docked",
+            "Features": [ "Normalize", "TargetClientPlayer", "Orthographic" ],
+            "Focal Length": 35,
+            "Aspect Ratio": 1,
+            "Edge Offset": 0.3
+        },
+        {
+            "Name": "Starbase Hardpoint",
+            "Simple Condition": "cur dialog.build at hardpoint",
+            "Features": [ "Normalize", "TargetClientPlayer", "Orthographic" ],
+            "Focal Length": 30,
+            "Aspect Ratio": 1,
+            "Edge Offset": 0.3
+        },
+        {
+            "Name": "Untargeted",
+            "Simple Condition": "extra captures.Combatant.forced freecam > 0",
+            "Features": [ "Normalize", "TargetClientPlayer", "Orthographic" ],
+            "Focal Length": 20.08,
+            "Aspect Ratio": 1,
+            "Edge Offset": 0.0
+        },
+        {
+            "Name": "Minimap Camera",
+            "Simple Condition": "Never",
+            "Features": [ "Normalize", "TargetClientPlayer", "Orthographic" ],
+            "Focal Length": "ZoomFullWrap",
+            "Background Color": [0,0,0,0.5],
+            "Aspect Ratio": 1,
+            "Bounds": [0,0,240,240]
+        },
+        {
+            "Name": "Player+Tether&Zoom Nearest",
+            "Simple Condition": "Never",
+            "Features": [ "Normalize", "TargetAllPlayers", "IncludeAllPlayers", "TetherNearest", "TargetIgnoresTether" ],
+            "Focal Length": 20.08,
+            "Maximum Focal Length": "ZoomHalfWrap",
+            "Aspect Ratio": 1,
+            "Tethers Property": "extra captures.Combatant.opponents"
+        }
+    ]
+}

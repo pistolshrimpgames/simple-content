@@ -1,0 +1,9 @@
+{
+    "Title": "Buy Resources",
+    "Cancellable": false,
+    "Choice Formats": [
+        { "Simple Condition": "is mineral>0", "Text": "Buy {qty} {resource type.$TYPE_NAME$:Resource - Mineral \\(.*\\) - (.*)} for {net price} RUs" },
+        { "Simple Condition": "resource type", "Text": "Buy {qty} {resource type.$TYPE_NAME$:Resource - (.*)} for {net price} RUs" },
+        { "Simple Condition": "trade good", "Text": "Trade {net price} RUs for {qty} {trade good.$TYPE_NAME$} - Owned: {total}" }
+    ]
+}

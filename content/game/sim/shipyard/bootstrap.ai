@@ -1,0 +1,75 @@
+{
+    "components": {
+        "17d2ec275aaafa1-bootstrap": {
+            "flags": "+",
+            "extends": "10",
+            "sections": {
+                "3": {
+                    "flags": "+",
+                    "instructions": {
+                        "b": {
+                            "flags": "p+",
+                            "comment": "SHIPYARD BOOTSTRAP"
+                        },
+                        "c": {
+                            "flags": "+",
+                            "instructions": {
+                                "17ddf33e3023657-": {
+                                    "flags": "+",
+                                    "extends": "17ddf222912277e|Simulation Transit - Bootstrap",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "17ddf2379f9bbee|in sim": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "live": 1,
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": 1
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17ddf238cdae9c9|with input": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -3
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "17ddf222912277e|Simulation Transit - Bootstrap"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                }
+                            },
+                            "LHS": {
+                                "obj": {
+                                    "inst": "17d2ec24a620bce|Shipyard Simulation"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,2877 @@
+{
+    "components": {
+        "1802f12edabd2f1-Syreen Ship": {
+            "flags": "*",
+            "extends": "1809b62dc7cafa3|Melee Ship",
+            "sections": {
+                "2": {
+                    "instructions": {
+                        "1802f59f638b2f6-hypno max range": {
+                            "base": "65",
+                            "init": {
+                                "bind": "*",
+                                "ops": [
+                                    {
+                                        "num": 208
+                                    },
+                                    {
+                                        "obj": {
+                                            "inst": "17ca4ab5732f61d|Ship Constants",
+                                            "prop": "17ca4ab0a953195|distance unit"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "1802f33738b17f9-hypno bp": {
+                            "flags": "*",
+                            "base": "8f",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "8f"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "1802f32f26b0d58-hypno collision body": {
+                            "flags": "*",
+                            "base": "33",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "1802f33e09a3692|Hypno Collision Body"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "1802f3299aba9fa-hypno collider": {
+                            "flags": "*",
+                            "base": "1802f340352649d|Hypno Collider",
+                            "init": {
+                                "needed": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17ca561b513fd12|thruster": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "captured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "1802f12edae5613|Syreen Thruster"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17e55a44b4fdf3d|turning": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "captured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "1802f12edafc294|Syreen Turning"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17bc6f246957acc|energy": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "captured": 1,
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "1802f12edb009c4|Syreen Energy"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17e6f61ccca5823|weapons": {
+                            "flags": "*",
+                            "init": {
+                                "needed": 1,
+                                "conjured": 1,
+                                "captured": 1,
+                                "bind": "+",
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "inst": "1802f12edb19f92|Stiletto Weapon"
+                                        }
+                                    },
+                                    {
+                                        "obj": {
+                                            "inst": "1802f12edb8831c|Hypno Weapon"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "11": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 16
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "3": {
+                    "instructions": {
+                        "b": {
+                            "flags": "+",
+                            "instructions": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "1802f16dd230d95-general offset": {
+                                            "base": "66",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "vec": {
+                                                            "z": 0.19999999
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "1802f16dd246c61-": {
+                                    "extends": "180905f06626b7d|Melee Ship Collider",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "vec": {}
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "1802f16dd230d95|general offset"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "32": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "rot": {
+                                                                    "x": 90
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "1802f16dd251aa9-": {
+                                                    "flags": "+",
+                                                    "extends": "40",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "4b": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "num": 0.19999999
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "4c": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "num": 1.39999999
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "40"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "prop": "48"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180905f06626b7d|Melee Ship Collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                },
+                                "1802f16dd261c85-": {
+                                    "extends": "180905f06626b7d|Melee Ship Collider",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "vec": {
+                                                                    "z": 1
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "1802f16dd230d95|general offset"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "1802f16dd272e71-": {
+                                                    "flags": "+",
+                                                    "extends": "42",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "47": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {
+                                                                                    "x": 0.057,
+                                                                                    "y": 0.19999999,
+                                                                                    "z": 0.19999999
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "42"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "prop": "48"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180905f06626b7d|Melee Ship Collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                },
+                                "1802f16dd28e92c-": {
+                                    "extends": "180905f06626b7d|Melee Ship Collider",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "vec": {
+                                                                    "x": -0.3,
+                                                                    "z": -0.64999999
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "1802f16dd230d95|general offset"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "32": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "rot": {
+                                                                    "y": 45.00189626
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "1802f16dd29383b-": {
+                                                    "flags": "+",
+                                                    "extends": "42",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "47": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {
+                                                                                    "x": 0.28599999,
+                                                                                    "y": 0.19999999,
+                                                                                    "z": 0.57099999
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "42"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "prop": "48"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180905f06626b7d|Melee Ship Collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                },
+                                "1802f16dd2a9d1f-": {
+                                    "extends": "180905f06626b7d|Melee Ship Collider",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "vec": {
+                                                                    "x": 0.3,
+                                                                    "z": -0.64999999
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "1802f16dd230d95|general offset"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "32": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "rot": {
+                                                                    "y": -45.00189742
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "1802f16dd2b3ddd-": {
+                                                    "flags": "+",
+                                                    "extends": "42",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "47": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {
+                                                                                    "x": 0.28599999,
+                                                                                    "y": 0.19999999,
+                                                                                    "z": 0.57099999
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "42"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "prop": "48"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180905f06626b7d|Melee Ship Collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                },
+                                "1802f16dd2ced81-": {
+                                    "extends": "180905f06626b7d|Melee Ship Collider",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "vec": {
+                                                                    "x": -0.44999999,
+                                                                    "z": -0.69999999
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "1802f16dd230d95|general offset"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "1802f16dd2d123f-": {
+                                                    "flags": "+",
+                                                    "extends": "42",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "47": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {
+                                                                                    "x": 0.057,
+                                                                                    "y": 0.3,
+                                                                                    "z": 0.69999999
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "42"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "prop": "48"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180905f06626b7d|Melee Ship Collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                },
+                                "1802f16dd2e9777-": {
+                                    "extends": "180905f06626b7d|Melee Ship Collider",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "31": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "vec": {
+                                                                    "x": 0.44999999,
+                                                                    "z": -0.69999999
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "1802f16dd230d95|general offset"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "1802f16dd2f199f-": {
+                                                    "flags": "+",
+                                                    "extends": "42",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "47": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {
+                                                                                    "x": 0.057,
+                                                                                    "y": 0.3,
+                                                                                    "z": 0.69999999
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "42"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "prop": "48"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180905f06626b7d|Melee Ship Collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                }
+                            },
+                            "comment": "Syreen Colliders"
+                        }
+                    }
+                },
+                "5": {
+                    "flags": "d+",
+                    "instructions": {
+                        "8": {
+                            "flags": "t+",
+                            "RHS": {
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "ui-": "17efafc0d95635d|Combatant (Melee Player)",
+                                            "prop": "17e6f855d357e64|max health"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "8": {
+                            "flags": "t+",
+                            "RHS": {
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "prop": "11"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "1802f24364599de-Combatant (Syreen)": {
+            "instances": "17efafc0d95635d|Combatant (Melee Player)",
+            "conjurer": "1802f12edabd2f1|Syreen Ship",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "17e6f855d357e64|max health": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 42
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "1802f12edae5613-Syreen Thruster": {
+            "extends": "182f4affb220bed|Ship Thruster (UQM Converter)",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "17ca55edd0a9566|max speed": {
+                            "flags": "*",
+                            "init": {
+                                "bind": "*",
+                                "ops": [
+                                    {
+                                        "num": 36
+                                    },
+                                    {
+                                        "obj": {
+                                            "inst": "17ca4ab5732f61d|Ship Constants",
+                                            "prop": "17ca4ab0a93597e|thrust unit"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17ca55edd0b4706|thrust increment": {
+                            "flags": "*",
+                            "init": {
+                                "bind": "*",
+                                "ops": [
+                                    {
+                                        "num": 9
+                                    },
+                                    {
+                                        "obj": {
+                                            "inst": "17ca4ab5732f61d|Ship Constants",
+                                            "prop": "17ca4ab0a93597e|thrust unit"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "17ca55edd0c7eb7|thrust wait": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "1802f12edafc294-Syreen Turning": {
+            "flags": "+",
+            "extends": "183d23603f6dc9c|Ship Turning (UQM Converter)",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "183d2362fc850d9|turn wait": {
+                            "flags": "*",
+                            "init": {
+                                "ops": [
+                                    {
+                                        "num": 1
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "1802f12edb009c4-Syreen Energy": {
+            "extends": "17e6ffef4e23be2|Ship Energy (Regenerating)",
+            "sections": {
+                "2": {
+                    "flags": "+",
+                    "instructions": {
+                        "17e6f7ebb580b97|regen delay": {
+                            "flags": "*",
+                            "init": {
+                                "bind": "*",
+                                "ops": [
+                                    {
+                                        "num": 7
+                                    },
+                                    {
+                                        "obj": {
+                                            "inst": "17ca4ab5732f61d|Ship Constants",
+                                            "prop": "17ca4ab0a969e0b|UQM frame time"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "b": {
+            "flags": "*",
+            "instructions": {
+                "1802f12edb19f92-Stiletto Weapon": {
+                    "extends": "17bc803e92b22e6|Ship Weapon",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17bc80762a55f44|firing trigger": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "captured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f12edb22707|Stiletto Weapon Trigger"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc803e92d90d1|energy cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc803e92eb4b3|powers": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f12edb3b6a2|Stiletto Missile Launcher"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f12edb22707-Stiletto Weapon Trigger": {
+                    "extends": "17c3d060d7cd3c2|Ship Weapon Trigger - Continuous",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17c3d060d7de788|reload time": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 9
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f12edb3b6a2-Stiletto Missile Launcher": {
+                    "extends": "17e2752b678033d|Power - Missile Launcher",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e2752b6796ace|launch missile": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f12edb4bb1c|Stiletto Missile"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e27573233e1af|create trigger": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f12edb544f7|Stiletto Missile - Collider"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "31": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "vec": {
+                                                    "z": 1.75
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f12edb4bb1c-Stiletto Missile": {
+                    "flags": "+*",
+                    "extends": "17e2746e493cd33|Missile",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e2746e4984461|lifespan FOR A MISSILE": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 10
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e2746e4995183|speed": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 120
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a93597e|thrust unit"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f12edb544f7-Stiletto Missile - Collider": {
+                    "extends": "17e0d221074de3c|Collider (Combat Trigger)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e0d23390303c9|interactions": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "bind": "+",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f12edb68d4c|Stiletto Missile - Interaction [Hit Combatant]"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f97eeb8ec4c|Stiletto Missile - Interaction [Hit Trigger]"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "48": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f12edb7da7b|Stiletto Missile - Shape"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f12edb68d4c-Stiletto Missile - Interaction [Hit Combatant]": {
+                    "flags": "+",
+                    "instances": "17e0d5dbb3550da|Combat Trigger Interaction [Hit Combatant] (Damage)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e0d5dea4592c6|damage": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 2
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e078420bbd49d|die on hit": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f97eeb8ec4c-Stiletto Missile - Interaction [Hit Trigger]": {
+                    "flags": "+",
+                    "extends": "17f042da9673f0e|Combat Trigger Interaction [Hit Trigger] (Damage)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17f042da9683077|damage": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 2
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f12edb7da7b-Stiletto Missile - Shape": {
+                    "instances": "42",
+                    "conjurer": "fffffffffffffffe|unconjured",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "47": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "vec": {
+                                                    "x": 0.19999999,
+                                                    "y": 0.19999999,
+                                                    "z": 0.3
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "stiletto"
+        },
+        "b": {
+            "flags": "*",
+            "instructions": {
+                "1802f12edb8831c-Hypno Weapon": {
+                    "flags": "+",
+                    "extends": "17bc803e92b22e6|Ship Weapon",
+                    "conjurer": "1802f12edabd2f1|Syreen Ship",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1802f5d1398d6ef-hypno max crew": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 8
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc803e92ff381|_button component": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "captured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17bc7aebb3e7466|Ship Weapon Button - Secondary"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc80762a55f44|firing trigger": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "captured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f12edb9b848|Hypno Weapon Trigger"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17bc803e92d90d1|energy cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 4
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "a": {
+                                            "flags": "l+",
+                                            "instructions": {
+                                                "b": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "1802f564ab9591e-c": {
+                                                                    "base": "1802f3d29b2e3af|Hypno Contact",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "2"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "1802f594158dc23-vec len": {
+                                                                    "base": "65",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {}
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "1802f5903218b47-req crew": {
+                                                                    "base": "65",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {}
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "c": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "a": {
+                                                                    "flags": "+",
+                                                                    "contextValue": -1,
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "selector": 1,
+                                                                            "prop": "17c75d44e5e8ec5|ignore types"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "bind": "=",
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "inst": -1
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "obj": {
+                                                                                    "inst": "1802f4a39734656|Effect - Hypno"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "sort": {
+                                                                        "ops": [
+                                                                            {}
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "1802f57e8b83bf2-": {
+                                                                    "extends": "8f",
+                                                                    "sections": {
+                                                                        "2": {
+                                                                            "flags": "+",
+                                                                            "instructions": {
+                                                                                "90": {
+                                                                                    "flags": "*",
+                                                                                    "init": {
+                                                                                        "ops": [
+                                                                                            {
+                                                                                                "obj": {
+                                                                                                    "selector": -3,
+                                                                                                    "prop": "1802f32f26b0d58|hypno collision body"
+                                                                                                }
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                },
+                                                                                "91": {
+                                                                                    "flags": "*",
+                                                                                    "init": {
+                                                                                        "ops": [
+                                                                                            {
+                                                                                                "obj": {
+                                                                                                    "selector": -2,
+                                                                                                    "sub": "2",
+                                                                                                    "prop": "13"
+                                                                                                }
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "3": {
+                                                                            "flags": "+",
+                                                                            "instructions": {
+                                                                                "9": {
+                                                                                    "LHS": {
+                                                                                        "obj": {
+                                                                                            "selector": -2,
+                                                                                            "prop": "1802f594158dc23|vec len"
+                                                                                        }
+                                                                                    },
+                                                                                    "RHS": {
+                                                                                        "ops": [
+                                                                                            {
+                                                                                                "obj": {
+                                                                                                    "prop": "31",
+                                                                                                    "tupleOffs": 4
+                                                                                                }
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "inst": "8f"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "obj": {
+                                                                            "selector": -1
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "1802f5903218b47|req crew"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "bind": "/",
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "1802f594158dc23|vec len"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -2,
+                                                                                    "prop": "1802f59f638b2f6|hypno max range"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "1802f5903218b47|req crew"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "bind": "-",
+                                                                        "ops": [
+                                                                            {
+                                                                                "num": 1
+                                                                            },
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "1802f5903218b47|req crew"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "9": {
+                                                                    "flags": "p",
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "1802f5903218b47|req crew"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "func": "CEIL",
+                                                                        "bind": "*",
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "1802f5903218b47|req crew"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -2,
+                                                                                    "prop": "1802f59f638b2f6|hypno max range"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "1802f575218d61b-": {
+                                                                    "flags": "+",
+                                                                    "extends": "1802f4a39734656|Effect - Hypno",
+                                                                    "sections": {
+                                                                        "2": {
+                                                                            "flags": "+",
+                                                                            "instructions": {
+                                                                                "1802f4df889033b|crew requested": {
+                                                                                    "flags": "*",
+                                                                                    "init": {
+                                                                                        "ops": [
+                                                                                            {
+                                                                                                "obj": {
+                                                                                                    "selector": -2,
+                                                                                                    "prop": "1802f5903218b47|req crew"
+                                                                                                }
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                },
+                                                                                "17c764f25fd912c|initiating contact": {
+                                                                                    "flags": "*",
+                                                                                    "init": {
+                                                                                        "needed": 1,
+                                                                                        "ops": [
+                                                                                            {
+                                                                                                "obj": {
+                                                                                                    "selector": -2,
+                                                                                                    "prop": "1802f564ab9591e|c"
+                                                                                                }
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "inst": "1802f4a39734656|Effect - Hypno"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "obj": {
+                                                                            "selector": 1,
+                                                                            "prop": "17c75d44e5d3e53|effects active"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "sub": "1802f564ab9591e|c",
+                                                                    "prop": "1802f44e6b44efb|hitting combatant"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "comment": ""
+                                                },
+                                                "c": {
+                                                    "flags": "d+",
+                                                    "instructions": {
+                                                        "8": {
+                                                            "flags": "+",
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": 1
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "sub": "2",
+                                                            "prop": "1802f44e6b44efb|hitting combatant"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "sub": "1802f3299aba9fa|hypno collider",
+                                                    "prop": "5b"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            },
+                                            "sort": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17d977adadb7e0e|firing"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f12edb9b848-Hypno Weapon Trigger": {
+                    "extends": "17c3d060d7cd3c2|Ship Weapon Trigger - Continuous",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17c3d060d7de788|reload time": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 21
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f4a39734656-Effect - Hypno": {
+                    "flags": "+",
+                    "extends": "17c764ea72845ee|Effect",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1802f4df889033b-crew requested": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "1802f829caea73c-rng": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "RNG": 1,
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "1802f801a3667f7-col": {
+                                    "flags": "*",
+                                    "base": "30",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "sub": "17c764f25fd912c|initiating contact",
+                                                    "prop": "5a"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1802f7fd9ae2d10-syreen owner": {
+                                    "flags": "*",
+                                    "base": "33",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "sub": "1802f801a3667f7|col",
+                                                    "prop": "90"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "11": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "1802f50daffcaca-start crew": {
+                                                    "base": "65",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -3,
+                                                                    "prop": "11"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "1802f4e93a2775b-remaining crew": {
+                                                    "base": "65",
+                                                    "init": {
+                                                        "bind": "-",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -3,
+                                                                    "prop": "11"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "1802f4df889033b|crew requested"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "+",
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "1802f50daffcaca|start crew"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "p",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "1802f4e93a2775b|remaining crew"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "<- max ->",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "1802f4e93a2775b|remaining crew"
+                                                        }
+                                                    },
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "p",
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -3,
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "1802f4e93a2775b|remaining crew"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "p",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "1802f4df889033b|crew requested"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "-",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "1802f50daffcaca|start crew"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "selector": -3,
+                                                            "prop": "11"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "1802f8177e5ff42-spawn offset init": {
+                                                            "base": "66",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "vec": {}
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "1802f815c0019c9-use spawn offset": {
+                                                            "base": "66",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "vec": {}
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "1802f7f0a966b35-": {
+                                                    "flags": "+",
+                                                    "extends": "8f",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "90": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -4
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "91": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -2,
+                                                                                    "sub": "1802f7fd9ae2d10|syreen owner",
+                                                                                    "prop": "13"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "3": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "1802f8177e5ff42|spawn offset init"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "31"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "8f"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "1802f8177e5ff42|spawn offset init",
+                                                            "tupleOffs": 4
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "8": {
+                                                    "flags": "l+",
+                                                    "instructions": {
+                                                        "b": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "2": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "1802f83947e773f-l": {
+                                                                            "base": "65",
+                                                                            "init": {
+                                                                                "bind": "*",
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "num": 1
+                                                                                    },
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "prop": "1802f829caea73c|rng"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "1802f815c0019c9|use spawn offset"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "1802f8177e5ff42|spawn offset init"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "1802f815c0019c9|use spawn offset",
+                                                                            "tupleOffs": 4
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "bind": "+",
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "1802f815c0019c9|use spawn offset",
+                                                                                    "tupleOffs": 4
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "1802f83947e773f|l"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "1802f8e08dea4ca-": {
+                                                                    "flags": "+",
+                                                                    "extends": "1802f8cde0f0338|Syreen Crew in Space Missile Launcher",
+                                                                    "sections": {
+                                                                        "2": {
+                                                                            "flags": "+",
+                                                                            "instructions": {
+                                                                                "31": {
+                                                                                    "flags": "*",
+                                                                                    "init": {
+                                                                                        "ops": [
+                                                                                            {
+                                                                                                "obj": {
+                                                                                                    "selector": -2,
+                                                                                                    "prop": "1802f815c0019c9|use spawn offset"
+                                                                                                }
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "inst": "1802f8cde0f0338|Syreen Crew in Space Missile Launcher"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "obj": {
+                                                                            "selector": -1
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "comment": ""
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "1802f4df889033b|crew requested"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": ""
+                                        }
+                                    },
+                                    "comment": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f33e09a3692-Hypno Collision Body": {
+                    "extends": "33",
+                    "conjurer": "1802f12edabd2f1|Syreen Ship",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "49": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f340352649d|Hypno Collider"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "93": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "1802f33738b17f9|hypno bp"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f340352649d-Hypno Collider": {
+                    "extends": "30",
+                    "conjurer": "1802f33e09a3692|Hypno Collision Body",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "51": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": "1|d6174488|30a526a5"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "48": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f353e1bfcd8|Hypno Sphere Shape"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "5b": {
+                                    "override": "1802f3d29b2e3af|Hypno Contact",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8a": {
+                                    "flags": "*",
+                                    "init": {
+                                        "flags": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17d3480382f8e58|Collision Masks",
+                                                    "prop": "17d7747152d972a|world triggers, char triggers"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8b": {
+                                    "flags": "*",
+                                    "init": {
+                                        "flags": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17d3480382f8e58|Collision Masks",
+                                                    "prop": "17d774618b50b10|chars"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "6c": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f3d29b2e3af|Hypno Contact"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "90": {
+                                    "override": "1802f33e09a3692|Hypno Collision Body",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "selector": -3,
+                                            "prop": "1802f3299aba9fa|hypno collider"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {}
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "t+",
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "5b"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f3d29b2e3af-Hypno Contact": {
+                    "extends": "56",
+                    "conjurer": "1802f340352649d|Hypno Collider",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1802f45c3f15d8a-other parent": {
+                                    "base": "15",
+                                    "init": {
+                                        "failable": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "sub": "1e",
+                                                    "prop": "90"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1802f44e6b44efb-hitting combatant": {
+                                    "base": "17c61c499ab6212|Combatant",
+                                    "init": {
+                                        "failable": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "sub": "1802f45c3f15d8a|other parent",
+                                                    "prop": "59"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "11": {
+                                    "flags": "+*",
+                                    "init": {
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "1802f4052ca8011-cb": {
+                                                            "base": "1802f33e09a3692|Hypno Collision Body",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "5a",
+                                                                            "prop": "90"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "1802f402582d303-attach to": {
+                                                            "base": "8f",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "1802f4052ca8011|cb",
+                                                                            "prop": "93"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "8": {
+                                                    "flags": "+",
+                                                    "contextValue": -2,
+                                                    "RHS": {
+                                                        "bind": "=",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "1e",
+                                                                    "prop": "90"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "1802f402582d303|attach to",
+                                                                    "prop": "90"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": ""
+                                        },
+                                        "a": {
+                                            "flags": "+",
+                                            "contextValue": -1,
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "5b"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "=",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": -1,
+                                                            "sub": "1e",
+                                                            "prop": "90"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "sub": "1e",
+                                                            "prop": "90"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "sort": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f353e1bfcd8-Hypno Sphere Shape": {
+                    "extends": "3f",
+                    "conjurer": "1802f340352649d|Hypno Collider",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "4a": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -4,
+                                                    "prop": "1802f59f638b2f6|hypno max range"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "hypno weapon"
+        },
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "1802f8cde0f0338-Syreen Crew in Space Missile Launcher": {
+                    "flags": "+",
+                    "extends": "17e2752b678033d|Power - Missile Launcher",
+                    "conjurer": "1802f4a39734656|Effect - Hypno",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e2752b6796ace|launch missile": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f716cf295fd|Syreen Crew in Space"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e27573233e1af|create trigger": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17aeedb73353cfd|power creator": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -4
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ca3b9a30fe92c|creator team": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17c5657124b693d|Combat System",
+                                                    "prop": "17c566290645e16|simulation team"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "90": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17aeedb73353cfd|power creator"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f716cf295fd-Syreen Crew in Space": {
+                    "flags": "+*",
+                    "extends": "17e27aad92e2e2c|Missile - Homing",
+                    "conjurer": "1802f8cde0f0338|Syreen Crew in Space Missile Launcher",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e27aad92f4ee1|turn rate": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1020
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e27aad930c037|target": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -3,
+                                                    "prop": "1802f7fd9ae2d10|syreen owner"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e27aad932dfb6|targeting scheme": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f74ed410d15|Targeting Scheme (Syreen Crew in Space)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e2746e4984461|lifespan FOR A MISSILE": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 300
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e2746e4995183|speed": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 4
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a93597e|thrust unit"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "49": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f794ed1edbc|Syreen Crew in Space Collider (Combat Trigger)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "t+",
+                                    "instructions": {
+                                        "9": {
+                                            "flags": "t",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17e27aad930c037|target"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17e27aad930c037|target"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": "hi"
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f74ed410d15-Targeting Scheme (Syreen Crew in Space)": {
+                    "extends": "17b08e31bca1923|Targeting Scheme",
+                    "sections": {
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "17b08e43d1b251a|return targets"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17b08e43d1b1bb8|source"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f794ed1edbc-Syreen Crew in Space Collider (Combat Trigger)": {
+                    "flags": "+",
+                    "extends": "17e0d221074de3c|Collider (Combat Trigger)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e0d23390303c9|interactions": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f7b26192e8a|Syreen Crew in Space Combat Trigger Interaction [Hit Combatant]"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e0d420f2105c6|team": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17c5657124b693d|Combat System",
+                                                    "prop": "17c566290645e16|simulation team"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "48": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f78db71c26d|Syreen Crew in Space Shape"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8a": {
+                                    "flags": "*",
+                                    "init": {
+                                        "flags": 1,
+                                        "ops": [
+                                            {
+                                                "num": "10|0|80000000d506ad83"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8b": {
+                                    "flags": "*",
+                                    "init": {
+                                        "flags": 1,
+                                        "ops": [
+                                            {
+                                                "num": "-1|0|80000000d506ad83"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f7b26192e8a-Syreen Crew in Space Combat Trigger Interaction [Hit Combatant]": {
+                    "extends": "17f040d5bed42f5|Combat Trigger Interaction [Hit Combatant]",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e0368b0fb9811|effects": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f7b96816012|Effect - Heal"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e078420bbd49d|die on hit": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f78db71c26d-Syreen Crew in Space Shape": {
+                    "extends": "3f",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "4a": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 0.25
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "hypno crew in space"
+        },
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "178fb31136ab076+Syreen Mk2 Melee Navigation Agent": {
+                    "flags": "+",
+                    "extends": "178f5460f98876a|Roster Ship",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17f50ea4a91529c|alien": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17cf16e260c7e85|Alien List",
+                                                    "prop": "1802f14ab330288|syreen"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "178f5460f98a7e8|ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f12edabd2f1|Syreen Ship"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "nav"
+        }
+    }
+}

@@ -1,0 +1,359 @@
+{
+    "components": {
+        "181e4a178dc742a+Simulation Transit - Initiate (To Shipyard - From Lobby)": {
+            "flags": "+",
+            "extends": "17cb943b03d689f|Simulation Transit - Initiate",
+            "sections": {
+                "3": {
+                    "flags": "+",
+                    "instructions": {
+                        "8": {
+                            "flags": "+",
+                            "contextValue": -1,
+                            "RHS": {
+                                "ops": [
+                                    {
+                                        "obj": {
+                                            "prop": "17de33f3a1f2f73|early out"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "b": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "comment": "DG NOTE: goofy looking hack but we want the shipyard to always be per-player (i.e. players don't participate together)"
+                                },
+                                "b": {
+                                    "comment": "We never use the created sim if one already exists - each player makes a new one each time"
+                                },
+                                "8": {
+                                    "flags": "d+",
+                                    "contextValue": -1,
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17cb95f7ddd11a1|to sim"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "9": {
+                                    "flags": "p",
+                                    "comment": "<--- from sim",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "17cddf1a0dfe353|from sim"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17cddf1a0dfe353|from sim"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "9": {
+                                    "flags": "p",
+                                    "comment": "<--- from sim",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "17cb95d6b8d4cb7|ret pos"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "91"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "b": {
+                                    "flags": "p+",
+                                    "comment": "---> to shipyard"
+                                },
+                                "181e4a178dd4c6f-": {
+                                    "flags": "+*",
+                                    "extends": "17d2ec24a620bce|Shipyard Simulation",
+                                    "path": "game/sim/shipyard/shipyard.sim",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "181e487b7e5d6cf|actions available": {
+                                                    "flags": "+*",
+                                                    "init": {
+                                                        "set": 1,
+                                                        "needed": 1,
+                                                        "conjured": 1,
+                                                        "scoped": 1
+                                                    },
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "181e46ae3650e7f|Shipyard Action Definition (Fleet Ship) [0]"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "181e46b2a41018b|Shipyard Action Definition (Fleet Ship) [1]"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "181e46b2b0243ff|Shipyard Action Definition (Fleet Ship) [2]"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "181e46b2ba93c36|Shipyard Action Definition (Fleet Ship) [3]"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "181e46b2c4a3638|Shipyard Action Definition (Fleet Ship) [4]"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "181e46b2cf19a82|Shipyard Action Definition (Fleet Ship) [5]"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "181e46b2d9a78f2|Shipyard Action Definition (Fleet Ship) [6]"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "181e46b2e399ef0|Shipyard Action Definition (Fleet Ship) [7]"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "181e46b2ef9fe05|Shipyard Action Definition (Fleet Ship) [8]"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "181e46b305b49a9|Shipyard Action Definition (Fleet Ship) [9]"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "17dc5d4fbfcb95d|parent collider": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -3
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "17d2ec24a620bce|Shipyard Simulation"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                }
+                            },
+                            "comment": ""
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

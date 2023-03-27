@@ -1,0 +1,12 @@
+{
+    "Type Colors": [
+        { "Simple Type": "Player (Market)", "Color": [ 1, 1, 1, 1 ] }
+    ],
+    "Include Files": [
+        "ship_controls.jsim"
+    ],
+    "Resource Files": [
+        { "Simple Type": "Resource Buy Dialog", "File": "Resource_Buy_Dialog.jdialog" },
+        { "Simple Type": "Resource Sell Dialog", "File": "Resource_Sell_Dialog.jdialog" }
+    ]
+}

@@ -1,0 +1,1877 @@
+{
+    "components": {
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "17c764ea72845ee+Effect": {
+                    "extends": "1f",
+                    "conjurer": "17c61c499ab6212|Combatant",
+                    "capturer": "17c61c499ab6212|Combatant",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17c764f25fd912c+initiating contact": {
+                                    "flags": "*",
+                                    "base": "56",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17c7659a9955e43+interrupts turning": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "17c7650a59f1747+interrupts movement": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "17c7650cd9d0c01+interrupts attacks": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "a": {
+                                    "flags": "l+",
+                                    "instructions": {
+                                        "18240bcf5b44807-": {
+                                            "flags": "+",
+                                            "extends": "1824096f1059a91|On Effect Callback",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "2"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "selector": -2,
+                                            "prop": "18240bc45bcd7fb|on effect callbacks"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    },
+                                    "sort": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17c76596d6d8c64|interrupt turning"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17c76596d6d8c64|interrupt turning"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {}
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17c7659a9955e43|interrupts turning"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17c764d0650ceb0|interrupt movement"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17c764d0650ceb0|interrupt movement"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {}
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17c7650a59f1747|interrupts movement"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17c764d5966bed2|interrupt attacks"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17c764d5966bed2|interrupt attacks"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {}
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17c7650cd9d0c01|interrupts attacks"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184f9639d18f867+Effect - Disables (base)": {
+                    "flags": "+",
+                    "extends": "17c764ea72845ee|Effect",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17c7ac6d134488f+disables turning": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "17c7ac6962cab64+disables movement": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "17c7ac60b15599a+disables attacks": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17c7ac72614efaa|disable turning"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17c7ac72614efaa|disable turning"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {}
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17c7ac6d134488f|disables turning"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17c7ac741a4418a|disable movement"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17c7ac741a4418a|disable movement"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {}
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17c7ac6962cab64|disables movement"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17c7ac752fcd8e2|disable attacks"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17c7ac752fcd8e2|disable attacks"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {}
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17c7ac60b15599a|disables attacks"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17c76524c978c63+Effect - Damage": {
+                    "extends": "17c764ea72845ee|Effect",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17c765387e8d60f+damage": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "11": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "a": {
+                                    "flags": "l+",
+                                    "instructions": {
+                                        "18048a53d881bfc-": {
+                                            "flags": "+",
+                                            "extends": "18048a2c036a3f2|On Damage Callback",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "2"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "selector": -2,
+                                            "prop": "18048a4b0ff3907|on damage"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    },
+                                    "sort": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "selector": -3,
+                                            "prop": "11"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "-",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -3,
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "17c765387e8d60f|damage"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "18048a2c036a3f2+On Damage Callback": {
+                    "extends": "f",
+                    "conjurer": "17c76524c978c63|Effect - Damage",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "18048a3da86ca9a+damage value": {
+                                    "base": "65",
+                                    "init": {
+                                        "live": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17c765387e8d60f|damage"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1819807b018af03+On Damage Callback (Invulnerability Time)": {
+                    "extends": "18048a2c036a3f2|On Damage Callback",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1819808646e1b86+invulnerability time": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                }
+                                            },
+                                            {
+                                                "num": 2
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "181980d10cf92ac-": {
+                                            "flags": "+",
+                                            "extends": "1819808b6d53ad1|Invulnerability Time",
+                                            "sections": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "18198094f5eb0e7|end at time": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "4"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "1819808646e1b86|invulnerability time"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "inst": "1819808b6d53ad1|Invulnerability Time"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "obj": {
+                                                    "selector": -3,
+                                                    "prop": "59"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": ">",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "18048a3da86ca9a|damage value"
+                                                }
+                                            },
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1824096f1059a91+On Effect Callback": {
+                    "extends": "f",
+                    "conjurer": "17c764ea72845ee|Effect",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "18240b7d64ff31f-effect": {
+                                    "base": "17c764ea72845ee|Effect",
+                                    "init": {
+                                        "live": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1824096f1064a1f+interrupts turning": {
+                                    "base": "65",
+                                    "init": {
+                                        "live": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17c7659a9955e43|interrupts turning"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "182409c56cca3b9+interrupts movement": {
+                                    "base": "65",
+                                    "init": {
+                                        "live": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17c7650a59f1747|interrupts movement"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "182409c896426d7+interrupts attacks": {
+                                    "base": "65",
+                                    "init": {
+                                        "live": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17c7650cd9d0c01|interrupts attacks"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1819808b6d53ad1-Invulnerability Time": {
+                    "extends": "10",
+                    "conjurer": "17c61c499ab6212|Combatant",
+                    "capturer": "fffffffffffffffe|unconjured",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "18198094f5eb0e7-end at time": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "selector": -2,
+                                            "prop": "17c75d44e5e8ec5|ignore types"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "+",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17c75d44e5e8ec5|ignore types"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17c76524c978c63|Effect - Damage"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "4": {
+                            "flags": "+"
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "a": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "b": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "181980bd7403a1d-dmg": {
+                                                                    "base": "17c76524c978c63|Effect - Damage",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "3"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "17c75d44e5e8ec5|ignore types"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "-",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "17c75d44e5e8ec5|ignore types"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "181980bd7403a1d|dmg"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "comment": ""
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17c75d44e5e8ec5|ignore types"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "=",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": -1
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "inst": "17c76524c978c63|Effect - Damage"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "sort": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": ">=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "4"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "18198094f5eb0e7|end at time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f7b96816012+Effect - Heal": {
+                    "extends": "17c764ea72845ee|Effect",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1802f7bcc0d5dbd+heal": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "11": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "selector": -3,
+                                            "prop": "11"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "+",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -3,
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "1802f7bcc0d5dbd|heal"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -3,
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17e6f855d357e64|max health"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": ">",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -3,
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17e6f855d357e64|max health"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17ca3e01090348b+Effect - Repeating Effect": {
+                    "extends": "17c76419c8145b6|Effect - Timed (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17ca3e0923801db+next tick time": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "+",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17ca3e052a0d52d|tick rate"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "4"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ca3e052a0d52d+tick rate": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e2bef6fb96862+effect to apply": {
+                                    "base": "17c764ea72845ee|Effect",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e2c039d49d11c+applied": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17ca3e0923801db|next tick time"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "4"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17ca3e052a0d52d|tick rate"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17e2c039d49d11c|applied"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "17e2befaf01762e-": {
+                                                    "flags": "+",
+                                                    "extends": "17c764ea72845ee|Effect",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "17c764f25fd912c|initiating contact": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "needed": 1,
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -2,
+                                                                                    "prop": "17c764f25fd912c|initiating contact"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "17e2bef6fb96862|effect to apply"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17c75d44e5d3e53|effects active"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17e2bef6fb96862|effect to apply"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": ">=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "4"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "prop": "17ca3e0923801db|next tick time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17ca3dc7a667bc0-Effect - Damage (Percent)": {
+                    "extends": "17c76524c978c63|Effect - Damage",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17ca3dc7a6771c5+damage pct": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 0.166
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17c765387e8d60f|damage": {
+                                    "flags": "+*",
+                                    "init": {
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "180908d481241ab-c hit": {
+                                                            "base": "30",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "17c764f25fd912c|initiating contact",
+                                                                            "prop": "1e"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "180908d18f30e2e-cb hit": {
+                                                            "base": "33",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "180908d481241ab|c hit",
+                                                                            "prop": "90"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "func": "CEIL",
+                                                        "bind": "*",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "180908d18f30e2e|cb hit",
+                                                                    "prop": "11"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "17ca3dc7a6771c5|damage pct"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": ""
+                                        }
+                                    }
+                                },
+                                "11": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17c76419c8145b6+Effect - Timed (base)": {
+                    "flags": "+",
+                    "extends": "184f9639d18f867|Effect - Disables (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17c7641cdcfe2ba+duration": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 0.5
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17c764b61bfeba0-end time": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17c764b61bfeba0|end time"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "4"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17c7641cdcfe2ba|duration"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17c7641cdcfe2ba|duration"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "11"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": ">=",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "4"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17c764b61bfeba0|end time"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17c764b61bfeba0|end time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17c763b33f29734+Effect - Stun": {
+                    "flags": "+",
+                    "extends": "17c76419c8145b6|Effect - Timed (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17c7ac6d134488f|disables turning": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17c7ac6962cab64|disables movement": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17c7ac60b15599a|disables attacks": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17c7659a9955e43|interrupts turning": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17c7650a59f1747|interrupts movement": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17c7650cd9d0c01|interrupts attacks": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17c76ec84dcad87+Effect - Knockback TEMP": {
+                    "extends": "17c764ea72845ee|Effect",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17c76edd7955734+strength": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "11": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "p+",
+                                    "instructions": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "17c76ec84dda37b-vec": {
+                                                    "base": "66",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "vec": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17c76ec84dda37b|vec"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "-",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -3,
+                                                            "prop": "13"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "sub": "17c764f25fd912c|initiating contact",
+                                                            "prop": "13"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17c76ec84dda37b|vec",
+                                                    "tupleOffs": 4
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17c76edd7955734|strength"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "p",
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -3,
+                                                    "prop": "16"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17c76ec84dda37b|vec"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "selector": -3,
+                                                            "prop": "16"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": "KNOCKED BACK"
+                                }
+                            }
+                        }
+                    }
+                },
+                "17cce39c6634d8d+Effect - Knockback Fixed": {
+                    "flags": "+",
+                    "extends": "17c764ea72845ee|Effect",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17cce39c6642056+strength": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17cce3b5badb15b+facing": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "11": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "p+",
+                                    "instructions": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "17cce3b899d3142-o": {
+                                                    "base": "67",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "rot": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17cce39c665572b-vec": {
+                                                    "base": "66",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "vec": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "b": {
+                                            "flags": "d",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "18468f53ed3f44f-INIT VEL": {
+                                                            "base": "65",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {}
+                                                                ]
+                                                            }
+                                                        },
+                                                        "18468f694fd08bb-on cb": {
+                                                            "base": "33",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -1
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "9": {
+                                                    "flags": "p",
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "18468f53ed3f44f|INIT VEL"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -3,
+                                                                    "prop": "16",
+                                                                    "tupleOffs": 4
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "flags": "p",
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "18468f694fd08bb|on cb"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -3
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": ""
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17cce3b899d3142|o",
+                                                    "tupleOffs": 2
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17cce3b5badb15b|facing"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17cce39c665572b|vec"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17cce3b899d3142|o",
+                                                            "tupleOffs": 6
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17cce39c6642056|strength"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "d",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17cce39c665572b|vec"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "-",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -3,
+                                                            "prop": "13"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "sub": "17c764f25fd912c|initiating contact",
+                                                            "prop": "13"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "d",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17cce39c665572b|vec",
+                                                    "tupleOffs": 4
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17cce39c6642056|strength"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -3,
+                                                    "prop": "16"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17cce39c665572b|vec"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "selector": -3,
+                                                            "prop": "16"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -3,
+                                                    "prop": "16",
+                                                    "tupleOffs": 4
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -3,
+                                                            "prop": "16",
+                                                            "tupleOffs": 4
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "b": {
+                                            "flags": "d",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "18468f219ed928e-l": {
+                                                            "base": "65",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {}
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "9": {
+                                                    "flags": "p",
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "18468f219ed928e|l"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -3,
+                                                                    "prop": "16",
+                                                                    "tupleOffs": 4
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": ""
+                                        }
+                                    },
+                                    "comment": "KNOCKED BACK"
+                                }
+                            }
+                        }
+                    }
+                },
+                "18169070cb7e3d6+Effect - While Touching (base)": {
+                    "flags": "+",
+                    "extends": "184f9639d18f867|Effect - Disables (base)",
+                    "conjurer": "1806cb786f5a387|Combatant (Ship)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "18169070cb9e005+initiating col": {
+                                    "base": "17d533e22d52e62|Collider (Trigger)",
+                                    "init": {
+                                        "failable": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "sub": "17c764f25fd912c|initiating contact",
+                                                    "prop": "5a"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17c764f25fd912c|initiating contact": {
+                                    "override": "17ffbb8857384d8|Collider (Trigger) Contact",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "a": {
+                                            "flags": "+",
+                                            "contextValue": -1,
+                                            "LHS": {
+                                                "obj": {
+                                                    "sub": "18169070cb9e005|initiating col",
+                                                    "prop": "17d534489a4347c|active touches"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "=",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": -1,
+                                                            "prop": "17d5345179d1450|touching"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17d3987f79e2e1b|owner"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "sort": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "combat -> effect"
+        }
+    }
+}

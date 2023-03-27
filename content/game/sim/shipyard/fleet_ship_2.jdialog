@@ -1,0 +1,7 @@
+{
+    "Title": "Build Ship",
+    "Cancellable": false,
+    "Choice Formats": [
+        { "Simple Condition": "alien", "Text": "{alien.(TYPE_NAME)}: Cost {alien.ship cost} Crew {alien.ship crew max}" }
+    ]
+}

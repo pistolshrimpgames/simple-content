@@ -1,0 +1,11 @@
+{
+    "Title": "Build",
+    "Cancellable": false,
+    "Choice Formats": [
+        { "Simple Condition": "", "Text": "" }
+    ],
+    "Comments_ChoiceFormats": [
+        "#DIALOG_CHOICE_FORMAT,is mineral>0,Buy {qty} {resource type.$TYPE_NAME$:Resource - Mineral \\(.*\\) - (.*)} for {net price} RUs",
+        "#DIALOG_CHOICE_FORMAT,resource type,Buy {qty} {resource type.$TYPE_NAME$:Resource - (.*)} for {net price} RUs"
+    ]
+}

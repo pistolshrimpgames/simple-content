@@ -1,0 +1,2101 @@
+{
+    "components": {
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "17bc71ae67f4abd+Planet Generator": {
+                    "flags": "*",
+                    "extends": "1f",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "184d4f2e0c053e4+spawn position": {
+                                    "flags": "*",
+                                    "base": "66",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "vec": {
+                                                    "x": 15,
+                                                    "z": 15
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "184d51c8fa350b3-planet type": {
+                                    "base": "17b317406db46a8|Planet",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b317406db46a8|Planet"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "17bc71b5f5daace-": {
+                                    "flags": "+*",
+                                    "extends": "17b317406db46a8|Planet",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "13": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "184d4f2e0c053e4|spawn position"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "184d51c8fa350b3|planet type"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                },
+                                "1809bc779c00e03-": {
+                                    "flags": "d*",
+                                    "extends": "17b317406db46a8|Planet",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "13": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "vec": {
+                                                                    "x": 17,
+                                                                    "z": 17
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "17b317406db46a8|Planet"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d4f353f85fae+Planet Generator (Random)": {
+                    "flags": "*",
+                    "extends": "17bc71ae67f4abd|Planet Generator",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "184d4f38b68b8c0+rng": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "RNG": 1,
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "184d4f2e0c053e4|spawn position": {
+                                    "flags": "+*",
+                                    "init": {
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "d",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "184d4f47e0017c1-playfield size": {
+                                                            "base": "66",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "vec": {}
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6",
+                                                            "tupleOffs": 1
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "176ee76b43b1735|Melee Simulation",
+                                                                    "prop": "36",
+                                                                    "tupleOffs": 1
+                                                                }
+                                                            },
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": ""
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6",
+                                                    "tupleOffs": 1
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "184d4f38b68b8c0|rng"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "inst": "176ee76b43b1735|Melee Simulation",
+                                                            "prop": "36",
+                                                            "tupleOffs": 1
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6",
+                                                    "tupleOffs": 3
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "184d4f38b68b8c0|rng"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "inst": "176ee76b43b1735|Melee Simulation",
+                                                            "prop": "36",
+                                                            "tupleOffs": 3
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17b317406db46a8+Planet": {
+                    "flags": "*",
+                    "extends": "17818c5353f36cf|Targetable (Rigid Body)",
+                    "sections": {
+                        "2": {
+                            "instructions": {
+                                "1809a45eab1d30e+gravity field": {
+                                    "flags": "*",
+                                    "base": "17b5b6f2ae079bd|Gravity Field",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17b5b19a266b919-planet overlapper": {
+                                    "flags": "*",
+                                    "base": "57",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17f0e83f6e17ac7+nav object": {
+                                    "flags": "*",
+                                    "base": "21",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17f0e8485fa1665|Planet Nav Object"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17f0e852d026251-width": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 2.203
+                                            }
+                                        ]
+                                    }
+                                },
+                                "37": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": "0|b2bb010a|4ccba341"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "35": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 100000
+                                            }
+                                        ]
+                                    }
+                                },
+                                "49": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1809079cb036bcc|Planet Collider (Combat Trigger)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "14": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "rot": {
+                                                    "y": 180
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "62": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 7102
+                                            }
+                                        ]
+                                    }
+                                },
+                                "11": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 99999
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "18090882bb3945e-": {
+                                    "flags": "d",
+                                    "extends": "1809079cb036bcc|Planet Collider (Combat Trigger)",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "17e0d23390303c9|interactions": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "set": 1,
+                                                        "needed": 1,
+                                                        "conjured": 1,
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "180907fae8c3b52|Planet Combat Trigger Interaction [Hit Combatant]"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "18090b49d8e712a|Planet Combat Trigger Interaction [Hit Trigger]"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "1809079cb036bcc|Planet Collider (Combat Trigger)"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "prop": "49"
+                                        }
+                                    }
+                                },
+                                "1809a454620609e-": {
+                                    "extends": "180d80c50fa8103|Planet Gravity Field",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "93": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "180d80c50fa8103|Planet Gravity Field"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "prop": "1809a45eab1d30e|gravity field"
+                                        }
+                                    }
+                                },
+                                "17b31744e33bfcc-": {
+                                    "flags": "d",
+                                    "extends": "17b37dd6950af8e|Damager (DEPRECATED)",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "17b37ddb3f72f89|ignore targets": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17b3c3e3b4363d2|team (old)": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "ui-": "17c61c499ab6212|Combatant",
+                                                                    "prop": "17c61c750184638|team"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17c76b967dcd311|fx": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "needed": 1,
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "17b65ed994bd12d|Effect - Planet Damage"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17b65653dc485bb|re-hit frequency": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "bind": "*",
+                                                        "ops": [
+                                                            {
+                                                                "num": 10
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                                    "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17d160d084d5031|damages combatants": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "17c622c43c5eead|Combatant (Player)"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "5e": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "8a": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "flags": 1,
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "17d3480382f8e58|Collision Masks",
+                                                                    "prop": "17d7744c9555798|world"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "8b": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "flags": 1,
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "17d3480382f8e58|Collision Masks",
+                                                                    "prop": "17d7745c2f4109f|world, characters, world triggers, char triggers"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "49"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "17b3174eb5b7597-": {
+                                                    "flags": "+",
+                                                    "extends": "3f",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "4a": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -3,
+                                                                                    "prop": "17f0e852d026251|width"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "3": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "48"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {}
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "3f"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                },
+                                                "17b5b705372e640-": {
+                                                    "flags": "d+*",
+                                                    "extends": "17b5b6f2ae079bd|Gravity Field",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "93": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -2
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "17b5b6f2ae079bd|Gravity Field"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "17b37dd6950af8e|Damager (DEPRECATED)"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d53de549df06-Planet (w/ Defense Laser)": {
+                    "flags": "*",
+                    "extends": "184d51c0ce91e77|Planet (w/ Orbiter)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "184d51de3b91b7d|orbiter": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "184d53d3a699cb1|Planet Orbiter (Defense Laser)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d51c0ce91e77+Planet (w/ Orbiter)": {
+                    "flags": "*",
+                    "extends": "17b317406db46a8|Planet",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "184d51de3b91b7d+orbiter": {
+                                    "flags": "*",
+                                    "base": "184d51ff941ed47|Planet Orbiter",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "184d51ff941ed47|Planet Orbiter"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d51ff941ed47+Planet Orbiter": {
+                    "flags": "*",
+                    "extends": "3b",
+                    "conjurer": "184d51c0ce91e77|Planet (w/ Orbiter)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "184d520555c3e74-owning planet": {
+                                    "flags": "*",
+                                    "base": "184d51c0ce91e77|Planet (w/ Orbiter)",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "184d5272368e6f8-orbiter twirler": {
+                                    "flags": "*",
+                                    "base": "184d5238b19c21f|Planet Orbiter Twirler",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "184d5238b19c21f|Planet Orbiter Twirler"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "184d521d52935df-orbiter attach": {
+                                    "flags": "*",
+                                    "base": "184d5229fb9b5d6|Planet Orbiter Attach",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "184d5229fb9b5d6|Planet Orbiter Attach"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "37": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": "1|3705291e|4ccba341"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "49": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "184d52a49a11ae5|Orbiter Ex Collider"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "93": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "184d521d52935df|orbiter attach"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d548dca40ea9+Combatant (Planet Orbiter)": {
+                    "instances": "17c622cc9add7fa|Combatant (NPC)",
+                    "conjurer": "184d51ff941ed47|Planet Orbiter",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17c61c750184638|team": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -3,
+                                                    "ui-": "17c61c499ab6212|Combatant",
+                                                    "prop": "17c61c750184638|team"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d53d3a699cb1-Planet Orbiter (Defense Laser)": {
+                    "flags": "*",
+                    "extends": "184d51ff941ed47|Planet Orbiter",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "184d5272368e6f8|orbiter twirler": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "184d53970312652|Planet Orbiter Twirler (Defense Laser)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d52a49a11ae5-Orbiter Ex Collider": {
+                    "extends": "30",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "48": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "184d52a7baa3bf6|Orbiter Ex Box"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d52a7baa3bf6-Orbiter Ex Box": {
+                    "extends": "42",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "47": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "vec": {
+                                                    "x": 1,
+                                                    "y": 0.5,
+                                                    "z": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d5238b19c21f-Planet Orbiter Twirler": {
+                    "extends": "33",
+                    "conjurer": "184d51ff941ed47|Planet Orbiter",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "184d5548954cdce-orbiter owner": {
+                                    "flags": "*",
+                                    "base": "184d51ff941ed47|Planet Orbiter",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "vec": {
+                                                    "y": 10
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "13": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -3,
+                                                    "prop": "13"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "14": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -3,
+                                                    "prop": "14"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "d+",
+                            "instructions": {
+                                "9": {
+                                    "flags": "t",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "17"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d5229fb9b5d6-Planet Orbiter Attach": {
+                    "extends": "8f",
+                    "conjurer": "184d51ff941ed47|Planet Orbiter",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "31": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "vec": {
+                                                    "z": 10
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "90": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "184d5272368e6f8|orbiter twirler"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "d+",
+                            "instructions": {
+                                "9": {
+                                    "flags": "t",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "90"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "90"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d53970312652-Planet Orbiter Twirler (Defense Laser)": {
+                    "extends": "184d5238b19c21f|Planet Orbiter Twirler",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "184d542ec2aaad4-shoot state": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "184d5432828381c-shoot timer": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "49": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "184d53a42e9a10a|Defense Laser Raycast"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "t+",
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "184d542ec2aaad4|shoot state"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "184d542ec2aaad4|shoot state"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "184d5432828381c|shoot timer"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "4"
+                                                                }
+                                                            },
+                                                            {
+                                                                "num": 0.19999999
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "17",
+                                                            "tupleOffs": 4
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "sub": "49",
+                                                            "prop": "5b"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "184d542ec2aaad4|shoot state"
+                                                }
+                                            },
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "e+",
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "184d542ec2aaad4|shoot state"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "17",
+                                                            "tupleOffs": 2
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 10
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "184d54c608410f7-": {
+                                                    "flags": "+",
+                                                    "extends": "184d547b2bca39d|Defense Laser Missile Launcher",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "31": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "vec": {
+                                                                                    "z": 10
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "184d547b2bca39d|Defense Laser Missile Launcher"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": ">=",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "4"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "184d5432828381c|shoot timer"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "184d542ec2aaad4|shoot state"
+                                                }
+                                            },
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d547b2bca39d-Defense Laser Missile Launcher": {
+                    "extends": "17e2752b678033d|Power - Missile Launcher",
+                    "conjurer": "184d53970312652|Planet Orbiter Twirler (Defense Laser)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e2752b6796ace|launch missile": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "184d54743eccfa6|Defense Laser Missile"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e27573233e1af|create trigger": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "184d54fd4e4e64b|Defense Laser Missile Collider"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "182414568502e5e|ship weapon": {
+                                    "flags": "*",
+                                    "init": {
+                                        "failable": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ca3b9a30fe92c|creator team": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "ui+": "184d548dca40ea9|Combatant (Planet Orbiter)",
+                                                    "sub": "184d5548954cdce|orbiter owner",
+                                                    "prop": "17c61c750184638|team"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d54743eccfa6-Defense Laser Missile": {
+                    "flags": "*",
+                    "extends": "17e2746e493cd33|Missile",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e2746e4984461|lifespan FOR A MISSILE": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 6
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a969e0b|UQM frame time"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e2746e4995183|speed": {
+                                    "flags": "*",
+                                    "init": {
+                                        "bind": "*",
+                                        "ops": [
+                                            {
+                                                "num": 380
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17ca4ab5732f61d|Ship Constants",
+                                                    "prop": "17ca4ab0a93597e|thrust unit"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1821d184486b61e|missile hijack callback": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d54fd4e4e64b-Defense Laser Missile Collider": {
+                    "extends": "17e0d221074de3c|Collider (Combat Trigger)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "48": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "184d550167b6d2b|Defense Laser Missile Shape"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d550167b6d2b-Defense Laser Missile Shape": {
+                    "extends": "42",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "184d550c599779f-add len per sec": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 250
+                                            }
+                                        ]
+                                    }
+                                },
+                                "184d55107028ac8-last frame time": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "4"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "47": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "vec": {
+                                                    "x": 0.5,
+                                                    "y": 0.5,
+                                                    "z": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "184d55167019f6f-al": {
+                                                    "base": "65",
+                                                    "init": {
+                                                        "bind": "-",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "4"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "184d55107028ac8|last frame time"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "184d55167019f6f|al"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "*",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "184d55167019f6f|al"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "184d550c599779f|add len per sec"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "47",
+                                                    "tupleOffs": 3
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "47",
+                                                            "tupleOffs": 3
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "184d55167019f6f|al"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": ""
+                                },
+                                "9": {
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "184d55107028ac8|last frame time"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "4"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d53a42e9a10a-Defense Laser Raycast": {
+                    "extends": "30",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "48": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "184d53ae42a5492|Defense Laser Raycast Shape"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8a": {
+                                    "flags": "*",
+                                    "init": {
+                                        "flags": 1,
+                                        "ops": [
+                                            {
+                                                "num": "4|49f657fe|80000000d506ad83"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8b": {
+                                    "flags": "*",
+                                    "init": {
+                                        "flags": 1,
+                                        "ops": [
+                                            {
+                                                "num": "2|8ff0eee|80000000d506ad83"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "31": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "vec": {
+                                                    "z": 10
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "184d53ae42a5492-Defense Laser Raycast Shape": {
+                    "extends": "3d",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1d": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 50
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1809079cb036bcc-Planet Collider (Combat Trigger)": {
+                    "extends": "17e0d221074de3c|Collider (Combat Trigger)",
+                    "conjurer": "17b317406db46a8|Planet",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e0d23390303c9|interactions": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "bind": "+",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "180907fae8c3b52|Planet Combat Trigger Interaction [Hit Combatant]"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "18090b49d8e712a|Planet Combat Trigger Interaction [Hit Trigger]"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e0d420f2105c6|team": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17c5657124b693d|Combat System",
+                                                    "prop": "17c566290645e16|simulation team"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "5e": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "48": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "180907e7cf3f786|Planet Shape"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8a": {
+                                    "flags": "*",
+                                    "init": {
+                                        "flags": 1,
+                                        "ops": [
+                                            {
+                                                "num": "1|ffe7463e|80000000d506ad83"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "flags": "td",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "5b"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "5b"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "180907fae8c3b52-Planet Combat Trigger Interaction [Hit Combatant]": {
+                    "extends": "17f040d5bed42f5|Combat Trigger Interaction [Hit Combatant]",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e0368b0fb9811|effects": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b65ed994bd12d|Effect - Planet Damage"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e07b2831fb891|filter": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1809080dd9c0294|Planet Combat Trigger Filter [Hit Combatant]"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "18090b49d8e712a-Planet Combat Trigger Interaction [Hit Trigger]": {
+                    "extends": "17f042da9673f0e|Combat Trigger Interaction [Hit Trigger] (Damage)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17f042da9683077|damage": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 100
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e07b2831fb891|filter": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "18090b79cdef620|Planet Combat Trigger Filter [Hit Trigger]"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1809080dd9c0294-Planet Combat Trigger Filter [Hit Combatant]": {
+                    "extends": "17e07b18e2e31d8|Combat Trigger Filter",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e07b18e30eba1|hits allies": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17e07b18e3177d3|interacts with type": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "3b"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "18090b79cdef620-Planet Combat Trigger Filter [Hit Trigger]": {
+                    "extends": "17e07b18e2e31d8|Combat Trigger Filter",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17e07b18e30eba1|hits allies": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "180907e7cf3f786-Planet Shape": {
+                    "extends": "3f",
+                    "conjurer": "1809079cb036bcc|Planet Collider (Combat Trigger)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "4a": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -3,
+                                                    "prop": "17f0e852d026251|width"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17f0e8485fa1665+Planet Nav Object": {
+                    "extends": "21",
+                    "conjurer": "17b317406db46a8|Planet",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "23": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "24": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17f0e852d026251|width"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17ca3c220f7b09d+Planet Combatant": {
+                    "flags": "+",
+                    "instances": "17c622cc9add7fa|Combatant (NPC)",
+                    "conjurer": "17b317406db46a8|Planet",
+                    "capturer": "33",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "180244bb01cc63d|targetable": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17b65ed994bd12d+Effect - Planet Damage": {
+                    "extends": "17ca3dc7a667bc0|Effect - Damage (Percent)"
+                },
+                "180d80c50fa8103+Planet Gravity Field": {
+                    "extends": "17b5b6f2ae079bd|Gravity Field",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "11": {
+                                    "flags": "+*",
+                                    "init": {
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "183904dea2a0d35|Melee Debug Config",
+                                                            "prop": "180d80b17f71d77|planet gravity enabled"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17b5b1eb2ae9e06-Planet Gravity Field (DEPRECATED?)": {
+                    "extends": "30",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "51": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": "1|d6174488|30a526a5"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "17b5b23fa6ce4ae-": {
+                                    "flags": "+",
+                                    "extends": "3f",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "4a": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 11
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "48"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "3f"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "melee -> planet"
+        }
+    }
+}

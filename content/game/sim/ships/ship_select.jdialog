@@ -1,0 +1,10 @@
+{
+    "Title": "Select Ship",
+    "Cancellable": false,
+    "Choice Formats": [
+        { "Simple Condition": "alien", "Text": "{alien.(TYPE_NAME)}: Cost {alien.ship cost} Crew {crew}" },
+        { "Simple Condition": "cost=-1", "Text": "Next" },
+        { "Simple Condition": "cost=-2", "Text": "Same" },
+        { "Simple Condition": "cost=-3", "Text": "Spectate" }
+    ]
+}

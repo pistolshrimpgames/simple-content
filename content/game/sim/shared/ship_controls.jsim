@@ -1,0 +1,18 @@
+{
+    "Input Bindings": [
+        { "Binding": "PrimaryAxisPositiveX", "Input": [ { "Key": "d" }, { "Key": "m" }, { "Key": "right" } ] },
+        { "Binding": "PrimaryAxisNegativeX", "Input": [ { "Key": "s" }, { "Key": "n" }, { "Key": "left" } ] },
+        { "Binding": "PrimaryAxisNegativeZ", "Input": [ { "Key": "comma" }, { "Key": "up" } ] },
+        { "Binding": "PrimaryAxisPositiveZ", "Input": [ { "Key": "w" }, { "Key": "down" } ] },
+        { "Binding": "PrimaryAxisPositiveY", "Input": [ { "Key": "period" }, { "Key": "leftcontrol" } ] },
+        { "Binding": "SecondaryAxisNegativeX", "Input": [ { "Key": "apostrophe" } ] },
+        { "Binding": "SecondaryAxisPositiveX", "Input": [ { "Key": "l" }, { "Key": "x" } ] },
+        { "Binding": "SecondaryAxisNegativeZ", "Input": [ { "Key": "semicolon" } ] },
+        { "Binding": "SecondaryAxisPositiveZ", "Input": [ { "Key": "a" }, { "Key": "slash" }, { "Key": "leftshift" } ] },
+        { "Binding": "SecondaryAxisPositiveY", "Input": [ { "Key": "rightshift" } ] },
+        { "Binding": "SecondaryAxisNegativeY", "Input": [ { "Key": "backslash" } ] }
+    ],
+    "Resource Files": [
+        { "Simple Type": "Ship Select Dialog", "File": "ships/Ship_Select.jdialog" }
+    ]
+}

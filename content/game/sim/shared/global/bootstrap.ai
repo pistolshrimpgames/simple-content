@@ -1,0 +1,94 @@
+{
+    "components": {
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "17da0133526358f+bootstrap": {
+                    "flags": "+",
+                    "extends": "10",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "18192f885077842+this sim": {
+                                    "base": "17cddec4007ce74|Simulation (Transitioner)",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "5"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "c": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "17ddf313e00ea3f-": {
+                                            "flags": "+",
+                                            "extends": "17ddf222912277e|Simulation - Start Player",
+                                            "sections": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "17ddf2379f9bbee|in sim": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "live": 1,
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": 1
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "17ddf238cdae9c9|with input": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -3
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "inst": "17ddf222912277e|Simulation - Start Player"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "18192f885077842|this sim"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "sim"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "Title": "Starbase",
+    "Cancellable": false,
+    "Choice Formats": [
+        { "Simple Condition": "hardpoint", "Text": "{(TYPE_NAME)}"},
+        { "Simple Condition": "hardpoint.object attached", "Text": "Deconstruct: {hardpoint.object attached.(TYPE_NAME)}"}
+    ],
+    "Comments_ChoiceFormats": [
+        "#DIALOG_CHOICE_FORMAT,object attached,Buy {qty} {resource type.$TYPE_NAME$:Resource - Mineral \\(.*\\) - (.*)} for {net price} RUs",
+        "#DIALOG_CHOICE_FORMAT,resource type,Buy {qty} {resource type.$TYPE_NAME$:Resource - (.*)} for {net price} RUs"
+    ]
+}

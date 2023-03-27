@@ -1,0 +1,12 @@
+{
+    "scripts": [
+        "game/sim/melee_lobby/melee_lobby.ai",
+        "game/sim/melee_lobby/simulation_transit_shipyard_from_lobby.ai",
+        "game/sim/shared/simulation_transit_melee.ai",
+        "game/sim/shared/simulation_transit_shipyard.ai",
+        "game/sim/ships/melee_constants.ai",
+        "game/sim/ships/melee_match.ai",
+        "game/sim/ships/melee_match_defend.ai",
+        ">game/sim/shared/global"
+    ]
+}

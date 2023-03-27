@@ -1,0 +1,2336 @@
+{
+    "components": {
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "17cf16e260c7e85+Alien List": {
+                    "flags": "+*",
+                    "instances": "52",
+                    "conjurer": "fffffffffffffffe|unconjured",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17cf16ea3b55157+all aliens": {
+                                    "flags": "+*",
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "b": {
+                                                    "flags": "+",
+                                                    "comment": "This current behavior will keep all the objects 'in' the Alien List simulation"
+                                                }
+                                            },
+                                            "comment": "DG NOTE 7.28.22 - This is just (conjured) for now until we figure out some of the challenges of <on-demand> objects across sims"
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180246ac4387b76|androsynth"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "1806c5edb57b6ae|arilou"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "1807796e2e1fc27|chenjesu"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17f50e68ff75e61|chmmr"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "1806c3961e89fe0|druuge"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17d2a60daa838d2|human"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "1802429257c0f0d|ilwrath"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17f510e472ca850|kohr-ah"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17f50febe46c0c7|melnorme"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "18053956e391cb1|mmrnmhrm"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "18048626d8073ee|mycon"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17f50fed42ec838|orz"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17f50e6d0e8bcd2|pkunk"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17fc28b7e569393|shofixti"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180ab4db333d88f|spathi"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180482c28b34195|supox"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "1802f14ab330288|syreen"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17cf17000c554d9|thraddash"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "1805320bf4fc239|umgah"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17f50e6acb8c50c|ur-quan"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180488b4d0e956f|utwig"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "1806c96c313e700|VUX"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17cf170586b8827|yehat"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "prop": "180775a66b596b8|zoqfot"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "17d2a60daa838d2+human": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17d2a607b218449|Alien Definition (Human)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17cf17000c554d9+thraddash": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17cf15a0515644d|Alien Definition (Thraddash)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17cf170586b8827+yehat": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17cf15aa71beb0f|Alien Definition (Yehat)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17f50e6d0e8bcd2+pkunk": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17f50dd64e86a36|Alien Definition (Pkunk)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17f50e68ff75e61+chmmr": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17f50d7fc4258aa|Alien Definition (Chmmr)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17f50e6acb8c50c+ur-quan": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17f50dc4b194da8|Alien Definition (Ur-Quan)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17f510e472ca850+kohr-ah": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17f50dd5e99cca8|Alien Definition (Kohr-Ah)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17f50febe46c0c7+melnorme": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17f50feeea6d534|Alien Definition (Melnorme)😍😍😍😍😍😍😍😍😍"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17f50fed42ec838+orz": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17f50fef065d1f6|Alien Definition (Orz)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17fc28b7e569393+shofixti": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17fc28a2b9eca45|Alien Definition (Shofixti)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1802429257c0f0d+ilwrath": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802429591cefd2|Alien Definition (Ilwrath)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "180246ac4387b76+androsynth": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "180246b18c81dd4|Alien Definition (Androsynth)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1802f14ab330288+syreen": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802f14d0331e6f|Alien Definition (Syreen)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "180482c28b34195+supox": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "180482c462b2fb5|Alien Definition (Supox)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "18048626d8073ee+mycon": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "180486281507024|Alien Definition (Mycon)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "180488b4d0e956f+utwig": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "180488b636d412a|Alien Definition (Utwig)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1805320bf4fc239+umgah": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1805320df37d4db|Alien Definition (Umgah)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "18053956e391cb1+mmrnmhrm": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1805394e5713335|Alien Definition (Mmrnmhrm)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1806c3961e89fe0+druuge": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1806c38e990c17d|Alien Definition (Druuge)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1806c5edb57b6ae+arilou": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1806c5eea1e0f19|Alien Definition (Arilou)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1806c96c313e700+VUX": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1806c9285f3cd2b|Alien Definition (VUX)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "180775a66b596b8+zoqfot": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1807759979deee4|Alien Definition (ZoqFot)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1807796e2e1fc27+chenjesu": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "18077966012ea37|Alien Definition (Chenjesu)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "180ab4db333d88f+spathi": {
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "180ab4dd6fb6eb5|Alien Definition (Spathi)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "d+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "td+",
+                                    "comment": ""
+                                },
+                                "8": {
+                                    "flags": "t+",
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17cf16ea3b55157|all aliens"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "a": {
+                                    "flags": "td+",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "17cf16ea3b55157|all aliens"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    },
+                                    "sort": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17cf15997e5a882+Alien Definition": {
+                    "extends": "1f",
+                    "conjurer": "fffffffffffffffe|unconjured",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1+roster ship": {
+                                    "base": "178f5460f98876a|Roster Ship",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0+ship cost": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 600
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1830052f36f10fe+ship repair cost": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17d2ad5798fcda0|ship cost"
+                                                }
+                                            },
+                                            {
+                                                "num": 2
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad58e5f9021+ship salvage value": {
+                                    "base": "65",
+                                    "init": {
+                                        "bind": "/",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17d2ad5798fcda0|ship cost"
+                                                }
+                                            },
+                                            {
+                                                "num": 4
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63+ship crew max": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17f50d7fc4258aa+Alien Definition (Chmmr)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17eef652761e4b1|Chmmr Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 42
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17d2a607b218449+Alien Definition (Human)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b0e5ef84f83f4|Human Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1000
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 18
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17cf15a0515644d+Alien Definition (Thraddash)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b091674b31a02|Thraddash MK2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 800
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 10
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17f50dd5e99cca8+Alien Definition (Kohr-Ah)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b3ceeeb33e5c3|Kohr-Ah Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 42
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17f50dc4b194da8+Alien Definition (Ur-Quan)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b1da04ee03a98|Urquan Melee Nav Agent Mk2"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 42
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17f50dd64e86a36+Alien Definition (Pkunk)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b1831f2349daa|Pkunk Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 6
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17cf15aa71beb0f+Alien Definition (Yehat)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b183a1b1f9a14|Yehat Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 20
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17f50feeea6d534+Alien Definition (Melnorme)😍😍😍😍😍😍😍😍😍": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17af87ff341238a|Melnorme Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 20
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17f50fef065d1f6+Alien Definition (Orz)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17e2b3b95d4d5c1|Orz Melee Navigation Agent Mk2"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 16
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17fc28a2b9eca45+Alien Definition (Shofixti)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b751ebfcd5834|Shofixti MK2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 6
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802429591cefd2+Alien Definition (Ilwrath)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1793844c0c6c501|Ilwrath Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 22
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "180246b18c81dd4+Alien Definition (Androsynth)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1799c7b658f1184|Androsynth Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 20
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802f14d0331e6f+Alien Definition (Syreen)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "178fb31136ab076|Syreen Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 12
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "180482c462b2fb5+Alien Definition (Supox)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "179aa32747b5d15|Supox Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 12
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "180486281507024+Alien Definition (Mycon)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "179864ee73b013c|Mycon Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 20
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "180488b636d412a+Alien Definition (Utwig)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1798bb671f206d0|Utwig Mk2 Melee Navigation"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 20
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1805320df37d4db+Alien Definition (Umgah)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b55bb753c6d71|Umgah MK2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 10
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1805394e5713335+Alien Definition (Mmrnmhrm)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17913be99325693|Mmrnmhrm Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 20
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1806c38e990c17d+Alien Definition (Druuge)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "178ffcb2deb9acc|Druuge Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 14
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1806c5eea1e0f19+Alien Definition (Arilou)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1790ee17113b097|Arilou Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 16
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1806c9285f3cd2b+Alien Definition (VUX)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1798ff68f6e846b|VUX Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 20
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1807759979deee4+Alien Definition (ZoqFot)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17990b1e5e5f20e|ZoqFot Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 10
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "18077966012ea37+Alien Definition (Chenjesu)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "179440925fe8b92|Chenjesu Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 36
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "180ab4dd6fb6eb5+Alien Definition (Spathi)": {
+                    "extends": "17cf15997e5a882|Alien Definition",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181b0cc3b6fcaa1|roster ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17b0d28056e3dd6|Spathi Mk2 Melee Navigation Agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2ad5798fcda0|ship cost": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 400
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d2a6640b19a63|ship crew max": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 30
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "b": {
+                    "flags": "+*",
+                    "instructions": {
+                        "18415b41f2d34fe+Alien Battlegroup Definition": {
+                            "extends": "10",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "18415b46887b8a7+aliens": {
+                                            "base": "17cf15997e5a882|Alien Definition",
+                                            "init": {
+                                                "set": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "18415b637f5c34c+Alien Battlegroup Data": {
+                            "extends": "10",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "18415b6cfc0f68d+definition": {
+                                            "flags": "*",
+                                            "base": "18415b41f2d34fe|Alien Battlegroup Definition",
+                                            "init": {
+                                                "needed": 1,
+                                                "conjured": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "18415b7fa90ff2a+fleet hold": {
+                                            "flags": "*",
+                                            "base": "17fdbeb9398d327|Resource Hold - Fleet Ships",
+                                            "init": {
+                                                "needed": 1,
+                                                "conjured": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "18415b8c2a89eb6|Resource Hold - Fleet Ships (Alien Battlegroup)"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "18415b8c2a89eb6-Resource Hold - Fleet Ships (Alien Battlegroup)": {
+                            "extends": "17fdbeb9398d327|Resource Hold - Fleet Ships",
+                            "conjurer": "18415b637f5c34c|Alien Battlegroup Data",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "17edf7cccb41a31|resources": {
+                                            "flags": "+*",
+                                            "init": {
+                                                "set": 1,
+                                                "needed": 1,
+                                                "conjured": 1,
+                                                "scoped": 1
+                                            },
+                                            "instructions": {
+                                                "8": {
+                                                    "flags": "l+",
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "18415bba42fd80a|Resource - Fleet Ship (Alien Battlegroup)"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "sub": "18415b6cfc0f68d|definition",
+                                                                    "prop": "18415b46887b8a7|aliens"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "18415bba42fd80a-Resource - Fleet Ship (Alien Battlegroup)": {
+                            "flags": "+",
+                            "extends": "17fdbbd49eda7e4|Resource - Fleet Ship",
+                            "conjurer": "18415b8c2a89eb6|Resource Hold - Fleet Ships (Alien Battlegroup)",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "18222bbfc48d455|alien def": {
+                                            "flags": "+*",
+                                            "init": {
+                                                "needed": 1,
+                                                "scoped": 1
+                                            },
+                                            "instructions": {
+                                                "b": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "18415c0910f75f4-ads": {
+                                                                    "base": "17cf15997e5a882|Alien Definition",
+                                                                    "init": {
+                                                                        "set": 1,
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -3,
+                                                                                    "sub": "18415b6cfc0f68d|definition",
+                                                                                    "prop": "18415b46887b8a7|aliens"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "18415c0910f75f4|ads",
+                                                                    "tupleOffs": 9
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "17d2aba92cb2661|type"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "num": 1
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "18415c0910f75f4|ads",
+                                                                            "tupleOffs": 8
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "comment": ""
+                                                }
+                                            }
+                                        },
+                                        "17d2aba92cb2661|type": {
+                                            "flags": "+*",
+                                            "init": {
+                                                "scoped": 1
+                                            },
+                                            "instructions": {
+                                                "a": {
+                                                    "flags": "l+",
+                                                    "instructions": {
+                                                        "8": {
+                                                            "flags": "+",
+                                                            "contextValue": -2,
+                                                            "instructions": {
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "1"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "=",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "2"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {}
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17edf7cccb41a31|resources"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    },
+                                                    "sort": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "17edbf2d59cbfba|num": {
+                                            "flags": "+*",
+                                            "init": {
+                                                "scoped": 1
+                                            },
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "18222bbfc48d455|alien def",
+                                                                    "prop": "17d2a6640b19a63|ship crew max"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "comment": "battlegroup"
+                }
+            },
+            "comment": "aliens"
+        }
+    }
+}

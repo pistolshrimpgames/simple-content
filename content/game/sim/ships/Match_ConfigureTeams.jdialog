@@ -1,0 +1,4 @@
+{
+    "Title": "Select Team Config",
+    "Fixed Choices": [ "Free-for-All", "2 Teams", "3 Teams", "4 Teams", "1v1 Tourney" ]
+}

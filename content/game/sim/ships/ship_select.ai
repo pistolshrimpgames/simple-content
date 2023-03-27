@@ -1,0 +1,2168 @@
+{
+    "components": {
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "17f4d2cb28054b9+Alien Select Dialog": {
+                    "flags": "+",
+                    "extends": "17ee5deb70cb063|Dialog",
+                    "conjurer": "17b36c0354722e6|Roster",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17ee5df892d1f06|data": {
+                                    "override": "17f4d40662eba32|Alien Select Dialog Data",
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17f4d40662eba32|Alien Select Dialog Data"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "180444ddf601686|DEV - stun combatants": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "62": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1239
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "182371e2ec4a8f6+Ship Select Dialog": {
+                    "extends": "17f4d2cb28054b9|Alien Select Dialog",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "182ad25465c6570+dummy player": {
+                                    "flags": "*",
+                                    "base": "182ad2441c72551|Dummy Ship Select Dialog Player",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "182ad2441c72551|Dummy Ship Select Dialog Player"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ee5df892d1f06|data": {
+                                    "override": "182371c2f952da6|Ship Select Dialog Data (Pick from Fleet)",
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "182371c2f952da6|Ship Select Dialog Data (Pick from Fleet)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ee5dff4d6ad5b|initiator": {
+                                    "override": "17b36c0354722e6|Roster",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "180444ddf601686|DEV - stun combatants": {
+                                    "flags": "+*",
+                                    "init": {
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "a": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "8": {
+                                                    "flags": "+",
+                                                    "contextValue": -2,
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {}
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": ">",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "3"
+                                                                }
+                                                            },
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -3,
+                                                    "prop": "17db66c3947c9d9|NEW JUST player objects present"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "<>",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": -1,
+                                                            "prop": "17cde143877e116|input client id"
+                                                        }
+                                                    },
+                                                    {}
+                                                ]
+                                            },
+                                            "sort": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "182ad2441c72551+Dummy Ship Select Dialog Player": {
+                    "extends": "1774b187e752711|Playable (Rigid Body)",
+                    "conjurer": "182371e2ec4a8f6|Ship Select Dialog",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17695e8a7c5eb0c|hold input": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "sub": "17ee5dff4d6ad5b|initiator",
+                                                    "prop": "17cde01590f46e8|input"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ce84e680fc5a2|sim player": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17ee5dff4d6ad5b|initiator"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "13": {
+                                    "flags": "+*",
+                                    "init": {
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "182ad28b00a3e16-cb": {
+                                                            "base": "33",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "17ce84e680fc5a2|sim player",
+                                                                            "prop": "17cde030aefe7c9|conjured player"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "8": {
+                                                    "flags": "+",
+                                                    "contextValue": -1,
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "sub": "182ad28b00a3e16|cb",
+                                                                            "prop": "13"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "182ad28b00a3e16|cb"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "17ce84e680fc5a2|sim player",
+                                                                    "prop": "17d114299d877ff|conjure start position"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "182ad2441c819af-": {
+                                    "flags": "+",
+                                    "extends": "30",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "8a": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "flags": 1,
+                                                        "ops": [
+                                                            {
+                                                                "num": "0|0|80000000d506ad83"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "49"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "182ad2441c9dc02-": {
+                                                    "flags": "+",
+                                                    "extends": "3f",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "4a": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "num": 1
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "3f"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "prop": "48"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "30"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17f4d40662eba32+Alien Select Dialog Data": {
+                    "flags": "+",
+                    "extends": "17ee5de61d0dd5d|Dialog Data",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1802955f571b04f+picked alien": {
+                                    "flags": "*",
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "181f44fa9f39b2f|choices": {
+                                    "override": "181f44b2e39b5db|Alien Select Choice (base)",
+                                    "flags": "+*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "scoped": 1
+                                    }
+                                },
+                                "18213412ce2f385|dialog result": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "182373f702fd2d9|Alien Select Dialog Result"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17eb6c7e5c7ce54|values": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "scoped": 1
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "d",
+                            "instructions": {
+                                "b": {
+                                    "flags": "+",
+                                    "comment": ""
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "d",
+                            "instructions": {
+                                "b": {
+                                    "flags": "+",
+                                    "comment": "alien Dialog"
+                                },
+                                "a": {
+                                    "flags": "l+",
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "1823c9bcd274ff6-acc": {
+                                                            "base": "18237240aed8fff|Alien Select Choice (Alien)",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "2"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "1823c9b5df0a63a-a": {
+                                                            "base": "17cf15997e5a882|Alien Definition",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -1
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "9": {
+                                                    "flags": "t",
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "1823c9b5df0a63a|a"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "1823c9bcd274ff6|acc",
+                                                                    "prop": "181fdf9c44382b7|alien"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": ""
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "181f44fa9f39b2f|choices"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    },
+                                    "sort": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "b": {
+                                    "flags": "+",
+                                    "comment": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "182373f702fd2d9+Alien Select Dialog Result": {
+                    "extends": "1821340f0f2ab63|Dialog Result",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1821342f0f21d1a|choice": {
+                                    "override": "181f44b2e39b5db|Alien Select Choice (base)",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "182371c2f952da6+Ship Select Dialog Data (Pick from Fleet)": {
+                    "extends": "17f4d40662eba32|Alien Select Dialog Data",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17f571b56c33715+picked same": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "17f571b335438a5+picked next": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "183b4129c1f1bd2+picked spectate": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "17fe744e051970d+pick from fleet ships": {
+                                    "flags": "*",
+                                    "base": "17fdbbd49eda7e4|Resource - Fleet Ship",
+                                    "init": {
+                                        "set": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "181f44fa9f39b2f|choices": {
+                                    "flags": "+*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "flags": "d",
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "1821c73bd9605c1|Ship Select Choice [Same]"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "flags": "d",
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "1821c73de121f54|Ship Select Choice [Next]"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "a": {
+                                                    "flags": "l+",
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "181fdf4920b668a|Ship Select Choice (Ship)"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "17fe744e051970d|pick from fleet ships"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    },
+                                                    "sort": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17fe744e051970d|pick from fleet ships"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1823c9520d04fca+Ship Select Dialog Data (Pick from Fleet [Melee Dev])": {
+                    "extends": "182371c2f952da6|Ship Select Dialog Data (Pick from Fleet)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181f44fa9f39b2f|choices": {
+                                    "flags": "+*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "1821c73bd9605c1|Ship Select Choice [Same]"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "1821c73de121f54|Ship Select Choice [Next]"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "a": {
+                                                    "flags": "l+",
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "1823ce7cd80b34a|Ship Select Choice (Ship - Melee Dev w/ Same/Next)"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "17fe744e051970d|pick from fleet ships"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    },
+                                                    "sort": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "183b41244075120|Ship Select Choice [Spectate]"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17fe744e051970d|pick from fleet ships"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "182371c5d3e518c+Alien Select Dialog Data (All Aliens)": {
+                    "extends": "17f4d40662eba32|Alien Select Dialog Data",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181f44fa9f39b2f|choices": {
+                                    "flags": "+*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "l+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "18237240aed8fff|Alien Select Choice (Alien)"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "17cf16e260c7e85|Alien List",
+                                                            "prop": "17cf16ea3b55157|all aliens"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "b": {
+                    "flags": "+*",
+                    "instructions": {
+                        "181f44b2e39b5db+Alien Select Choice (base)": {
+                            "flags": "+",
+                            "extends": "18213426c415d34|Dialog Choice",
+                            "conjurer": "17f4d40662eba32|Alien Select Dialog Data",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "181fdf40f67ee74-choice id": {
+                                            "flags": "+*",
+                                            "base": "65",
+                                            "init": {
+                                                "scoped": 1
+                                            },
+                                            "instructions": {
+                                                "a": {
+                                                    "flags": "l+",
+                                                    "instructions": {
+                                                        "8": {
+                                                            "flags": "+",
+                                                            "contextValue": -2,
+                                                            "instructions": {
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "1"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "=",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "2"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {}
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "181f44fa9f39b2f|choices"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    },
+                                                    "sort": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "181f44b6a61c394-cost": {
+                                            "flags": "*",
+                                            "base": "65",
+                                            "init": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        },
+                                        "181f44b966e840b-crew": {
+                                            "flags": "*",
+                                            "base": "65",
+                                            "init": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        },
+                                        "182473b7fd679d7|callback on pick": {
+                                            "flags": "*",
+                                            "init": {
+                                                "unconjured": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "1827f73317acd16|Alien Select Choice Callback (base)"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "18237240aed8fff+Alien Select Choice (Alien)": {
+                            "extends": "181f44b2e39b5db|Alien Select Choice (base)",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "181fdf9c44382b7+alien": {
+                                            "flags": "+*",
+                                            "base": "17cf15997e5a882|Alien Definition",
+                                            "init": {
+                                                "needed": 1,
+                                                "conjured": 1,
+                                                "scoped": 1
+                                            },
+                                            "instructions": {
+                                                "b": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "18237256d8e7659-aliens": {
+                                                                    "base": "17cf15997e5a882|Alien Definition",
+                                                                    "init": {
+                                                                        "set": 1,
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "inst": "17cf16e260c7e85|Alien List",
+                                                                                    "prop": "17cf16ea3b55157|all aliens"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "18237256d8e7659|aliens",
+                                                                    "tupleOffs": 9
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "181fdf40f67ee74|choice id"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "num": 1
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "18237256d8e7659|aliens",
+                                                                            "tupleOffs": 8
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "comment": ""
+                                                }
+                                            }
+                                        },
+                                        "182473b7fd679d7|callback on pick": {
+                                            "flags": "*",
+                                            "init": {
+                                                "unconjured": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "182b32f106c34a8|Alien Select Choice Callback (Alien)"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "1827f73317acd16+Alien Select Choice Callback (base)": {
+                            "extends": "18247398155f55f|Dialog Choice Callback",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "1827f90193b862f|dialog data": {
+                                            "override": "17f4d40662eba32|Alien Select Dialog Data",
+                                            "init": {
+                                                "needed": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17ee5df892d1f06|data"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "1827e63bc95797e|result choice": {
+                                            "override": "181f44b2e39b5db|Alien Select Choice (base)",
+                                            "init": {
+                                                "needed": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "sub": "182473b1df6ec32|result",
+                                                            "prop": "1821342f0f21d1a|choice"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "182b32f106c34a8-Alien Select Choice Callback (Alien)": {
+                            "extends": "1827f73317acd16|Alien Select Choice Callback (base)",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "1827e63bc95797e|result choice": {
+                                            "override": "18237240aed8fff|Alien Select Choice (Alien)",
+                                            "init": {
+                                                "needed": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "sub": "182473b1df6ec32|result",
+                                                            "prop": "1821342f0f21d1a|choice"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "c": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": 1,
+                                                            "prop": "1802955f571b04f|picked alien"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "1827e63bc95797e|result choice",
+                                                                    "prop": "181fdf9c44382b7|alien"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "1827f90193b862f|dialog data"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "182a832c9359be8-Ship Select Choice Callback (base)": {
+                            "extends": "182b32f106c34a8|Alien Select Choice Callback (Alien)"
+                        },
+                        "1821c73bd9605c1+Ship Select Choice [Same]": {
+                            "extends": "181f44b2e39b5db|Alien Select Choice (base)",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "181f44b6a61c394|cost": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "num": -2
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "182473b7fd679d7|callback on pick": {
+                                            "flags": "*",
+                                            "init": {
+                                                "unconjured": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "182a84537d87f27|Ship Select Choice Callback (Same)"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "182a84537d87f27-Ship Select Choice Callback (Same)": {
+                            "extends": "1827f73317acd16|Alien Select Choice Callback (base)",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "1827f90193b862f|dialog data": {
+                                            "override": "182371c2f952da6|Ship Select Dialog Data (Pick from Fleet)",
+                                            "init": {
+                                                "needed": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17ee5df892d1f06|data"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "c": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": 1,
+                                                            "prop": "17f571b56c33715|picked same"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "1827f90193b862f|dialog data"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "1821c73de121f54+Ship Select Choice [Next]": {
+                            "extends": "181f44b2e39b5db|Alien Select Choice (base)",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "181f44b6a61c394|cost": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "num": -1
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "182473b7fd679d7|callback on pick": {
+                                            "flags": "*",
+                                            "init": {
+                                                "unconjured": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "182a84577405e7c|Ship Select Choice Callback (Next)"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "182a84577405e7c-Ship Select Choice Callback (Next)": {
+                            "extends": "1827f73317acd16|Alien Select Choice Callback (base)",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "1827f90193b862f|dialog data": {
+                                            "override": "182371c2f952da6|Ship Select Dialog Data (Pick from Fleet)",
+                                            "init": {
+                                                "needed": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17ee5df892d1f06|data"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "c": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": 1,
+                                                            "prop": "17f571b335438a5|picked next"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "1827f90193b862f|dialog data"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "183b41244075120+Ship Select Choice [Spectate]": {
+                            "flags": "+",
+                            "extends": "181f44b2e39b5db|Alien Select Choice (base)",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "181f44b6a61c394|cost": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "num": -3
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "182473b7fd679d7|callback on pick": {
+                                            "flags": "*",
+                                            "init": {
+                                                "unconjured": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "183b4124408d766|Ship Select Choice Callback (Spectate)"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "183b4124408d766-Ship Select Choice Callback (Spectate)": {
+                            "flags": "+",
+                            "extends": "1827f73317acd16|Alien Select Choice Callback (base)",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "1827f90193b862f|dialog data": {
+                                            "override": "182371c2f952da6|Ship Select Dialog Data (Pick from Fleet)",
+                                            "init": {
+                                                "needed": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17ee5df892d1f06|data"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "c": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": 1,
+                                                            "prop": "183b4129c1f1bd2|picked spectate"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "1827f90193b862f|dialog data"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "181fdf4920b668a+Ship Select Choice (Ship)": {
+                            "extends": "18237240aed8fff|Alien Select Choice (Alien)",
+                            "conjurer": "182371c2f952da6|Ship Select Dialog Data (Pick from Fleet)",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "18227702570678c-fleet ship": {
+                                            "flags": "+*",
+                                            "base": "17fdbbd49eda7e4|Resource - Fleet Ship",
+                                            "init": {
+                                                "scoped": 1
+                                            },
+                                            "instructions": {
+                                                "b": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "1822770706e5121-pick from fleet ships": {
+                                                                    "base": "17fdbbd49eda7e4|Resource - Fleet Ship",
+                                                                    "init": {
+                                                                        "set": 1,
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -2,
+                                                                                    "prop": "17fe744e051970d|pick from fleet ships"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "182277070702956-choice to fleet id": {
+                                                                    "base": "65",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "1823ce905406185|use choice to fleet id"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "1822770706e5121|pick from fleet ships",
+                                                                    "tupleOffs": 9
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "182277070702956|choice to fleet id"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "1822770706e5121|pick from fleet ships",
+                                                                            "tupleOffs": 8
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "comment": ""
+                                                }
+                                            }
+                                        },
+                                        "1823ce905406185-use choice to fleet id": {
+                                            "flags": "*",
+                                            "base": "65",
+                                            "init": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181fdf40f67ee74|choice id"
+                                                        }
+                                                    },
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "181fdf9c44382b7|alien": {
+                                            "flags": "*",
+                                            "init": {
+                                                "needed": 1,
+                                                "conjured": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "sub": "18227702570678c|fleet ship",
+                                                            "prop": "18222bbfc48d455|alien def"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "181f44b6a61c394|cost": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "sub": "181fdf9c44382b7|alien",
+                                                            "prop": "17d2ad5798fcda0|ship cost"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "181f44b966e840b|crew": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "sub": "18227702570678c|fleet ship",
+                                                            "prop": "17edbf2d59cbfba|num"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "182473b7fd679d7|callback on pick": {
+                                            "flags": "*",
+                                            "init": {
+                                                "unconjured": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "182a833e8cd21a0|Ship Select Choice Callback (Ship)"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "5": {
+                                    "flags": "d+",
+                                    "instructions": {
+                                        "9": {
+                                            "flags": "td",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "181fdf9c44382b7|alien"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181fdf9c44382b7|alien"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "td+",
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181f44b6a61c394|cost"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "td+",
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181f44b966e840b|crew"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "182a833e8cd21a0-Ship Select Choice Callback (Ship)": {
+                            "extends": "182a832c9359be8|Ship Select Choice Callback (base)",
+                            "conjurer": "182371e2ec4a8f6|Ship Select Dialog",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "182ffea17bae835+destroy slot": {
+                                            "base": "65",
+                                            "init": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        },
+                                        "1827f90193b862f|dialog data": {
+                                            "override": "182371c2f952da6|Ship Select Dialog Data (Pick from Fleet)",
+                                            "init": {
+                                                "needed": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17ee5df892d1f06|data"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "1827e63bc95797e|result choice": {
+                                            "override": "181fdf4920b668a|Ship Select Choice (Ship)",
+                                            "init": {
+                                                "needed": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "sub": "182473b1df6ec32|result",
+                                                            "prop": "1821342f0f21d1a|choice"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "c": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "b": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "182a87b47156e4c-fleet ship": {
+                                                                    "base": "17fdbbd49eda7e4|Resource - Fleet Ship",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "sub": "1827e63bc95797e|result choice",
+                                                                                    "prop": "18227702570678c|fleet ship"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "182ae2f3ac6975f-a": {
+                                                                    "base": "17cf15997e5a882|Alien Definition",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "sub": "182a87b47156e4c|fleet ship",
+                                                                                    "prop": "18222bbfc48d455|alien def"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "182a87ae9512bb4-": {
+                                                            "flags": "+",
+                                                            "extends": "17ee05e2f040690|Action - Receive Resource Package",
+                                                            "sections": {
+                                                                "2": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "17ee0790a321115|num requested": {
+                                                                            "flags": "*",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "selector": -2,
+                                                                                            "sub": "182a87b47156e4c|fleet ship",
+                                                                                            "prop": "17edbf2d59cbfba|num"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "182657cf3e47009|destroy slot on empty": {
+                                                                            "flags": "*",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "selector": -2,
+                                                                                            "prop": "182ffea17bae835|destroy slot"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "17ee05e2f055875|pkg": {
+                                                                            "flags": "*",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "selector": -2,
+                                                                                            "prop": "182a87b47156e4c|fleet ship"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "17ee05e2f06e135|from holds": {
+                                                                            "flags": "*",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "selector": 1,
+                                                                                            "prop": "18029319b4051ba|fleet hold"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "3": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "182a89374b1e538-": {
+                                                                            "flags": "+",
+                                                                            "extends": "1825ada96c0b6b8|Roster - Set Roster Active Fleet Ship",
+                                                                            "sections": {
+                                                                                "2": {
+                                                                                    "flags": "+",
+                                                                                    "instructions": {
+                                                                                        "1825adacf50b3eb|in roster": {
+                                                                                            "flags": "*",
+                                                                                            "init": {
+                                                                                                "ops": [
+                                                                                                    {
+                                                                                                        "obj": {
+                                                                                                            "selector": 1
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        },
+                                                                                        "1825adb6bc8660f|fleet ship": {
+                                                                                            "flags": "*",
+                                                                                            "init": {
+                                                                                                "ops": [
+                                                                                                    {
+                                                                                                        "obj": {
+                                                                                                            "selector": -2,
+                                                                                                            "prop": "17ee05e2f055875|pkg"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "LHS": {
+                                                                                "obj": {
+                                                                                    "inst": "1825ada96c0b6b8|Roster - Set Roster Active Fleet Ship"
+                                                                                }
+                                                                            },
+                                                                            "RHS": {
+                                                                                "obj": {
+                                                                                    "selector": -1
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "inst": "17ee05e2f040690|Action - Receive Resource Package"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "obj": {
+                                                                    "selector": -1
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "comment": ""
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17ee5dff4d6ad5b|initiator"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "1823ce7cd80b34a-Ship Select Choice (Ship - Melee Dev w/ Same/Next)": {
+                            "extends": "181fdf4920b668a|Ship Select Choice (Ship)",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "1823ce905406185|use choice to fleet id": {
+                                            "flags": "*",
+                                            "init": {
+                                                "bind": "-",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181fdf40f67ee74|choice id"
+                                                        }
+                                                    },
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "182278183ece8de+Ship Select Choice (Ship - Debug AI Menu)": {
+                            "extends": "181fdf4920b668a|Ship Select Choice (Ship)",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "18227702570678c|fleet ship": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "181fdf9c44382b7|alien": {
+                                            "flags": "+*",
+                                            "init": {
+                                                "needed": 1,
+                                                "conjured": 1,
+                                                "scoped": 1
+                                            },
+                                            "instructions": {
+                                                "b": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "18227882a005d89-all aliens": {
+                                                                    "base": "17cf15997e5a882|Alien Definition",
+                                                                    "init": {
+                                                                        "set": 1,
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "inst": "17cf16e260c7e85|Alien List",
+                                                                                    "prop": "17cf16ea3b55157|all aliens"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "18227882a005d89|all aliens",
+                                                                    "tupleOffs": 9
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "+",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "181fdf40f67ee74|choice id"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "num": 1
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "18227882a005d89|all aliens",
+                                                                            "tupleOffs": 8
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "comment": ""
+                                                }
+                                            }
+                                        },
+                                        "181f44b966e840b|crew": {
+                                            "flags": "*",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "num": 99999999
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "182473b7fd679d7|callback on pick": {
+                                            "flags": "*",
+                                            "init": {
+                                                "unconjured": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "182ae437fb3b348|Ship Select Choice Callback (Ship - Debug AI Menu)"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "182ae437fb3b348-Ship Select Choice Callback (Ship - Debug AI Menu)": {
+                            "extends": "182a832c9359be8|Ship Select Choice Callback (base)",
+                            "conjurer": "182371e2ec4a8f6|Ship Select Dialog",
+                            "sections": {
+                                "2": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "182ae4e373f6247-ad": {
+                                            "flags": "*",
+                                            "base": "17cf15997e5a882|Alien Definition",
+                                            "init": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "sub": "1827e63bc95797e|result choice",
+                                                            "prop": "181fdf9c44382b7|alien"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "1827f90193b862f|dialog data": {
+                                            "override": "17f574407d29e54|AI Ship Select Dialog Data",
+                                            "init": {
+                                                "needed": 1,
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17ee5df892d1f06|data"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "c": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": 1,
+                                                            "prop": "17f571b8c968a69|AI picked ship"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "182ae4e373f6247|ad",
+                                                                    "prop": "181b0cc3b6fcaa1|roster ship"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "1827f90193b862f|dialog data"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "comment": "choices"
+                }
+            },
+            "comment": "ship select"
+        }
+    }
+}

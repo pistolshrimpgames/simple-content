@@ -1,0 +1,8 @@
+{
+    "Title": "Fleet Ship",
+    "Cancellable": false,
+    "Choice Formats": [
+        { "Simple Condition": "alien", "Text": "{alien.(TYPE_NAME)}: Cost {alien.ship cost} Crew {crew}" },
+        { "Simple Condition": "upgrade", "Text": "{upgrade.(TYPE_NAME)}: Cost {upgrade.cost}" }
+    ]
+}

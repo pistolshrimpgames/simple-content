@@ -1,0 +1,610 @@
+{
+    "components": {
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "17ed65e55fc833c+Battlegroup Fleet Description": {
+                    "flags": "+",
+                    "extends": "10",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17ed65e9e03e4c5+alien": {
+                                    "flags": "*",
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ed65e9e0416ae+ships per alien": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "adventure -> battlegroup"
+        },
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "17ce6baef8b5ce9+Simulation Transit Collider (To Melee)": {
+                    "extends": "17cb95651aea558|Simulation Transition Collider",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17cf15bde05aeb1+alien": {
+                                    "flags": "*",
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17cf15c0dd53ac0+ships per alien": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17f56e3a9fb0c1c-entered melee": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "17cddbf4b6681cd|transit to": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17ce6a0d78977b1|Simulation Transit - Initiate (To Melee - Adventure)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "9": {
+                                    "flags": "td",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "17d0c483e778296|conjured simulation"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17d0c483e778296|conjured simulation"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "11"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "func": "NOT",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17d0c483e778296|conjured simulation"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17f56e3a9fb0c1c|entered melee"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "181e4e300708a13+Simulation Transit - Initiate (To Melee - PVP)": {
+                    "flags": "+",
+                    "extends": "17cb943b03d689f|Simulation Transit - Initiate",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181f3f2c7650b58+melee match": {
+                                    "flags": "*",
+                                    "base": "181bb332dddf384|Melee Match",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "181f3ca2014013c|Melee Match - Free-for-All"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "contextValue": -1,
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17de33f3a1f2f73|early out"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "contextValue": -1,
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17cb95f7ddd11a1|to sim"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "p",
+                                            "comment": "<--- from sim",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17cddf1a0dfe353|from sim"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17cddf1a0dfe353|from sim"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "b": {
+                                            "flags": "p+",
+                                            "comment": "---> to melee"
+                                        },
+                                        "181e4e3007213f8-": {
+                                            "flags": "+*",
+                                            "extends": "176ee76b43b1735|Melee Simulation",
+                                            "path": "game/sim/ships/melee.sim",
+                                            "sections": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "181bb8681e3d59b|match": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "needed": 1,
+                                                                "conjured": 1,
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "181f3f2c7650b58|melee match"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "17dc5d4fbfcb95d|parent collider": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "17de495ce174bd7|from collider"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "17cde0756ff3b15|simulation player construction": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "needed": 1,
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "1824acff4c1bdf5|Roster (Melee)"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "17dd9efcae13223|return out - pre-construct": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "181f90bfbd5ae03|Simulation Transit - Return From Melee Reset"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "inst": "176ee76b43b1735|Melee Simulation"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "d",
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "17ce6a0d78977b1+Simulation Transit - Initiate (To Melee - Adventure)": {
+                    "flags": "+",
+                    "extends": "17cb943b03d689f|Simulation Transit - Initiate",
+                    "conjurer": "17ce6baef8b5ce9|Simulation Transit Collider (To Melee)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17cf1649974d732+alien fleet": {
+                                    "flags": "*",
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "set": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "contextValue": -1,
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17de33f3a1f2f73|early out"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "contextValue": -1,
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17cb95f7ddd11a1|to sim"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "p",
+                                            "comment": "<--- from sim",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17cddf1a0dfe353|from sim"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17cddf1a0dfe353|from sim"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "b": {
+                                            "flags": "p+",
+                                            "comment": "---> to melee"
+                                        },
+                                        "8": {
+                                            "flags": "l+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "17cf1649974d732|alien fleet"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "17cf1649974d732|alien fleet"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "17cf15bde05aeb1|alien"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17cf15c0dd53ac0|ships per alien"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "p",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17cf1649974d732|alien fleet"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17cf1649974d732|alien fleet"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17f56e3a9fb0c1c|entered melee"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "17ce6a0d78a619d-": {
+                                            "flags": "+*",
+                                            "extends": "176ee76b43b1735|Melee Simulation",
+                                            "path": "game/sim/ships/melee.sim",
+                                            "sections": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "17ce6a7114b227c|adventure mode": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "num": 1
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "17f5761d68471dc|co-op players team": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "needed": 1,
+                                                                "conjured": 1,
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "17b1cf1834dd8d9|Team"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "17f575f5000127b|rosters use team": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "17f5761d68471dc|co-op players team"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "17cf15e63d420a2|enemy aliens": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "17cf1649974d732|alien fleet"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "181bb8681e3d59b|match": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "needed": 1,
+                                                                "conjured": 1,
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "181f3d38c0f033f|Melee Match - Adventure Co-Op"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "17dc5d4fbfcb95d|parent collider": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "17de495ce174bd7|from collider"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "inst": "176ee76b43b1735|Melee Simulation"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "d",
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "sim -> transit -> to"
+        }
+    }
+}

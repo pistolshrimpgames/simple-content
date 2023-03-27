@@ -1,0 +1,157 @@
+{
+    "components": {
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "17d2f85d46933b7+Simulation Transit Collider (To Shipyard)": {
+                    "extends": "17cb95651aea558|Simulation Transition Collider",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17cddbf4b6681cd|transit to": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17d2f85d46aaf5e|Simulation Transit - Initiate (To Shipyard - Adventure)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17d2f85d46aaf5e+Simulation Transit - Initiate (To Shipyard - Adventure)": {
+                    "extends": "17cb943b03d689f|Simulation Transit - Initiate",
+                    "conjurer": "17d2f85d46933b7|Simulation Transit Collider (To Shipyard)",
+                    "sections": {
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "contextValue": -1,
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17de33f3a1f2f73|early out"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "b": {
+                                            "comment": "DG NOTE: goofy looking hack but we want the shipyard to always be per-player (i.e. players don't participate together)"
+                                        },
+                                        "b": {
+                                            "comment": "We never use the created sim if one already exists - each player makes a new one each time"
+                                        },
+                                        "8": {
+                                            "flags": "d+",
+                                            "contextValue": -1,
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17cb95f7ddd11a1|to sim"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "p",
+                                            "comment": "<--- from sim",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17cddf1a0dfe353|from sim"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17cddf1a0dfe353|from sim"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "flags": "p",
+                                            "comment": "<--- from sim",
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "17cb95d6b8d4cb7|ret pos"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "91"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "b": {
+                                            "flags": "p+",
+                                            "comment": "---> to shipyard"
+                                        },
+                                        "17d2f85d46b2cc3-": {
+                                            "flags": "+*",
+                                            "extends": "17d2ec24a620bce|Shipyard Simulation",
+                                            "path": "game/sim/shipyard/shipyard.sim",
+                                            "sections": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "17dc5d4fbfcb95d|parent collider": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "17de495ce174bd7|from collider"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "inst": "17d2ec24a620bce|Shipyard Simulation"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "comment": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "sim -> transit -> to"
+        }
+    }
+}

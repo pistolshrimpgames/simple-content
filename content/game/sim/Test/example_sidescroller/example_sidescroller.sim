@@ -1,0 +1,9 @@
+{
+    "scripts": [
+        "game/sim/Test/example_sidescroller/bootstrap.ai",
+        "game/sim/Test/example_sidescroller/enemy.ai",
+        "game/sim/Test/example_sidescroller/example_sidescroller.ai",
+        "game/sim/Test/example_sidescroller/killplane.ai",
+        "game/sim/Test/example_sidescroller/player.ai"
+    ]
+}

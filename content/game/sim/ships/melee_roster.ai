@@ -1,0 +1,2668 @@
+{
+    "components": {
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "1824acff4c1bdf5+Roster (Melee)": {
+                    "flags": "+",
+                    "extends": "17b36c0354722e6|Roster",
+                    "conjurer": "176ee76b43b1735|Melee Simulation",
+                    "sections": {
+                        "2": {
+                            "instructions": {
+                                "17f0e10e7cfe7dd+AI driven": {
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "17b3b8ffe003e07+DEBUG - force agent": {
+                                    "flags": "*",
+                                    "base": "178f5460f98876a|Roster Ship",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "181f47483dda3ac-melee team": {
+                                    "flags": "+*",
+                                    "base": "181e4c5e7e8d47c|Melee Team",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "p+",
+                                            "comment": "MELEE TEAM in roster"
+                                        },
+                                        "8": {
+                                            "flags": "p+",
+                                            "contextValue": -256,
+                                            "instructions": {
+                                                "8": {
+                                                    "flags": "p+",
+                                                    "instructions": {
+                                                        "b": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "2": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "181f477ccc51330-match": {
+                                                                            "base": "181bb332dddf384|Melee Match",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "sub": "17ce194b748f776|in sim",
+                                                                                            "prop": "181bb8681e3d59b|match"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "a": {
+                                                                    "flags": "lp+",
+                                                                    "instructions": {
+                                                                        "b": {
+                                                                            "flags": "+",
+                                                                            "instructions": {
+                                                                                "2": {
+                                                                                    "flags": "+",
+                                                                                    "instructions": {
+                                                                                        "181f474c3107b8c-mt": {
+                                                                                            "base": "181bb355396d0d6|Match Team",
+                                                                                            "init": {
+                                                                                                "ops": [
+                                                                                                    {
+                                                                                                        "obj": {
+                                                                                                            "prop": "2"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        },
+                                                                                        "181f4751c238904-match team i": {
+                                                                                            "base": "65",
+                                                                                            "init": {
+                                                                                                "ops": [
+                                                                                                    {
+                                                                                                        "obj": {
+                                                                                                            "sub": "2",
+                                                                                                            "prop": "181f3d9493308c6|team index"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "a": {
+                                                                                    "flags": "p+",
+                                                                                    "contextValue": -5,
+                                                                                    "instructions": {
+                                                                                        "a": {
+                                                                                            "flags": "p+",
+                                                                                            "instructions": {
+                                                                                                "9": {
+                                                                                                    "flags": "p",
+                                                                                                    "LHS": {
+                                                                                                        "obj": {
+                                                                                                            "prop": "6"
+                                                                                                        }
+                                                                                                    },
+                                                                                                    "RHS": {
+                                                                                                        "ops": [
+                                                                                                            {
+                                                                                                                "obj": {
+                                                                                                                    "prop": "3"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            },
+                                                                                            "LHS": {
+                                                                                                "obj": {
+                                                                                                    "sub": "17ce194b748f776|in sim",
+                                                                                                    "prop": "181f3c681a2e7b1|melee teams"
+                                                                                                }
+                                                                                            },
+                                                                                            "RHS": {
+                                                                                                "bind": "=",
+                                                                                                "ops": [
+                                                                                                    {
+                                                                                                        "obj": {
+                                                                                                            "inst": -1,
+                                                                                                            "prop": "181f3d9493308c6|team index"
+                                                                                                        }
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "obj": {
+                                                                                                            "prop": "181f4751c238904|match team i"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ]
+                                                                                            },
+                                                                                            "sort": {
+                                                                                                "ops": [
+                                                                                                    {}
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    "LHS": {
+                                                                                        "obj": {
+                                                                                            "sub": "181f474c3107b8c|mt",
+                                                                                            "prop": "181bb3590809e65|team players"
+                                                                                        }
+                                                                                    },
+                                                                                    "RHS": {
+                                                                                        "bind": "=",
+                                                                                        "ops": [
+                                                                                            {
+                                                                                                "obj": {
+                                                                                                    "inst": -1,
+                                                                                                    "prop": "17cde143877e116|input client id"
+                                                                                                }
+                                                                                            },
+                                                                                            {
+                                                                                                "obj": {
+                                                                                                    "prop": "17cde143877e116|input client id"
+                                                                                                }
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    "sort": {
+                                                                                        "ops": [
+                                                                                            {}
+                                                                                        ]
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "comment": ""
+                                                                        }
+                                                                    },
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "sub": "181f477ccc51330|match",
+                                                                            "prop": "181bb36b2a74e8b|match teams"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "num": 1
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "sort": {
+                                                                        "ops": [
+                                                                            {}
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "comment": ""
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "17ce194b748f776|in sim",
+                                                                    "prop": "181bb8681e3d59b|match"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "sub": "17ce194b748f776|in sim",
+                                                            "prop": "181f3c681a2e7b1|melee teams"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "1824b1aec9a0ffa|behavior": {
+                                    "flags": "+*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "captured": 1,
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "8": {
+                                                    "flags": "+",
+                                                    "contextValue": -1,
+                                                    "instructions": {
+                                                        "9": {
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "182602b82c18d61|Roster Behavior - Check if Need New Ship (Melee AI)"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "17f0e10e7cfe7dd|AI driven"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "1824b19f37389c6|Roster Behavior - Check if Need New Ship (Melee)"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "11"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "17fe73dc6ca2bc1|active fleet ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17f511574ec1a03|use ship select dialog": {
+                                    "flags": "+*",
+                                    "init": {
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 1
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "+",
+                                            "contextValue": -1,
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17f0e10e7cfe7dd|AI driven"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "+",
+                                            "contextValue": -1,
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "17b3b8ffe003e07|DEBUG - force agent"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "17b7a7128f5d34d|team": {
+                                    "flags": "+*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "contextValue": -1,
+                                            "instructions": {
+                                                "9": {
+                                                    "flags": "p",
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "181f47483dda3ac|melee team",
+                                                                    "prop": "181bbadbcefe828|team"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181f47483dda3ac|melee team"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "prop": "6"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "sub": "17ce194b748f776|in sim",
+                                                            "prop": "17f575f5000127b|rosters use team"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "17ce194b748f776|in sim": {
+                                    "override": "176ee76b43b1735|Melee Simulation",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "contextValue": -2,
+                                    "RHS": {
+                                        "bind": "<=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "c": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": 1,
+                                                    "prop": "181bb3590809e65|team players"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": 1,
+                                                            "prop": "181bb3590809e65|team players"
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {}
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "181f47483dda3ac|melee team"
+                                        }
+                                    }
+                                },
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "181e10af7bc347c-": {
+                                                    "flags": "+",
+                                                    "extends": "17b84bad8e929f4|Roster Event",
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "sub": "181bb8681e3d59b|match",
+                                                            "prop": "181e10a9163ef59|roster initialize callback"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "sub": "181bb8681e3d59b|match",
+                                                            "prop": "181e10a9163ef59|roster initialize callback"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "181bb8681e3d59b|match"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "d+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "t+",
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "sub": "17d11230e7cf24d|persistent object",
+                                                    "prop": "17d2a6237f90e84|resources"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "d+",
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "comment": ""
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "<=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            {}
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1824b19f37389c6-Roster Behavior - Check if Need New Ship (Melee)": {
+                    "flags": "+",
+                    "extends": "1824ae28ea6da6e|Roster Behavior - Check if Need New Ship",
+                    "conjurer": "1824acff4c1bdf5|Roster (Melee)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1824b2ce49f9fdb|next behavior": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1824b1a8c6a782b|Roster Behavior - Show Ship Select Dialog (Melee)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "4": {
+                            "instructions": {
+                                "b": {
+                                    "flags": "d",
+                                    "contextValue": -256,
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "contextValue": -256,
+                                            "instructions": {
+                                                "8": {
+                                                    "flags": "d",
+                                                    "instructions": {
+                                                        "8": {
+                                                            "flags": "+",
+                                                            "contextValue": -2,
+                                                            "RHS": {
+                                                                "bind": ">",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "17f0e10e7cfe7dd|AI driven"
+                                                                        }
+                                                                    },
+                                                                    {}
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": ">",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "17b8483b5c0f7b5|ships spawned"
+                                                                }
+                                                            },
+                                                            {}
+                                                        ]
+                                                    }
+                                                },
+                                                "b": {
+                                                    "flags": "b+",
+                                                    "comment": ""
+                                                },
+                                                "182a8ab2835d558-": {
+                                                    "flags": "+",
+                                                    "extends": "17fdbbd49eda7e4|Resource - Fleet Ship",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "18222bbfc48d455|alien def": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "needed": 1,
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -3,
+                                                                                    "sub": "17b3b8ffe003e07|DEBUG - force agent",
+                                                                                    "prop": "17f50ea4a91529c|alien"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                "17edbf2d59cbfba|num": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "num": 99999
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "inst": "17fdbbd49eda7e4|Resource - Fleet Ship"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17fe73dc6ca2bc1|active fleet ship"
+                                                        }
+                                                    }
+                                                },
+                                                "b": {
+                                                    "flags": "+",
+                                                    "comment": ""
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17b3b8ffe003e07|DEBUG - force agent"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": "DEV ONLY: If using DEBUG - force agent, always let the player have that ship"
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "contextValue": -1,
+                                            "RHS": {
+                                                "func": "NOT",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "182a3fd2e0c8d43|allow behavior switch"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "9": {
+                                            "LHS": {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "17fe73dc6ca2bc1|active fleet ship"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "b": {
+                                            "flags": "+",
+                                            "contextValue": -256,
+                                            "instructions": {
+                                                "8": {
+                                                    "flags": "+",
+                                                    "contextValue": -256,
+                                                    "instructions": {
+                                                        "8": {
+                                                            "flags": "d",
+                                                            "instructions": {
+                                                                "8": {
+                                                                    "flags": "+",
+                                                                    "contextValue": -2,
+                                                                    "RHS": {
+                                                                        "bind": ">",
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -2,
+                                                                                    "prop": "17f0e10e7cfe7dd|AI driven"
+                                                                                }
+                                                                            },
+                                                                            {}
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": ">",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "17b8483b5c0f7b5|ships spawned"
+                                                                        }
+                                                                    },
+                                                                    {}
+                                                                ]
+                                                            }
+                                                        },
+                                                        "182b2e03d425e88-": {
+                                                            "flags": "+",
+                                                            "extends": "17fdbbd49eda7e4|Resource - Fleet Ship",
+                                                            "sections": {
+                                                                "2": {
+                                                                    "flags": "+",
+                                                                    "instructions": {
+                                                                        "18222bbfc48d455|alien def": {
+                                                                            "flags": "*",
+                                                                            "init": {
+                                                                                "needed": 1,
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "obj": {
+                                                                                            "selector": -3,
+                                                                                            "sub": "17b3b8ffe003e07|DEBUG - force agent",
+                                                                                            "prop": "17f50ea4a91529c|alien"
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        "17edbf2d59cbfba|num": {
+                                                                            "flags": "*",
+                                                                            "init": {
+                                                                                "ops": [
+                                                                                    {
+                                                                                        "num": 99999
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "LHS": {
+                                                                "obj": {
+                                                                    "inst": "17fdbbd49eda7e4|Resource - Fleet Ship"
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "17fe73dc6ca2bc1|active fleet ship"
+                                                                }
+                                                            }
+                                                        },
+                                                        "b": {
+                                                            "flags": "+",
+                                                            "comment": ""
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "prop": "17b3b8ffe003e07|DEBUG - force agent"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": "DEV ONLY: If using DEBUG - force agent, always let the player have that ship"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "1824b19606bcc1f|want new behavior"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1824b1a8c6a782b-Roster Behavior - Show Ship Select Dialog (Melee)": {
+                    "flags": "+",
+                    "extends": "1824ae21a59f51a|Roster Behavior - Show Ship Select Dialog",
+                    "conjurer": "1824acff4c1bdf5|Roster (Melee)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "184691daf261287-ship select dialog complete": {
+                                    "flags": "*",
+                                    "base": "65",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "1824b2a807a5730|use ship select dialog data type": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -3,
+                                                    "sub": "181bb8681e3d59b|match",
+                                                    "prop": "1823c92956e19db|ship select dialog data"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1824b2ce49f9fdb|next behavior": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1824b86fecbdb33|Roster Behavior - Create Requested Ship (Melee)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "184691daf261287|ship select dialog complete"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "b": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "184691ef5b0cdc3-ship select callback": {
+                                                                    "base": "17b84bad8e929f4|Roster Event",
+                                                                    "init": {
+                                                                        "failable": 1,
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -3,
+                                                                                    "sub": "181bb8681e3d59b|match",
+                                                                                    "prop": "1846919d704f9f0|post ship select callback"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "8": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "184691ec1b8395e-": {
+                                                                    "flags": "+",
+                                                                    "extends": "17b84bad8e929f4|Roster Event",
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "184691ef5b0cdc3|ship select callback"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "obj": {
+                                                                            "selector": -2,
+                                                                            "prop": "59"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "184691ef5b0cdc3|ship select callback"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "comment": ""
+                                                }
+                                            },
+                                            "RHS": {
+                                                "func": "NOT",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "184691daf261287|ship select dialog complete"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "1824b19606bcc1f|want new behavior"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1824b86fecbdb33-Roster Behavior - Create Requested Ship (Melee)": {
+                    "flags": "+",
+                    "extends": "1824b7b19a266c8|Roster Behavior - Create Requested Ship",
+                    "conjurer": "1824acff4c1bdf5|Roster (Melee)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1824b80ee7a9aa3|create ship callback": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1824b87ab9b576f|Roster - Create Ship (Melee)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1824b2ce49f9fdb|next behavior": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1824b19f37389c6|Roster Behavior - Check if Need New Ship (Melee)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "+",
+                                    "comment": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "183b424b9304437-Roster Behavior - Spectating (Melee)": {
+                    "mods": "183b4136257c468|Roster Behavior - Spectating",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1824b2ce49f9fdb|next behavior": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1824b19f37389c6|Roster Behavior - Check if Need New Ship (Melee)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1824b87ab9b576f+Roster - Create Ship (Melee)": {
+                    "flags": "+",
+                    "extends": "1804396560b3be7|Roster - Create Ship",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "18076f51a1dab0a|generate spawn position": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "181e100dc86da22-melee sim": {
+                                                    "base": "176ee76b43b1735|Melee Simulation",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "1804396b50bd520|from roster",
+                                                                    "prop": "17ce194b748f776|in sim"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "181e1009fde00b1-match": {
+                                                    "base": "181bb332dddf384|Melee Match",
+                                                    "init": {
+                                                        "failable": 1,
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "181e100dc86da22|melee sim",
+                                                                    "prop": "181bb8681e3d59b|match"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "181e10042ff1788-match callback": {
+                                                    "base": "17b84bad8e929f4|Roster Event",
+                                                    "init": {
+                                                        "failable": 1,
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "sub": "181e1009fde00b1|match",
+                                                                    "prop": "181e0f31bfae9cb|conjure ship callback"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "181e101723f87ba-": {
+                                                    "flags": "+",
+                                                    "extends": "17b84bad8e929f4|Roster Event",
+                                                    "sections": {
+                                                        "2": {
+                                                            "flags": "+",
+                                                            "instructions": {
+                                                                "17b84bad8eafb4a|roster": {
+                                                                    "flags": "*",
+                                                                    "init": {
+                                                                        "live": 1,
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "selector": -2,
+                                                                                    "prop": "1804396b50bd520|from roster"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "181e10042ff1788|match callback"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "obj": {
+                                                            "selector": -1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "prop": "181e10042ff1788|match callback"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "comment": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "18260a9d952a00a-Roster - Create Ship (Melee - AI)": {
+                    "extends": "1824b87ab9b576f|Roster - Create Ship (Melee)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "18260a895934239|additional captures": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "sub": "1804399d4737307|agent",
+                                                    "prop": "17f2d4add78e5b2|ship AI"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "b": {
+                    "flags": "+*",
+                    "comment": "===="
+                },
+                "18029eed8011e7d+Roster (Melee Dev)": {
+                    "extends": "1824acff4c1bdf5|Roster (Melee)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "181f47483dda3ac|melee team": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "176ee76b43b1735|Melee Simulation",
+                                                    "prop": "181f3c681a2e7b1|melee teams"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802e1fccd45a7b-Roster (Melee Dev) - Customizer": {
+                    "extends": "18029eed8011e7d|Roster (Melee Dev)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17b3b8ffe003e07|DEBUG - force agent": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "sub": "17dba8ab6e344fb|obj definition",
+                                                    "prop": "1802e286989564a|DEBUG - force agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17dba8ab6e344fb|obj definition": {
+                                    "override": "1802e1ea6bc7b0c|Simulation Transitioner Definition (Melee Dev Player) - Debug Properties",
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802e1ea6bc7b0c|Simulation Transitioner Definition (Melee Dev Player) - Debug Properties"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+"
+                        }
+                    }
+                },
+                "1802e1ea6bc7b0c+Simulation Transitioner Definition (Melee Dev Player) - Debug Properties": {
+                    "extends": "1802a0a0af86198|Simulation Transitioner Definition (Melee Dev Player)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1802e286989564a+DEBUG - force agent": {
+                                    "flags": "*",
+                                    "base": "178f5460f98876a|Roster Ship",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -2,
+                                                    "prop": "1802e29bfd177f0|DEBUG - force agent"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17dbb1c081ccd7b|persistent object type": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802a0d6670228c|Simulation Transitioner Persistent Data (Melee Dev Player)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17db65271809ac9|create object": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802e1fccd45a7b|Roster (Melee Dev) - Customizer"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+"
+                        }
+                    }
+                },
+                "1802a0a0af86198+Simulation Transitioner Definition (Melee Dev Player)": {
+                    "extends": "17f702263ba6cb9|Simulation Transitioner Definition (Player Base)",
+                    "conjurer": "1802e0b0efc089a|Simulation - Start Player (Melee Dev)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17dbb1c081ccd7b|persistent object type": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802a0d6670228c|Simulation Transitioner Persistent Data (Melee Dev Player)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17db65271809ac9|create object": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "18029eed8011e7d|Roster (Melee Dev)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802a0d6670228c-Simulation Transitioner Persistent Data (Melee Dev Player)": {
+                    "extends": "17db67561d0fe39|Simulation Transitioner Persistent Data (Player)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17d2a6237f90e84|resources": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "captured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802a1529b0d36e|Player Resources (Melee Dev)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "td+",
+                                    "comment": "melee player pers"
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802a1529b0d36e-Player Resources (Melee Dev)": {
+                    "extends": "17cec2a7a8dcae3|Player Resources",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17fdbecb8c96a1f|hold - fleet": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802a1567321b54|Resource Hold - Fleet Ships (Melee Dev)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "182f531d6b54719-": {
+                                            "flags": "+",
+                                            "extends": "182f52638aa03a6|Fleet Ship Upgrade (OLD)",
+                                            "sections": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "182f52730e4772a|alien": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "needed": 1,
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "17d2a607b218449|Alien Definition (Human)"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "182f52679828ec4|energy max": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "num": 2
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "182f526a0e8841d|regen amount": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "num": 4
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "182f526d8602479|regen delay": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "num": 0.5
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "182f5479058c68f|primary reload delay": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "num": 0.1
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "inst": "182f52638aa03a6|Fleet Ship Upgrade (OLD)"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "obj": {
+                                                    "prop": "182f527f0854cc2|fleet ship upgrades"
+                                                }
+                                            }
+                                        },
+                                        "182f56b78d83ed3-": {
+                                            "flags": "+",
+                                            "extends": "182f52638aa03a6|Fleet Ship Upgrade (OLD)",
+                                            "sections": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "182f52730e4772a|alien": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "needed": 1,
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "17cf15aa71beb0f|Alien Definition (Yehat)"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "182f55735085d7e|primary weapon damage": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "num": 2
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        "182f55836705e81|primary weapon speed": {
+                                                            "flags": "*",
+                                                            "init": {
+                                                                "ops": [
+                                                                    {
+                                                                        "num": 4
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "LHS": {
+                                                "obj": {
+                                                    "inst": "182f52638aa03a6|Fleet Ship Upgrade (OLD)"
+                                                }
+                                            },
+                                            "RHS": {
+                                                "obj": {
+                                                    "prop": "182f527f0854cc2|fleet ship upgrades"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "comment": "Test upgrades"
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802a1567321b54-Resource Hold - Fleet Ships (Melee Dev)": {
+                    "extends": "17fdbeb9398d327|Resource Hold - Fleet Ships",
+                    "conjurer": "1802a1529b0d36e|Player Resources (Melee Dev)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17edf7cccb41a31|resources": {
+                                    "flags": "+*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "l+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "1802a16b877e903|Resource - Fleet Ship (Melee Dev Magic)"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "inst": "17cf16e260c7e85|Alien List",
+                                                            "prop": "17cf16ea3b55157|all aliens"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "ld+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "1802a16b877e903|Resource - Fleet Ship (Melee Dev Magic)"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "+",
+                                                "ops": [
+                                                    {
+                                                        "num": 24
+                                                    },
+                                                    {
+                                                        "num": 6
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8": {
+                                            "flags": "ld+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "6"
+                                                                }
+                                                            },
+                                                            {
+                                                                "obj": {
+                                                                    "inst": "1802a16b877e903|Resource - Fleet Ship (Melee Dev Magic)"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "ops": [
+                                                    {
+                                                        "num": 24
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "17ee059a52c1e0a|request callback": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "18042f9ad623610|Resource Request - Fleet Ship (Melee Dev Magic Cheater)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "d+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "p+",
+                                    "comment": ""
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "d+",
+                            "instructions": {
+                                "9": {
+                                    "flags": "td",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "17edf7cccb41a31|resources"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17edf7cccb41a31|resources"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "18042f9ad623610-Resource Request - Fleet Ship (Melee Dev Magic Cheater)": {
+                    "flags": "+",
+                    "extends": "17ee05c11cf87c7|Resource Request (base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17edbf7f0f328fd|package": {
+                                    "override": "1802a16b877e903|Resource - Fleet Ship (Melee Dev Magic)",
+                                    "init": {
+                                        "live": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "flags": "+",
+                            "instructions": {
+                                "18042fa98d90cd9-": {
+                                    "flags": "+",
+                                    "extends": "1802a16b877e903|Resource - Fleet Ship (Melee Dev Magic)",
+                                    "sections": {
+                                        "2": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "1802a3ea5f26ed3|idx": {
+                                                    "flags": "*",
+                                                    "init": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "selector": -2,
+                                                                    "sub": "17edbf7f0f328fd|package",
+                                                                    "prop": "1802a3ea5f26ed3|idx"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17edbf7f0f328fd|package"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {}
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "LHS": {
+                                        "obj": {
+                                            "inst": "1802a16b877e903|Resource - Fleet Ship (Melee Dev Magic)"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "obj": {
+                                            "selector": -1
+                                        }
+                                    }
+                                },
+                                "b": {
+                                    "flags": "+",
+                                    "comment": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "18042ef101091aa-Resource Request - Fleet Ship (Melee Dev Magic)": {
+                    "extends": "17ee05d13af32b4|Resource Request - Typed",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17ee05d51888377|package want": {
+                                    "override": "17fdbbd49eda7e4|Resource - Fleet Ship",
+                                    "init": {
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "17edbf7f0f328fd|package"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ee067993f9731|found resource of type": {
+                                    "override": "17fdbbd49eda7e4|Resource - Fleet Ship",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17edbf7f0f328fd|package": {
+                                    "override": "17fdbbd49eda7e4|Resource - Fleet Ship",
+                                    "init": {
+                                        "live": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802a16b877e903-Resource - Fleet Ship (Melee Dev Magic)": {
+                    "extends": "17fdbbd49eda7e4|Resource - Fleet Ship",
+                    "conjurer": "1802a1567321b54|Resource Hold - Fleet Ships (Melee Dev)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1802a3ea5f26ed3-idx": {
+                                    "flags": "+*",
+                                    "base": "65",
+                                    "init": {
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "8": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "a": {
+                                                    "flags": "l+",
+                                                    "instructions": {
+                                                        "8": {
+                                                            "flags": "+",
+                                                            "contextValue": -1,
+                                                            "instructions": {
+                                                                "9": {
+                                                                    "LHS": {
+                                                                        "obj": {
+                                                                            "prop": "6"
+                                                                        }
+                                                                    },
+                                                                    "RHS": {
+                                                                        "ops": [
+                                                                            {
+                                                                                "obj": {
+                                                                                    "prop": "1"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            },
+                                                            "RHS": {
+                                                                "bind": "=",
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "prop": "2"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "obj": {}
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "selector": -2,
+                                                            "prop": "17edf7cccb41a31|resources"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    },
+                                                    "sort": {
+                                                        "ops": [
+                                                            {}
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "RHS": {
+                                                "bind": "=",
+                                                "ops": [
+                                                    {
+                                                        "obj": {
+                                                            "selector": -2
+                                                        }
+                                                    },
+                                                    {
+                                                        "obj": {
+                                                            "inst": "1802a1567321b54|Resource Hold - Fleet Ships (Melee Dev)"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "18222bbfc48d455|alien def": {
+                                    "flags": "+*",
+                                    "init": {
+                                        "needed": 1,
+                                        "scoped": 1
+                                    },
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "instructions": {
+                                                "2": {
+                                                    "flags": "+",
+                                                    "instructions": {
+                                                        "182272e14805d18-aliens": {
+                                                            "base": "17cf15997e5a882|Alien Definition",
+                                                            "init": {
+                                                                "set": 1,
+                                                                "ops": [
+                                                                    {
+                                                                        "obj": {
+                                                                            "inst": "17cf16e260c7e85|Alien List",
+                                                                            "prop": "17cf16ea3b55157|all aliens"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "182272e14805d18|aliens",
+                                                            "tupleOffs": 9
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "bind": "+",
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "1802a3ea5f26ed3|idx"
+                                                                }
+                                                            },
+                                                            {
+                                                                "num": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "9": {
+                                                    "LHS": {
+                                                        "obj": {
+                                                            "prop": "6"
+                                                        }
+                                                    },
+                                                    "RHS": {
+                                                        "ops": [
+                                                            {
+                                                                "obj": {
+                                                                    "prop": "182272e14805d18|aliens",
+                                                                    "tupleOffs": 8
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "comment": ""
+                                        }
+                                    }
+                                },
+                                "17d2aba92cb2661|type": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "1802a3ea5f26ed3|idx"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17edbf2d59cbfba|num": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 9999999
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "183150989cc8b79-Simulation Transitioner Persistent Data (Player - Melee Battlegroup)": {
+                    "flags": "+",
+                    "extends": "17db67561d0fe39|Simulation Transitioner Persistent Data (Player)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17d2a6237f90e84|resources": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "captured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "18005067bcab482|resource holds": {
+                                    "flags": "*",
+                                    "init": {
+                                        "set": 1,
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "bind": "+",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17edc0a1a079168|Resource Hold - RUs"
+                                                }
+                                            },
+                                            {
+                                                "obj": {
+                                                    "inst": "17fdbba58ccecfd|Resource Hold - Minerals"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802eb58fe2c835+Roster (AI Fleet)": {
+                    "extends": "17fc39127c06678|Roster (AI)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1802eb62d6463c0+AI fleet hold": {
+                                    "flags": "*",
+                                    "base": "17fdbeb9398d327|Resource Hold - Fleet Ships",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802ee2dce6b93f|Resource Hold - Fleet Ships (Adventure Battlegroup)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "18029319b4051ba|fleet hold": {
+                                    "flags": "*",
+                                    "init": {
+                                        "live": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "1802eb62d6463c0|AI fleet hold"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17d11230e7cf24d|persistent object": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "183150989cc8b79|Simulation Transitioner Persistent Data (Player - Melee Battlegroup)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "+",
+                            "instructions": {
+                                "b": {
+                                    "flags": "+",
+                                    "comment": "AI Fleet Roster"
+                                }
+                            }
+                        }
+                    }
+                },
+                "183af91129c5bfa+Roster (AI Fleet - Input Aliens)": {
+                    "extends": "1802eb58fe2c835|Roster (AI Fleet)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "183af920ca4e109+input aliens": {
+                                    "flags": "*",
+                                    "base": "17cf15997e5a882|Alien Definition",
+                                    "init": {
+                                        "set": 1,
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1802eb62d6463c0|AI fleet hold": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "183af918b151199|Resource Hold - Fleet Ships (AI Fleet)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "18204428b1ed085-Roster (AI - PvP)": {
+                    "extends": "17fc39127c06678|Roster (AI)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17fe6dd1fff0370|player resources": {
+                                    "flags": "*",
+                                    "init": {
+                                        "failable": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "sub": "17d11230e7cf24d|persistent object",
+                                                    "prop": "17d2a6237f90e84|resources"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "182b2cbf45f3d9f-Roster (AI - Debug Ship)": {
+                    "extends": "17fc39127c06678|Roster (AI)"
+                },
+                "17fc39127c06678+Roster (AI)": {
+                    "flags": "+",
+                    "extends": "1824acff4c1bdf5|Roster (Melee)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17f0e10e7cfe7dd|AI driven": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17fe73dc6ca2bc1|active fleet ship": {
+                                    "flags": "*",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "18029319b4051ba|fleet hold": {
+                                    "flags": "*",
+                                    "init": {
+                                        "live": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17fe6dd1fff0370|player resources": {
+                                    "flags": "*",
+                                    "init": {
+                                        "failable": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "183f75be04f0557|is real player": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "17dba8ab6e344fb|obj definition": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17fc392534a2759|Simulation Transitioner Definition (AI Player)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "d+",
+                            "instructions": {
+                                "9": {
+                                    "flags": "t",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "1824b1aec9a0ffa|behavior"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "1824b1aec9a0ffa|behavior"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "8": {
+                                    "flags": "d+",
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "comment": ""
+                                        }
+                                    },
+                                    "RHS": {
+                                        "bind": "<=",
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "11"
+                                                }
+                                            },
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "9": {
+                                    "flags": "td",
+                                    "LHS": {
+                                        "obj": {
+                                            "prop": "1800a7515c80915|add extra captures to ship"
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "1800a7515c80915|add extra captures to ship"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "182602b82c18d61-Roster Behavior - Check if Need New Ship (Melee AI)": {
+                    "extends": "1824b19f37389c6|Roster Behavior - Check if Need New Ship (Melee)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "182602c8451c26f|check resource availability": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {}
+                                        ]
+                                    }
+                                },
+                                "1824b2ce49f9fdb|next behavior": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "182602bd479f701|Roster Behavior - Create Requested Ship (Melee AI)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "flags": "d+",
+                            "instructions": {
+                                "8": {
+                                    "flags": "+",
+                                    "instructions": {
+                                        "b": {
+                                            "flags": "+",
+                                            "comment": ""
+                                        }
+                                    },
+                                    "RHS": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "prop": "1824b19606bcc1f|want new behavior"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "182602bd479f701-Roster Behavior - Create Requested Ship (Melee AI)": {
+                    "extends": "1824b86fecbdb33|Roster Behavior - Create Requested Ship (Melee)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1824b80ee7a9aa3|create ship callback": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "18260a9d952a00a|Roster - Create Ship (Melee - AI)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "1824b2ce49f9fdb|next behavior": {
+                                    "flags": "*",
+                                    "init": {
+                                        "unconjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "182602b82c18d61|Roster Behavior - Check if Need New Ship (Melee AI)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "1802eb01189011d-Simulation Transitioner Definition (Adventure Battlegroup)": {
+                    "flags": "+",
+                    "instances": "17f702263ba6cb9|Simulation Transitioner Definition (Player Base)",
+                    "conjurer": "176ee76b43b1735|Melee Simulation",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17db65243471045|ID": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "num": 50
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17db65271809ac9|create object": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "18204428b1ed085|Roster (AI - PvP)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "17fc392534a2759-Simulation Transitioner Definition (AI Player)": {
+                    "flags": "+",
+                    "extends": "17f702263ba6cb9|Simulation Transitioner Definition (Player Base)",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "17dbb1c081ccd7b|persistent object type": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17db67561d0fe39|Simulation Transitioner Persistent Data (Player)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17db65271809ac9|create object": {
+                                    "flags": "*",
+                                    "init": {
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "17fc39127c06678|Roster (AI)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "melee -> roster"
+        },
+        "182a82e9d0479f0-Simulation Transitioner Definition (Adventure Melee)": {
+            "extends": "17dba82f72b3e61|Simulation Transitioner Definition (Player)"
+        },
+        "b": {
+            "flags": "+*",
+            "instructions": {
+                "1802e0b0efc089a+Simulation - Start Player (Melee Dev)": {
+                    "flags": "+",
+                    "extends": "17ddf222912277e|Simulation - Start Player",
+                    "sections": {
+                        "2": {
+                            "flags": "+",
+                            "instructions": {
+                                "1802e29bfd177f0+DEBUG - force agent": {
+                                    "flags": "*",
+                                    "base": "178f5460f98876a|Roster Ship",
+                                    "init": {
+                                        "needed": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "selector": -1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "17ddf288112b74b|definition": {
+                                    "flags": "*",
+                                    "init": {
+                                        "conjured": 1,
+                                        "ops": [
+                                            {
+                                                "obj": {
+                                                    "inst": "1802e1ea6bc7b0c|Simulation Transitioner Definition (Melee Dev Player) - Debug Properties"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "comment": "melee"
+        }
+    }
+}

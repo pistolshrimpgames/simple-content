@@ -1,0 +1,17 @@
+{
+    "Include Files": [
+        "shared/ship_controls.jsim"
+    ],
+    "Property Colors": [
+        { "Simple Condition": "ai player=1", "Color": [ 0.75, 0.2, 0.2, 1 ] },
+        { "Simple Condition": "posessing another=1", "Color": [ 0.75, 0.2, 0.2, 1 ] },
+        { "Simple Condition": "VIEW player ready=1", "Color": [ 0, 0, 1, 1 ] }
+    ],
+    "Resource Files": [
+        { "Simple Type": "Melee Match Pick Team Dialog", "File": "../ships/Match_JoinTeam.jdialog" },
+        { "Simple Type": "Melee Match Configure Dialog", "File": "../ships/Match_ConfigureTeams.jdialog" },
+        { "Simple Type": "Melee Lobby Wait Dialog", "File": "../ships/Match_Waiting.jdialog" },
+        { "Simple Type": "Melee Lobby Ready Dialog", "File": "Match_ReadyUp.jdialog" },
+        { "Simple Type": "Melee Lobby Readied Dialog", "File": "Match_ReadyDown.jdialog" }
+    ]
+}

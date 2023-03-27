@@ -1,0 +1,120 @@
+{
+    "Include Files": [
+        "shared/ship_controls.jsim",
+        "melee_lights.jsim",
+        "melee_camera.jsim",
+        "melee_backdrop.jsim",
+        "shared/melee_ships.jsim",
+        "additional_ships/additional_ships.jsim"
+    ],
+    "Type Colors": [
+        { "Simple Type": "Melee Ship (Defeated)", "Color": [ 1, 0, 0.25, 0.75 ] },
+        { "Simple Type": "Laser Collider", "Color": [ 1, 1, 1, 1 ] }
+    ],
+    "Property Colors": [
+        { "Simple Condition": "extra captures.Combatant.team.team num=3", "Color": [ 0, 0.5, 0.8, 1 ] },
+        { "Simple Condition": "extra captures.Combatant.team.team num=2", "Color": [ 0, 0.75, 0, 1 ] },
+        { "Simple Condition": "extra captures.Combatant.team.team num=4", "Color": [ 0.75, 0.75, 0.75, 1 ] },
+        { "Simple Condition": "extra captures.Combatant.team.team num=5", "Color": [ 1, 1, 0, 1 ] },
+        { "Simple Condition": "extra captures.Combatant.team.team num=6", "Color": [ 0, 1, 1, 1 ] },
+        { "Simple Condition": "extra captures.Combatant (Starbase Component).health stage = 0", "Color": [ 1, 0, 0, 1 ] },
+        { "Simple Condition": "extra captures.Combatant (Starbase Component).health stage = 1", "Color": [ 0.5, 0.5, 0, 1 ] },
+        { "Simple Condition": "extra captures.Combatant (Starbase Component).health stage = 2", "Color": [ 1, 1, 0, 1 ] },
+        { "Simple Condition": "extra captures.Combatant (Starbase Component).health stage = 3", "Color": [ 0, 1, 0, 1 ] },
+        { "Simple Condition": "extra captures.Combatant (Starbase Component).health stage = 4", "Color": [ 1, 1, 1, 1 ] },
+        { "Simple Condition": "extra captures.Combatant (Starbase Component).health stage = 5", "Color": [ 1, 1, 1, 1 ] },
+        { "Simple Condition": "teleporting=1", "Color": [ 0.5,0,0.5,1 ] },
+        { "Simple Condition": "cloaked=1", "Color": [ 0,0,0,1 ] },
+        { "Simple Condition": "weapons.Yehat Shield Weapon.shielded=1", "Color": [ 0,1,0,1] },
+        { "Simple Condition": "hot potato time until explosion < 10", "Color": [ 0.5,0,0,1 ] },
+        { "Simple Condition": "hot potato time until explosion < 2", "Color": [ 0.5,0.5,0,1 ] },
+        { "Simple Condition": "hot potato time until explosion < 1", "Color": [ 1,1,1,1 ] }
+    ],
+    "Camera Cycle Input": [
+        { "Mouse": "mousemiddle" }
+    ],
+    "Camera Mode Input": [
+        { "Mouse": "mouseright" }
+    ],
+    "Minimap": {
+        "Texture File": "MinimapTexture.png",
+        "Player Color": [ 0, 1, 0, 1 ],
+        "Enemy Color": [ 1, 0, 0, 1 ],
+        "Pixel Size": 16
+    },
+    "Lighting": {
+        "Ambient Color": [ 0, 0, 0 ]
+    },
+    "Resource Dialogs": [
+        {
+            "Simple Type": "Ship Select Dialog",
+            "Dialog": {
+                "Title": "Select Ship",
+                "Cancellable": false,
+                "Choice Formats": [
+                    { "Simple Condition": "alien", "Text": "{alien.(TYPE_NAME)}: Cost {alien.ship cost} Crew {crew}" },
+                    { "Simple Condition": "cost=-1", "Text": "Next" },
+                    { "Simple Condition": "cost=-2", "Text": "Same" },
+                    { "Simple Condition": "cost=-3", "Text": "Spectate" }
+                ]
+            }
+        },
+        {
+            "Simple View ID": 1240,
+            "Dialog": {
+                "Title": "Debug",
+                "Fixed Choices": [
+                    "Change Ship",
+                    "Change AI",
+                    "Remove AI",
+                    "Toggle AI Brain",
+                    "Toggle AI Flight Mode",
+                    "Toggle AI Weapons",
+                    "Toggle AI Teams",
+                    "Toggle Godmode",
+                    "Toggle Infinite Energy",
+                    "Toggle Planet",
+                    "Toggle Gravity",
+                    "Toggle Asteroids",
+                    "Destroy Ship",
+                    "Toggle Arilou/Spathi Fixed Turn Angles",
+                    "Toggle Arilou/Spathi Fixed Fire Angles",
+                    "Add Friendly AI",
+                    "Remove Friendly AI"
+                ]
+            }
+        }
+    ],
+    "Resource Files": [
+        { "Simple Type": "Melee Match Pick Team Dialog", "File": "Match_JoinTeam.jdialog" },
+        { "Simple Type": "Melee Match Configure Dialog", "File": "Match_ConfigureTeams.jdialog" },
+        { "Simple Type": "Melee Match 1v1 Tourney Wait Dialog", "File": "Match_Waiting.jdialog" },
+        { "Simple Type": "Starbase Dialog", "File": "Starbase_Dialog.jdialog" },
+        { "Simple Type": "Starbase Build Dialog", "File": "Starbase_Hardpoint_Dialog.jdialog" },
+        { "Simple Type": "Survival Ready Dialog", "File": "Match_AskIfReady.jdialog" }
+    ],
+    "Widgets": [
+        { "Widget Type": "Label", "Label Text": "{$PLAYER_NAME$}" },
+        { "Widget Type": "ProgressBar", "Label Text": "CREW", "Current Value": "health", "Maximum Value": "extra captures.Combatant (Player).max health", "Simple Condition": "energy" },
+        { "Widget Type": "ProgressBar", "Label Text": "ENERGY", "Current Value": "energy.energy value", "Maximum Value": "energy.energy max", "Simple Condition": "energy.energy value" },
+        { "Widget Type": "Label", "Label Text": "Godmode On", "Simple Condition": "sim player.extra captures.Melee Debug Controls.godmode > 0" },
+        { "Widget Type": "Label", "Label Text": "Infinite Energy", "Simple Condition": "sim player.extra captures.Melee Debug Controls.infinite energy > 0" },
+        { "Widget Type": "Text", "Label Text": "Spawning in", "Value Text": " {time until spawn} seconds", "Simple Condition": "time until spawn" },
+        { "Simple Type": "Pirate Escaping GUI", "Widget Type": "Text", "Label Text": "Pirate Escaping", "Value Text": "{escape time remaining}" },
+        { "Simple Type": "Survival Assault Data", "Widget Type": "Text", "Label Text": "Battlegroup", "Value Text": " {battlegroup number}/{battlegroups total}" },
+        { "Simple Type": "Survival Assault Data", "Simple Condition": "battlegroup spawn time remaining > 0", "Widget Type": "Text", "Label Text": "Next Battlegroup In", "Value Text": "{battlegroup spawn time remaining}" },
+        { "Simple Type": "Survival Assault Data", "Simple Condition": "assault enemies left > 0", "Widget Type": "Text", "Label Text": "Enemies Remaining", "Value Text": "{assault enemies left}" },
+        { "Simple Type": "Melee Starbase", "Widget Type": "Text", "Label Text": "Starbase Crew", "Value Text": "{health}" },
+        { "Simple Type": "Melee Starbase", "Widget Type": "Text", "Label Text": "Starbase RUs", "Value Text": "{resources.hold - rus.num}" },
+        { "Simple Type": "Melee Debug Config", "Simple Condition": "planet enabled = 0", "Widget Type": "Label", "Label Text": "Planet Disabled" },
+        { "Simple Type": "Melee Debug Config", "Simple Condition": "planet gravity enabled = 0", "Widget Type": "Label", "Label Text": "Planet Gravity Disabled" },
+        { "Simple Type": "Melee Debug Config", "Simple Condition": "asteroids enabled = 0", "Widget Type": "Label", "Label Text": "Asteroids Disabled" },
+        { "Simple Type": "Melee Debug Config", "Simple Condition": "ai fly behavior = 1", "Widget Type": "Label", "Label Text": "AI Fly Straight" },
+        { "Simple Type": "Melee Debug Config", "Simple Condition": "ai fly behavior = 2", "Widget Type": "Label", "Label Text": "AI Fly in Circles" },
+        { "Simple Type": "Melee Debug Config", "Simple Condition": "ai weapons disabled > 0", "Widget Type": "Label", "Label Text": "AI Weapons Disabled" },
+        { "Simple Type": "Melee Debug Config", "Simple Condition": "ai halted > 0", "Widget Type": "Label", "Label Text": "AI Halted" },
+        { "Simple Type": "Melee Debug Config", "Simple Condition": "ai share team > 0", "Widget Type": "Label", "Label Text": "AI Share Team" },
+        { "Simple Type": "Melee Debug Config", "Simple Condition": "arilou spathi fixed turn angles > 0", "Widget Type": "Label", "Label Text": "A+S Fixed Turn" },
+        { "Simple Type": "Melee Debug Config", "Simple Condition": "arilou spathi fixed fire angles > 0", "Widget Type": "Label", "Label Text": "A+S Fixed Firing" }
+    ]
+}

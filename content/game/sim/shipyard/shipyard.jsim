@@ -1,0 +1,10 @@
+{
+    "Include Files": [
+        "shared/market.jsim"
+    ],
+    "Resource Files": [
+        { "Simple Type": "Dialog (Fleet Ship)", "File": "fleet_ship_2.jdialog" },
+        { "Simple Type": "Dialog (Owned Fleet Ship)", "File": "fleet_ship_owned.jdialog" },
+        { "Simple Type": "Dialog (Damaged Fleet Ship)", "File": "fleet_ship_damaged.jdialog" }
+    ]
+}
