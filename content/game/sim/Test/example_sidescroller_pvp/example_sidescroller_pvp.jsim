@@ -13,10 +13,14 @@
         { "Binding": "SecondaryAxisNegativeY", "Input": [ { "Key": "backslash" } ] }
     ],
     "Type Colors": [
-        { "Simple Type": "Killplane", "Color": [ 1, 0, 0, 1 ]}
+        { "Simple Type": "Killplane", "Color": [ 1, 0, 0, 1 ]},
+        { "Simple Type": "Sidescroller Map Collider (PVP)", "Color": [0, 1, 0, 0.25]}
     ],
     "Property Colors": [
         { "Simple Condition": "about to die=1", "Color": [ 0.5,1,0.1,0.5 ]}
+    ],
+    "Widgets": [
+            { "Widget Type": "Text", "Label Text": "Ammo", "Value Text": "{ammo} Shots", "Simple Condition": "ammo > 0" }
     ],
     "Cameras": [
         {
